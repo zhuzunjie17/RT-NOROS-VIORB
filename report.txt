@@ -1,0 +1,5 @@
+2017/10/24  fork 去除ros框架的jingpan非实时版VIORB
+
+TODO：1.将jingpan的RT版中的实时性代码搬移上来。
+	2.将高博的结合SVO的track代码搬移上来。
+	3.检查代码鲁棒性。
