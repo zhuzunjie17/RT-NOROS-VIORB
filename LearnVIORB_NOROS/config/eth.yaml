@@ -3,7 +3,7 @@
 # 1: realtime, 0: non-realtime
 test.RealTime: 1
 # Time for visual-inertial initialization
-test.VINSInitTime: 15.0
+test.VINSInitTime: 0
 
 # Modify test.InitVIOTmpPath and bagfile to the correct path
 # Path to save tmp files/results
@@ -59,18 +59,18 @@ LocalMapping.LocalWindowSize: 20
 #--------------------------------------------------------------------------------------------
 
 # Camera calibration and distortion parameters (OpenCV) 
-Camera.fx: 458.654
-Camera.fy: 457.296
-Camera.cx: 367.215
-Camera.cy: 248.375
+Camera.fx: 199.1
+Camera.fy: 198.8
+Camera.cx: 132.19
+Camera.cy: 110.71
 
-Camera.k1: -0.28340811
-Camera.k2: 0.07395907
-Camera.p1: 0.00019359
-Camera.p2: 0.00001762 
+Camera.k1: -0.368436311798
+Camera.k2: 0.150947243557
+Camera.p1: -0.000296130534385
+Camera.p2: -0.000759431726241
 
-Camera.width: 752
-Camera.height: 480
+Camera.width: 480
+Camera.height: 360
 
 # Camera frames per second 
 Camera.fps: 20.0
@@ -92,7 +92,7 @@ DepthMapFactor: 1.0
 #--------------------------------------------------------------------------------------------
 
 # ORB Extractor: Number of features per image
-ORBextractor.nFeatures: 1000
+ORBextractor.nFeatures: 200
 
 # ORB Extractor: Scale factor between levels in the scale pyramid 
 ORBextractor.scaleFactor: 1.2
@@ -104,8 +104,8 @@ ORBextractor.nLevels: 8
 # Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
 # Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
 # You can lower these values if your images have low contrast   
-ORBextractor.iniThFAST: 20
-ORBextractor.minThFAST: 7
+ORBextractor.iniThFAST: 10
+ORBextractor.minThFAST: 3
 
 #--------------------------------------------------------------------------------------------
 # Viewer Parameters

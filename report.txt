@@ -3,3 +3,7 @@
 TODO：1.将jingpan的RT版中的实时性代码搬移上来。
 	2.将高博的结合SVO的track代码搬移上来。
 	3.检查代码鲁棒性。
+
+
+17/10/20 change MonocularInitialization() :init feature numbers and match numbers
+	change Initializer() : last if variable

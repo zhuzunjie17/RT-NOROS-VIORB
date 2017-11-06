@@ -594,7 +594,9 @@ bool Initializer::ReconstructH(vector<bool> &vbMatchesInliers, cv::Mat &H21, cv:
     float d2 = w.at<float>(1);
     float d3 = w.at<float>(2);
 
-    if(d1/d2<1.00001 || d2/d3<1.00001)
+	bool temp1=d1/d2<1.00001;
+	bool temp2=d2/d3<1.00001;
+    if(temp1 || temp2)
     {
         return false;
     }
@@ -717,8 +719,10 @@ bool Initializer::ReconstructH(vector<bool> &vbMatchesInliers, cv::Mat &H21, cv:
         }
     }
 
-
-    if(secondBestGood<0.75*bestGood && bestParallax>=minParallax && bestGood>minTriangulated && bestGood>0.9*N)
+	std::cout<<secondBestGood<<endl<<bestGood<<endl<<bestParallax<<std::endl<<N<<endl;
+	
+    if(secondBestGood < 0.75 * bestGood && bestParallax >= minParallax && bestGood > minTriangulated &&
+            bestGood > 0.9 * N)
     {
         vR[bestSolutionIdx].copyTo(R21);
         vt[bestSolutionIdx].copyTo(t21);

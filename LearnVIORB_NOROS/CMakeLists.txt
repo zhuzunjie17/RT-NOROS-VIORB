@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8)
 project(ORB_SLAM2)
 
 IF(NOT CMAKE_BUILD_TYPE)
-  SET(CMAKE_BUILD_TYPE Release)
+  SET(CMAKE_BUILD_TYPE Debug )
 ENDIF()
 
 MESSAGE("Build type: " ${CMAKE_BUILD_TYPE})
@@ -28,16 +28,21 @@ endif()
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
+
+
+# set (EIGEN3_INCLUDE_DIR  /usr/local/include/eigen3)
+message("eigen:." ${EIGEN3_INCLUDE_DIR})
 find_package(OpenCV 2.4.3 REQUIRED)
-find_package(Eigen3 3.1.0 REQUIRED)
+find_package(Eigen3 3.2.10 REQUIRED)
 find_package(Pangolin REQUIRED)
 find_package(Cholmod REQUIRED)
+
 
 include_directories(
 ${PROJECT_SOURCE_DIR}
 ${PROJECT_SOURCE_DIR}/include
 ${PROJECT_SOURCE_DIR}/src
-${EIGEN3_INCLUDE_DIR}
+${EIGEN3_INCLUDE_DIR} /usr/local/include/eigen3
 ${Pangolin_INCLUDE_DIRS}
 ${CHOLMOD_INCLUDE_DIR}
 )
@@ -110,6 +115,10 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/MonoVIO)
 add_executable(vio
 Examples/MonoVIO/vio.cc)
 target_link_libraries(vio ${PROJECT_NAME})
+
+add_executable(runeth
+Examples/MonoVIO/runeth.cc)
+target_link_libraries(runeth ${PROJECT_NAME})
 
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/RGB-D)
 

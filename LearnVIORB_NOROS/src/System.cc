@@ -26,7 +26,9 @@
 #include <pangolin/pangolin.h>
 #include <iomanip>
 #include <time.h>
-
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include "IMU/configparam.h"
 
 
