@@ -49,22 +49,12 @@
 #include <memory>
 #include <functional>
 #include <atomic>
+#include <chrono>
 using namespace std;
-
-/*class ImageGrabber
-{
-public:
-    ImageGrabber(ORB_SLAM2::System* pSLAM):mpSLAM(pSLAM){}
-
-   // void GrabImage(const sensor_msgs::ImageConstPtr& msg);
-
-    ORB_SLAM2::System* mpSLAM;
-};
-*/
 
 typedef struct ImageList
 {
-	unsigned long timeStamp;
+	double timeStamp;
 	string imgName;
 }ICell;
 
@@ -122,7 +112,7 @@ void loadIMUFile(char * imuPath,std::vector<ORB_SLAM2::IMUData> &vimuData)
     size_t comma = 0;
     size_t comma2 = 0;
 
-    char imuTime[14] = {0};
+//     char imuTime[14] = {0};
     double acc[3] = {0.0};
     double grad[3] = {0.0};
     unsigned long imuTimeStamp = 0;
@@ -199,80 +189,82 @@ int main(int argc, char **argv)
     /**
      * @brief added data sync
      */
-    double imageMsgDelaySec = config.GetImageDelayToIMU();
+//     double imageMsgDelaySec = config.GetImageDelayToIMU();
 	
     // 3dm imu output per g. 1g=9.80665 according to datasheet
     const double g3dm = 9.80665;
     const bool bAccMultiply98 = config.GetAccMultiply9p8();
     //cout<<"-----------------------------------------------------------------------------"<<endl;
-    char *fullPath = new char[500];// = {0};
-    memset(fullPath,0,500);
+    char *fullPath = new char[100];// = {0};
+    memset(fullPath,0,strlen(fullPath));
     //imgData>>imageTimeStamp>>imageName;
     //imuDataFile>>imuTimeStamp>>grad[0]>>grad[1]>>grad[2]>>acc[0]>>acc[1]>>acc[2];
     std::vector<ORB_SLAM2::IMUData> allimuData;
     std::vector<ICell> iListData;
-    //loadIMUFile("/home/fyj/Code/C++/LearnVIORB/Examples/ROS/ORB_VIO/v2_03_diff/V2_03_difficult/mav0/imu0/data.csv",allimuData);
+	
     loadIMUFile(argv[3],allimuData);
     //cout<<"loading imu finished"<<endl;
-    //loadImageList("/home/fyj/Code/C++/LearnVIORB/Examples/ROS/ORB_VIO/v2_03_diff/V2_03_difficult/mav0/cam0/data.csv",iListData);
     loadImageList(argv[4],iListData);
     //cout<<"loading image finished"<<endl;
     double e = pow(10.0,-9);
+	
+	vector<float> vTimesTrack;
+	vTimesTrack.resize(iListData.size());
         
     //cout<<iListData.size()<<"------------"<<allimuData.size()<<endl;
     //cv::waitKey(0);
-    for(int j=0;j<iListData.size();j++)
+    for(uint j=0;j<iListData.size();j++)
     {
-            std::vector<ORB_SLAM2::IMUData> vimuData;
+        std::vector<ORB_SLAM2::IMUData> vimuData;
 	    /*
 	    *imu 的频率是200HZ 图像帧率是20HZ 所以简单的认为每一帧图像对应10个imu数据
+		* TODO:这种是offline的做法，需要将其改为online的做法，即根据时间戳来判断IMU数据与图像数据的关系
 	    */
-            for(unsigned int i=0;i<10;i++)
-            {
-//                cout<<"*************************************************************************"<<endl;
-                char temp[10] = {0};
+		for(unsigned int i=0;i<10;i++)
+		{
+			int count_it = j*10 + i;
+			if(bAccMultiply98)
+			{
+				allimuData[j]._a(0) *= g3dm;
+				allimuData[j]._a(1) *= g3dm;
+				allimuData[j]._a(2) *= g3dm;
+			}
+
+			allimuData[count_it]._t = allimuData[count_it]._t*e;
+			//这里将时间戳×上e-9后的结果，程序可以正常运行，但是显示出来的时间和ros环境下的时间不同，且运行速度缓慢。
+			ORB_SLAM2::IMUData imudata(allimuData[count_it]._g(0),allimuData[count_it]._g(1),allimuData[count_it]._g(2),
+						allimuData[count_it]._a(0),allimuData[count_it]._a(1),allimuData[count_it]._a(2),(double)allimuData[count_it]._t);
+			/*
+			//时间戳按这个给程序也可以正常运行，速度基本和ros环境下一样，问题在于当按照正常的0.005设置时候程序会挂，后来尝试后发现这个数据给的越小程序越容易运行成功。
+			ORB_SLAM2::IMUData imudata(allimuData[count_it]._g(0),allimuData[count_it]._g(1),allimuData[count_it]._g(2),
+									allimuData[count_it]._a(0),allimuData[count_it]._a(1),allimuData[count_it]._a(2),j*0.0005+i*0.00005);
+			*/
+			vimuData.push_back(imudata);
+        }
+		//cout<<"IMU FINISHED READING"<<endl;
 		
-                //substring(temp,imuTime,0,10);
-  //              cout<<"=========================================================================="<<endl;
-                if(bAccMultiply98)
-                {
-                    allimuData[j]._a(0) *= g3dm;
-                    allimuData[j]._a(1) *= g3dm;
-                    allimuData[j]._a(2) *= g3dm;
-                }
-                //cout<<allimuData[j]._g(0)<<","<<allimuData[j]._g(1)<<","<<allimuData[j]._g(2)<<endl;
-		//cout<<allimuData[j]._a(0)<<","<<allimuData[j]._a(1)<<","<<allimuData[j]._a(2)<<endl;
-		//printf("imutimestamp,%0.10f\n",(double)allimuData[j]._t);
-                allimuData[j]._t = allimuData[j]._t*e;
-		/*
-		*这里将时间戳×上e-9后的结果，程序可以正常运行，但是显示出来的时间和ros环境下的时间不同，且运行速度缓慢。
-		ORB_SLAM2::IMUData imudata(allimuData[j]._g(0),allimuData[j]._g(1),allimuData[j]._g(2),
-                                allimuData[j]._a(0),allimuData[j]._a(1),allimuData[j]._a(2),(double)allimuData[j]._t);
-		*/
-		//时间戳按这个给程序也可以正常运行，速度基本和ros环境下一样，问题在于当按照正常的0.005设置时候程序会挂，后来尝试后发现这个数据给的越小程序越容易运行成功。
-		ORB_SLAM2::IMUData imudata(allimuData[j]._g(0),allimuData[j]._g(1),allimuData[j]._g(2),
-                                allimuData[j]._a(0),allimuData[j]._a(1),allimuData[j]._a(2),j*0.0005+i*0.00005);
-                vimuData.push_back(imudata);
-            }
-	   
-            //cout<<"IMU FINISHED READING"<<endl;
 	    //发现读取txt时，图像文件名后多了一个‘/r’，因此需要截掉这个字符。
 	    string temp = iListData[j].imgName.substr(0,iListData[j].imgName.size()-1);
 	    //sprintf(fullPath,"%s/%s","/home/fyj/Code/C++/LearnVIORB/Examples/ROS/ORB_VIO/v2_03_diff/V2_03_difficult/mav0/cam0/data",temp.c_str());
 	    sprintf(fullPath,"%s/%s",argv[5],temp.c_str());
+		cout<<endl;
 	    cv::Mat im = cv::imread(fullPath,0);
 	    cout<<fullPath<<endl;
-	    memset(fullPath,0,100);
-	  //  cout<<"-----------------------FYJ----------------------"<<iListData[j].timeStamp<<endl;
+	    memset(fullPath,0,strlen(fullPath));
+
 	    iListData[j].timeStamp = iListData[j].timeStamp*e;
-	    //printf("imagetimestamp,%0.10f\n",(double)iListData[j].timeStamp);
-	    //SLAM.TrackMonoVI(im, vimuData, (double)iListData[j].timeStamp);
-	    SLAM.TrackMonoVI(im, vimuData, j*0.00005);
-		//if(j == 6)
-		//{
-		//	usleep(20);			
-			//cv::waitKey(0);
-		//}
+
+
+		std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
+
+	    SLAM.TrackMonoVI(im, vimuData, iListData[j].timeStamp);
+
+        std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
+
+		double ttrack= std::chrono::duration_cast<std::chrono::duration<double> >(t2 - t1).count();
+		vTimesTrack[j]=ttrack;
+		cout<<"timecost: "<<ttrack<<endl;
+
 //             // Wait local mapping end.
 //             bool bstop = false;
 // 	//cout<<"----------------------------------"<<j<<"----------------------------------------"<<endl;
@@ -283,7 +275,19 @@ int main(int argc, char **argv)
 //             //if(bstop)
 //               //  break;
      }
-    delete [] fullPath;
+     delete [] fullPath;
+     // Tracking time statistics
+    sort(vTimesTrack.begin(),vTimesTrack.end());
+    float totaltime = 0;
+    for(uint ni=0; ni<iListData.size(); ni++)
+    {
+        totaltime+=vTimesTrack[ni];
+    }
+    cout << "-------" << endl << endl;
+    cout << "median tracking time: " << vTimesTrack[iListData.size()/2] << endl;
+    cout << "mean tracking time: " << totaltime/iListData.size() << endl;
+
+    
     SLAM.SaveKeyFrameTrajectoryNavState(config._tmpFilePath+"KeyFrameNavStateTrajectory.txt");
     cout<<endl<<endl<<"press any key to shutdown"<<endl;
     getchar();
