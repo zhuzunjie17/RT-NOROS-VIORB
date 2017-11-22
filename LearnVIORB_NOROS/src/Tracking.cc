@@ -40,7 +40,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define TRACK_WITH_IMU
+#define TRACK_WITH_IMU TRUE
 
 using namespace std;
 
@@ -483,14 +483,21 @@ cv::Mat Tracking::GrabImageMonoVI(const cv::Mat &im, const std::vector<IMUData> 
         else
             cvtColor(mImGray,mImGray,CV_BGRA2GRAY);
     }
-
+	
+	std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
     if(mState==NOT_INITIALIZED || mState==NO_IMAGES_YET)
         mCurrentFrame = Frame(mImGray,timestamp,vimu,mpIniORBextractor,mpORBVocabulary,mK,mDistCoef,mbf,mThDepth);
     else
         mCurrentFrame = Frame(mImGray,timestamp,vimu,mpORBextractorLeft,mpORBVocabulary,mK,mDistCoef,mbf,mThDepth,mpLastKeyFrame);
-
+	std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
+	double ttrack= std::chrono::duration_cast<std::chrono::duration<double> >(t2 - t1).count();
+	std::cout<<"Time costs:#frame preprocess#： "<<ttrack<<std::endl;
+	
     Track();
-
+	std::chrono::steady_clock::time_point t3 = std::chrono::steady_clock::now();
+	double ttrack1= std::chrono::duration_cast<std::chrono::duration<double> >(t3 - t2).count();
+	cout<<"Time costs:#track#： "<<ttrack1<<endl;
+	
     return mCurrentFrame.mTcw.clone();
 }
 
@@ -756,18 +763,21 @@ void Tracking::Track()
 
     if(mState==NOT_INITIALIZED)
     {
+		cout<<"*NOT_INITIALIZED:*"<<endl;
         if(mSensor==System::STEREO || mSensor==System::RGBD)
             StereoInitialization();
         else
             MonocularInitialization();
 
         mpFrameDrawer->Update(this);
-
+		
+		cout<<"current state "<<mState<<endl;
         if(mState!=OK)
             return;
     }
     else
     {
+		
         // System is initialized. Track Frame.
         bool bOK;
 
@@ -779,22 +789,33 @@ void Tracking::Track()
 
             if(mState==OK)
             {
+				cout<<"*OK:*"<<endl;
                 // Local Mapping might have changed some MapPoints tracked in last frame
                 CheckReplacedInLastFrame();
 #ifdef TRACK_WITH_IMU
                 // If Visual-Inertial is initialized
                 if(mpLocalMapper->GetVINSInited())
                 {
+					cout<<"Visual-Inertial is initialized,";
                     // 20 Frames after reloc, track with only vision
                     if(mbRelocBiasPrepare)
                     {
+						cout<<" 20 Frames after reloc, track with only vision"<<endl;
                         bOK = TrackReferenceKeyFrame();
                     }
                     else
                     {
+						std::chrono::steady_clock::time_point twi1 = std::chrono::steady_clock::now();
                         bOK = TrackWithIMU(bMapUpdated);
+						std::chrono::steady_clock::time_point twi2 = std::chrono::steady_clock::now();
+						double twi= std::chrono::duration_cast<std::chrono::duration<double> >(twi2 - twi1).count();
+						if(bOK)
+							cout<<"TrackWithIMU,time costs"<<twi<<endl;
                         if(!bOK)
+						{
+							cout<<"TrackWithIMU failed, TrackReferenceKeyFrame"<<endl;
                             bOK = TrackReferenceKeyFrame();
+						}
 
                     }
                 }
@@ -802,20 +823,31 @@ void Tracking::Track()
                 else
 #endif
                 {
+					cout<<"pure-vslam,";
                     if(mVelocity.empty() || mCurrentFrame.mnId<mnLastRelocFrameId+2)
                     {
+						cout<<"TrackReferenceKeyFrame"<<endl;
                         bOK = TrackReferenceKeyFrame();
                     }
                     else
                     {
+						std::chrono::steady_clock::time_point tm1 = std::chrono::steady_clock::now();
                         bOK = TrackWithMotionModel();
+						std::chrono::steady_clock::time_point tm2 = std::chrono::steady_clock::now();
+						double tm= std::chrono::duration_cast<std::chrono::duration<double> >(tm2 - tm1).count();
+						if(bOK)
+							cout<<"TrackWithMotionModel, time costs:"<<tm<<endl;
                         if(!bOK)
+						{
+							cout<<"TrackWithMotionModel failed, TrackReferenceKeyFrame"<<endl;
                             bOK = TrackReferenceKeyFrame();
+						}
                     }
                 }
             }
             else
             {
+				cout<<"*not OK, try to Relocalization*,";
                 bOK = Relocalization();
                 if(bOK) cout<<"Relocalized. id: "<<mCurrentFrame.mnId<<endl;
             }
@@ -831,23 +863,39 @@ void Tracking::Track()
         // If we have an initial estimation of the camera pose and matching. Track the local map.
         if(!mbOnlyTracking)
         {
+			cout<<"*have an initial estimation. Track the local map*:"<<endl;
             if(bOK)
             {
 #ifndef TRACK_WITH_IMU
+				cout<<"track with imu,TrackLocalMap"<<endl;
                 bOK = TrackLocalMap();
 #else
                 if(!mpLocalMapper->GetVINSInited())
+				{
+					
+					std::chrono::steady_clock::time_point tl1 = std::chrono::steady_clock::now();
                     bOK = TrackLocalMap();
+					std::chrono::steady_clock::time_point tl2 = std::chrono::steady_clock::now();
+					double tl= std::chrono::duration_cast<std::chrono::duration<double> >(tl2 - tl1).count();
+					cout<<"TrackLocalMap,time costs:"<<tl<<endl;
+					
+				}
                 else
                 {
                     if(mbRelocBiasPrepare)
                     {
                         // 20 Frames after reloc, track with only vision
                         bOK = TrackLocalMap();
+						cout<<"reloc,TrackLocalMap"<<endl;
                     }
                     else
                     {
+						
+						std::chrono::steady_clock::time_point ti1 = std::chrono::steady_clock::now();
                         bOK = TrackLocalMapWithIMU(bMapUpdated);
+						std::chrono::steady_clock::time_point ti2 = std::chrono::steady_clock::now();
+						double ti= std::chrono::duration_cast<std::chrono::duration<double> >(ti2 - ti1).count();
+						cout<<"TrackLocalMapWithIMU,time costs:"<<ti<<endl;
                     }
                 }
 #endif
@@ -897,6 +945,7 @@ void Tracking::Track()
         }
         else
         {
+			cout<<"lost!"<<endl;
             mState=LOST;
 
             // Clear Frame vectors for reloc bias computation

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ORB_SLAM2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\usr\local\share\OpenCV\;CMake Files\..\..\..\..\..\usr\local\share\eigen3\;CMake Files\..\..\..\..\..\usr\local\share\eigen3\cmake\;CMake Files\..\..\..\Documents\;CMake Files\..\..\..\Documents\Thirdparty\;CMake Files\..\..\..\Documents\Thirdparty\Pangolin-master\;CMake Files\..\..\..\Documents\Thirdparty\Pangolin-master\build\;CMake Files\..\..\..\Documents\Thirdparty\Pangolin-master\build\src\;CMake Files\cmake_modules\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runeth">
+				<Option output="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/Examples/MonoVIO/runeth" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/Examples/MonoVIO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/include"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/cristin/Documents/Thirdparty/Pangolin-master/include"/>
+					<Add directory="/home/cristin/Documents/Thirdparty/Pangolin-master/build/src/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 runeth"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runeth/fast">
+				<Option output="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/Examples/MonoVIO/runeth" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/Examples/MonoVIO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/include"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/cristin/Documents/Thirdparty/Pangolin-master/include"/>
+					<Add directory="/home/cristin/Documents/Thirdparty/Pangolin-master/build/src/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 runeth/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="vio">
+				<Option output="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/Examples/MonoVIO/vio" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/Examples/MonoVIO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/include"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/cristin/Documents/Thirdparty/Pangolin-master/include"/>
+					<Add directory="/home/cristin/Documents/Thirdparty/Pangolin-master/build/src/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 vio"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="vio/fast">
+				<Option output="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/Examples/MonoVIO/vio" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/Examples/MonoVIO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/include"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/cristin/Documents/Thirdparty/Pangolin-master/include"/>
+					<Add directory="/home/cristin/Documents/Thirdparty/Pangolin-master/build/src/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 vio/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rosvio">
+				<Option output="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/Examples/ROS/ORB_VIO/src/rosvio" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/Examples/MonoVIO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/include"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/cristin/Documents/Thirdparty/Pangolin-master/include"/>
+					<Add directory="/home/cristin/Documents/Thirdparty/Pangolin-master/build/src/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 rosvio"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rosvio/fast">
+				<Option output="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/Examples/ROS/ORB_VIO/src/rosvio" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/Examples/MonoVIO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/include"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/cristin/Documents/Thirdparty/Pangolin-master/include"/>
+					<Add directory="/home/cristin/Documents/Thirdparty/Pangolin-master/build/src/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 rosvio/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ORB_SLAM2">
+				<Option output="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/lib/libORB_SLAM2.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/include"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/cristin/Documents/Thirdparty/Pangolin-master/include"/>
+					<Add directory="/home/cristin/Documents/Thirdparty/Pangolin-master/build/src/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 ORB_SLAM2"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ORB_SLAM2/fast">
+				<Option output="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/lib/libORB_SLAM2.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/include"/>
+					<Add directory="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/cristin/Documents/Thirdparty/Pangolin-master/include"/>
+					<Add directory="/home/cristin/Documents/Thirdparty/Pangolin-master/build/src/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 ORB_SLAM2/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/Examples/MonoVIO/runeth.cc">
+			<Option target="runeth"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/Examples/MonoVIO/vio.cc">
+			<Option target="vio"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/Examples/ROS/ORB_VIO/src/ros_vio.cc">
+			<Option target="rosvio"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/include/Frame.h">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/include/KeyFrame.h">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/include/LocalMapping.h">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/include/Tracking.h">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/Converter.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/Frame.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/FrameDrawer.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/IMU/IMUPreintegrator.cpp">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/IMU/IMUPreintegrator.h">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/IMU/NavState.cpp">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/IMU/NavState.h">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/IMU/configparam.cpp">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/IMU/configparam.h">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/IMU/g2otypes.cpp">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/IMU/g2otypes.h">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/IMU/imudata.cpp">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/IMU/imudata.h">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/IMU/so3.cpp">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/IMU/so3.h">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/Initializer.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/KeyFrame.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/KeyFrameDatabase.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/LocalMapping.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/LoopClosing.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/Map.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/MapDrawer.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/MapPoint.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/ORBextractor.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/ORBmatcher.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/Optimizer.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/PnPsolver.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/Sim3Solver.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/System.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/Tracking.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/src/Viewer.cc">
+			<Option target="ORB_SLAM2"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/../../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/../../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/../../../../../usr/local/share/eigen3/cmake/Eigen3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\eigen3\cmake\"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/../../../../../usr/local/share/eigen3/cmake/Eigen3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\eigen3\cmake\"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/../../../../../usr/local/share/eigen3/cmake/Eigen3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\eigen3\cmake\"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/../../../Documents/Thirdparty/Pangolin-master/build/src/PangolinConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\Documents\Thirdparty\Pangolin-master\build\src\"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/../../../Documents/Thirdparty/Pangolin-master/build/src/PangolinConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\Documents\Thirdparty\Pangolin-master\build\src\"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/../../../Documents/Thirdparty/Pangolin-master/build/src/PangolinTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\Documents\Thirdparty\Pangolin-master\build\src\"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake_modules/FindEigen3.cmake">
+			<Option virtualFolder="CMake Files\cmake_modules\"/>
+		</Unit>
+		<Unit filename="/home/cristin/projects/RT_NOROS_VIORB/LearnVIORB_NOROS/cmake_modules/FindCholmod.cmake">
+			<Option virtualFolder="CMake Files\cmake_modules\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

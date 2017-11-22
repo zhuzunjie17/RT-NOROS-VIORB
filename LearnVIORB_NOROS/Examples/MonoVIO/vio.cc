@@ -76,14 +76,14 @@ void loadImageList(char * imagePath,std::vector<ICell> &iListData)
         getline(inf,line);
 
         comma = line.find(',',0);
-        //string temp1 = line.substr(0,comma).substr(0,10);
-        temp.timeStamp = (unsigned long)atoi(line.substr(0,comma).c_str());
+		string temp1 = line.substr(0,comma);
+        temp.timeStamp = (double)atof(temp1.c_str());
         
         //cout<<line.substr(0,comma).c_str()<<' ';
         //memcpy(imuTimeStamp,line.substr(0,comma).c_str(),line.substr(0,comma).length);
         while (comma < line.size() && j != cnt-1)
         {
-	   
+
             comma2 = line.find(',',comma + 1);
             //i = atof(line.substr(comma + 1,comma2-comma-1).c_str());
             temp.imgName = line.substr(comma + 1,comma2-comma-1).c_str();
@@ -91,7 +91,7 @@ void loadImageList(char * imagePath,std::vector<ICell> &iListData)
             comma = comma2;
         }
         iListData.push_back(temp);
-        cout<<endl;
+
         j = 0;
     }
 
@@ -115,17 +115,15 @@ void loadIMUFile(char * imuPath,std::vector<ORB_SLAM2::IMUData> &vimuData)
 //     char imuTime[14] = {0};
     double acc[3] = {0.0};
     double grad[3] = {0.0};
-    unsigned long imuTimeStamp = 0;
-
+    double imuTimeStamp = 0.0;
     getline(inf,line);
     while (!inf.eof())
     {
         getline(inf,line);
-
         comma = line.find(',',0);
-	string temp = line.substr(0,comma);
-        imuTimeStamp = (unsigned long)atoi(line.substr(0,comma).c_str());
-        
+		string temp = line.substr(0,comma);
+        imuTimeStamp = (double)atof(temp.c_str());
+       
         //cout<<line.substr(0,comma).c_str()<<' ';
         //memcpy(imuTimeStamp,line.substr(0,comma).c_str(),line.substr(0,comma).length);
         while (comma < line.size() && j != cnt-1)
@@ -159,7 +157,7 @@ void loadIMUFile(char * imuPath,std::vector<ORB_SLAM2::IMUData> &vimuData)
         }
 	ORB_SLAM2::IMUData tempImu(grad[0],grad[1],grad[2],acc[0],acc[1],acc[2],imuTimeStamp);
         vimuData.push_back(tempImu);
-        cout<<endl;
+        
         j = 0;
     }
 
@@ -213,7 +211,7 @@ int main(int argc, char **argv)
         
     //cout<<iListData.size()<<"------------"<<allimuData.size()<<endl;
     //cv::waitKey(0);
-    for(uint j=0;j<iListData.size();j++)
+    for(int j=90;j<iListData.size();j++)
     {
         std::vector<ORB_SLAM2::IMUData> vimuData;
 	    /*
@@ -222,15 +220,15 @@ int main(int argc, char **argv)
 	    */
 		for(unsigned int i=0;i<10;i++)
 		{
-			int count_it = j*10 + i;
+			int count_it = (j-1)*10+ i;
 			if(bAccMultiply98)
 			{
-				allimuData[j]._a(0) *= g3dm;
-				allimuData[j]._a(1) *= g3dm;
-				allimuData[j]._a(2) *= g3dm;
+				allimuData[count_it]._a(0) *= g3dm;
+				allimuData[count_it]._a(1) *= g3dm;
+				allimuData[count_it]._a(2) *= g3dm;
 			}
-
 			allimuData[count_it]._t = allimuData[count_it]._t*e;
+
 			//这里将时间戳×上e-9后的结果，程序可以正常运行，但是显示出来的时间和ros环境下的时间不同，且运行速度缓慢。
 			ORB_SLAM2::IMUData imudata(allimuData[count_it]._g(0),allimuData[count_it]._g(1),allimuData[count_it]._g(2),
 						allimuData[count_it]._a(0),allimuData[count_it]._a(1),allimuData[count_it]._a(2),(double)allimuData[count_it]._t);
@@ -249,6 +247,7 @@ int main(int argc, char **argv)
 	    sprintf(fullPath,"%s/%s",argv[5],temp.c_str());
 		cout<<endl;
 	    cv::Mat im = cv::imread(fullPath,0);
+		cout<<"----------------------------------"<<j<<"----------------------------------------"<<endl;
 	    cout<<fullPath<<endl;
 	    memset(fullPath,0,strlen(fullPath));
 
@@ -267,7 +266,7 @@ int main(int argc, char **argv)
 
 //             // Wait local mapping end.
 //             bool bstop = false;
-// 	//cout<<"----------------------------------"<<j<<"----------------------------------------"<<endl;
+ 	
 //             while(!SLAM.bLocalMapAcceptKF())
 //             {
 //                bstop=true;

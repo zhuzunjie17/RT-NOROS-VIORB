@@ -170,21 +170,23 @@ void LocalMapping::VINSInitThread()
             if(!GetVINSInited() && mpCurrentKeyFrame->mnId > initedid)
             {
                 initedid = mpCurrentKeyFrame->mnId;
-
+				cout<<"initedid"<<initedid<<endl;
                 bool tmpbool = TryInitVIO();
                 if(tmpbool)
                 {
+					cout<<"-------!!!IMU init success!!!-------"<<endl;
                     //SetFirstVINSInited(true);
-                    //SetVINSInited(true);
+//                     SetVINSInited(true);
                     break;
                 }
             }
-        usleep(3000);
+         usleep(3000);
         if(isFinished())
             break;
     }
 }
 
+//TODO:求证，找BUG
 bool LocalMapping::TryInitVIO(void)
 {
     if(mpMap->KeyFramesInMap()<=mnLocalWindowSize)
@@ -283,7 +285,7 @@ bool LocalMapping::TryInitVIO(void)
     cv::Mat B = cv::Mat::zeros(3*(N-2),1,CV_32F);
     cv::Mat I3 = cv::Mat::eye(3,3,CV_32F);
 
-    // Step 2.
+    // Step 2. TODO:why can't i directly init gravity to be the init imu acc parameter
     // Approx Scale and Gravity vector in 'world' frame (first KF's camera frame)
     for(int i=0; i<N-2; i++)
     {
@@ -478,9 +480,9 @@ bool LocalMapping::TryInitVIO(void)
     // Debug log
     {
         cv::Mat gwbefore = Rwi*GI;
+
         cv::Mat gwafter = Rwi_*GI;
         cout<<"Time: "<<mpCurrentKeyFrame->mTimeStamp - mnStartTime<<", sstar: "<<sstar<<", s: "<<s_<<endl;
-
         fgw<<mpCurrentKeyFrame->mTimeStamp<<" "
            <<gwafter.at<float>(0)<<" "<<gwafter.at<float>(1)<<" "<<gwafter.at<float>(2)<<" "
            <<gwbefore.at<float>(0)<<" "<<gwbefore.at<float>(1)<<" "<<gwbefore.at<float>(2)<<" "
@@ -506,14 +508,16 @@ bool LocalMapping::TryInitVIO(void)
 
 
     // ********************************
-    // Todo:
+    // TODO:
     // Add some logic or strategy to confirm init status
     bool bVIOInited = false;
     if(mbFirstTry)
     {
+		
         mbFirstTry = false;
         mnStartTime = mpCurrentKeyFrame->mTimeStamp;
     }
+    cout<<pNewestKF->mTimeStamp - mnStartTime<<endl;
     if(pNewestKF->mTimeStamp - mnStartTime >= ConfigParam::GetVINSInitTime())
     {
         bVIOInited = true;

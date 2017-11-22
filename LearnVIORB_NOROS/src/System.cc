@@ -132,7 +132,8 @@ cv::Mat System::TrackMonoVI(const cv::Mat &im, const std::vector<IMUData> &vimu,
             mbDeactivateLocalizationMode = false;
         }
     }
-
+	
+	//TODO:why should reset map, landmark point ought to be robust while visual or imu rework.
     // Check reset
     {
     unique_lock<mutex> lock(mMutexReset);
@@ -239,6 +240,7 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
     mpLoopCloser->SetTracker(mpTracker);
     mpLoopCloser->SetLocalMapper(mpLocalMapper);
     
+// 	cout<<ConfigParam::GetRealTimeFlag()<<endl;
     if(ConfigParam::GetRealTimeFlag())
     {
 	    //Thread for VINS initialization

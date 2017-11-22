@@ -145,12 +145,14 @@ Frame::Frame(const cv::Mat &imGray, const double &timeStamp, const std::vector<I
     :mpORBvocabulary(voc),mpORBextractorLeft(extractor),mpORBextractorRight(static_cast<ORBextractor*>(NULL)),
      mTimeStamp(timeStamp), mK(K.clone()),mDistCoef(distCoef.clone()), mbf(bf), mThDepth(thDepth)
 {
+	
     // Copy IMU data
     mvIMUDataSinceLastFrame = vimu;
 
     // Frame ID
     mnId=nNextId++;
-
+	
+	//TODO:understand how ORBextractor works
     // Scale Level Info
     mnScaleLevels = mpORBextractorLeft->GetLevels();
     mfScaleFactor = mpORBextractorLeft->GetScaleFactor();
@@ -160,6 +162,7 @@ Frame::Frame(const cv::Mat &imGray, const double &timeStamp, const std::vector<I
     mvLevelSigma2 = mpORBextractorLeft->GetScaleSigmaSquares();
     mvInvLevelSigma2 = mpORBextractorLeft->GetInverseScaleSigmaSquares();
 
+	//TODO:这里可以被改为光度误差跟踪，因此不需要每一帧都提取特征点
     // ORB extraction
     ExtractORB(0,imGray);
 
