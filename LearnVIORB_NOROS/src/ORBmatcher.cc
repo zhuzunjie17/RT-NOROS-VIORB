@@ -201,7 +201,7 @@ int ORBmatcher::SearchByBoW(KeyFrame* pKF,Frame &F, vector<MapPoint*> &vpMapPoin
                 int bestDist1=256;
                 int bestIdxF =-1 ;
                 int bestDist2=256;
-
+				//某个节点中的特征点数量
                 for(size_t iF=0; iF<vIndicesF.size(); iF++)
                 {
                     const unsigned int realIdxF = vIndicesF[iF];
@@ -244,7 +244,7 @@ int ORBmatcher::SearchByBoW(KeyFrame* pKF,Frame &F, vector<MapPoint*> &vpMapPoin
                             assert(bin>=0 && bin<HISTO_LENGTH);
                             rotHist[bin].push_back(bestIdxF);
                         }
-                        nmatches++;
+                        nmatches++;//TODO:why? 不是应该只要有小于40的的距离就算有匹配了吗？为什么还要考虑最好的匹配和次好的匹配大小不同
                     }
                 }
 
@@ -271,7 +271,8 @@ int ORBmatcher::SearchByBoW(KeyFrame* pKF,Frame &F, vector<MapPoint*> &vpMapPoin
         int ind3=-1;
 
         ComputeThreeMaxima(rotHist,HISTO_LENGTH,ind1,ind2,ind3);
-
+		
+		//不是属于分布最多的这三个区间的匹配，都被删除。
         for(int i=0; i<HISTO_LENGTH; i++)
         {
             if(i==ind1 || i==ind2 || i==ind3)

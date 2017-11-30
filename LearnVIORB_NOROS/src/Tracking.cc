@@ -40,7 +40,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define TRACK_WITH_IMU TRUE
+#define TRACK_WITH_IMU false
 
 using namespace std;
 
@@ -781,7 +781,7 @@ void Tracking::Track()
         // System is initialized. Track Frame.
         bool bOK;
 
-        // Initial camera pose estimation using motion model or relocalization (if tracking is lost)
+        // Initial camera pose estimation using motion model or relocalization(if tracking is lost)
         if(!mbOnlyTracking)
         {
             // Local Mapping is activated. This is the normal behaviour, unless
@@ -791,6 +791,7 @@ void Tracking::Track()
             {
 				cout<<"*OK:*"<<endl;
                 // Local Mapping might have changed some MapPoints tracked in last frame
+				// So we should replace these tracked points to the better one(mappoint)
                 CheckReplacedInLastFrame();
 #ifdef TRACK_WITH_IMU
                 // If Visual-Inertial is initialized
@@ -857,9 +858,10 @@ void Tracking::Track()
             // Localization Mode: Local Mapping is deactivated
             cerr<<"Localization mode not supported yet"<<endl;
         }
-
+	
         mCurrentFrame.mpReferenceKF = mpReferenceKF;
-
+		
+		//LOCAL MAPPING
         // If we have an initial estimation of the camera pose and matching. Track the local map.
         if(!mbOnlyTracking)
         {
@@ -907,6 +909,7 @@ void Tracking::Track()
             cerr<<"Localization mode not supported yet"<<endl;
         }
 
+        //RELOC???
         if(bOK)
         {
             mState = OK;
@@ -956,7 +959,7 @@ void Tracking::Track()
         // Update drawer
         mpFrameDrawer->Update(this);
 
-        // If tracking were good, check if we insert a keyframe
+        // KEYFRAME CREATION. If tracking were good, check if we insert a keyframe
         if(bOK)
         {
             // Update motion model
@@ -1035,6 +1038,7 @@ void Tracking::Track()
         mLastFrame = Frame(mCurrentFrame);
     }
 
+    
     // Store frame pose information to retrieve the complete camera trajectory afterwards.
     if(!mCurrentFrame.mTcw.empty())
     {
