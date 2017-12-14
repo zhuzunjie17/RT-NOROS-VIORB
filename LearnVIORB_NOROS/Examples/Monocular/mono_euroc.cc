@@ -33,6 +33,34 @@ using namespace std;
 void LoadImages(const string &strImagePath, const string &strPathTimes,
                 vector<string> &vstrImages, vector<double> &vTimeStamps);
 
+typedef struct ImageList
+{
+	double timeStamp;
+	string imgName;
+}ICell;
+void loadImageList(char * imagePath,std::vector<ICell> &iListData)
+{
+	ifstream inf;
+	inf.open(imagePath, ifstream::in);       // 你要输出的个数
+	
+	string line;
+	size_t comma = 0;
+	ICell temp;
+	getline(inf,line);
+	while (!inf.eof())
+	{
+		getline(inf,line);
+		
+		comma = line.find(' ',0);
+		string temp1 = line.substr(0,comma);
+		temp.timeStamp = (double)atof(temp1.c_str());
+		temp.imgName = line.substr(comma + 1,line.size()-comma-1).c_str();
+		iListData.push_back(temp);
+	}
+	
+	inf.close();
+	//  return 0;
+}
 int main(int argc, char **argv)
 {
     if(argc != 5)
@@ -41,12 +69,15 @@ int main(int argc, char **argv)
         return 1;
     }
 
+    
+    std::vector<ICell> iListData;
+	loadImageList(argv[4],iListData);
     // Retrieve paths to images
-    vector<string> vstrImageFilenames;
+//     vector<string> vstrImageFilenames;
     vector<double> vTimestamps;
-    LoadImages(string(argv[3]), string(argv[4]), vstrImageFilenames, vTimestamps);
+//     LoadImages(string(argv[3]), string(argv[4]), vstrImageFilenames, vTimestamps);
 
-    int nImages = vstrImageFilenames.size();
+    int nImages = iListData.size();
 
     if(nImages<=0)
     {
@@ -54,6 +85,8 @@ int main(int argc, char **argv)
         return 1;
     }
 
+    char *fullPath = new char[100];// = {0};
+	memset(fullPath,0,strlen(fullPath));
     // Create SLAM system. It initializes all system threads and gets ready to process frames.
     ORB_SLAM2::System SLAM(argv[1],argv[2],ORB_SLAM2::System::MONOCULAR,true);
 
@@ -69,17 +102,28 @@ int main(int argc, char **argv)
     cv::Mat im;
     for(int ni=0; ni<nImages; ni++)
     {
+		
+		string temp = iListData[ni].imgName;
+		sprintf(fullPath,"%s/%s",argv[3],temp.c_str());
+		cout<<endl;
+		cv::Mat im = cv::imread(fullPath,0);
+		cout<<"----------------------------------"<<ni<<"----------------------------------------"<<endl;
+		cout<<fullPath<<endl;
+		memset(fullPath,0,strlen(fullPath));
+		
         // Read image from file
-        im = cv::imread(vstrImageFilenames[ni],CV_LOAD_IMAGE_UNCHANGED);
-        double tframe = vTimestamps[ni];
+// 		im = cv::imread(iListData[ni].imgName,CV_LOAD_IMAGE_UNCHANGED);
+//         double tframe = vTimestamps[ni];
+		double tframe = iListData[ni].timeStamp;
 
         if(im.empty())
         {
             cerr << endl << "Failed to load image at: "
-                 <<  vstrImageFilenames[ni] << endl;
+			<<  iListData[ni].imgName << endl;
             return 1;
         }
-
+        
+        
 #ifdef COMPILEDWITHC11
         std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
 #else
@@ -102,12 +146,12 @@ int main(int argc, char **argv)
         // Wait to load the next frame
         double T=0;
         if(ni<nImages-1)
-            T = vTimestamps[ni+1]-tframe;
+			T = iListData[ni+1].timeStamp-tframe;
         else if(ni>0)
-            T = tframe-vTimestamps[ni-1];
+			T = tframe-iListData[ni-1].timeStamp;
 
         if(ttrack<T)
-            usleep((T-ttrack)*1e6);
+            usleep((T-ttrack)*1e3);
     }
 
     // Stop all threads
@@ -148,8 +192,10 @@ void LoadImages(const string &strImagePath, const string &strPathTimes,
             vstrImages.push_back(strImagePath + "/" + ss.str() + ".png");
             double t;
             ss >> t;
-            vTimeStamps.push_back(t/1e9);
+            vTimeStamps.push_back(t/1e6);
 
         }
     }
 }
+
+

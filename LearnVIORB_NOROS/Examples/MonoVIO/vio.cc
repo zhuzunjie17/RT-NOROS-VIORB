@@ -190,7 +190,8 @@ int main(int argc, char **argv)
 //     double imageMsgDelaySec = config.GetImageDelayToIMU();
 	
     // 3dm imu output per g. 1g=9.80665 according to datasheet
-    const double g3dm = 9.80665;
+    // beijing 9.8012
+    const double g3dm = 9.8012;
     const bool bAccMultiply98 = config.GetAccMultiply9p8();
     //cout<<"-----------------------------------------------------------------------------"<<endl;
     char *fullPath = new char[100];// = {0};

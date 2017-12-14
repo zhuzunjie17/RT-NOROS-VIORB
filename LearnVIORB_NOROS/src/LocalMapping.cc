@@ -852,6 +852,16 @@ bool LocalMapping::TryInitVIO(void)
         if(vKFInit[i])
             delete vKFInit[i];
     }
+/*    
+	fgw.close();
+	fscale.close();
+	fbiasa.close();
+	fcondnum.close();
+	ftime.close();
+	fbiasg.close();
+    */
+    
+    
 
     return bVIOInited;
 }

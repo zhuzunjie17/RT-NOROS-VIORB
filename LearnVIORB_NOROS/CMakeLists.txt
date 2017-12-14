@@ -33,7 +33,7 @@ LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 # set (EIGEN3_INCLUDE_DIR  /usr/local/include/eigen3)
 message("eigen:." ${EIGEN3_INCLUDE_DIR})
 find_package(OpenCV 2.4.3 REQUIRED)
-find_package(Eigen3 3.2.10 REQUIRED)
+find_package(Eigen3 3.2.0 REQUIRED)
 find_package(Pangolin REQUIRED)
 find_package(Cholmod REQUIRED)
 
@@ -120,6 +120,9 @@ add_executable(runeth
 Examples/MonoVIO/runeth.cc)
 target_link_libraries(runeth ${PROJECT_NAME})
 
+add_executable(deblur
+Examples/DeblurVIO/Deblur.cpp)
+target_link_libraries(deblur ${PROJECT_NAME})
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/RGB-D)
 
 #add_executable(rgbd_tum
@@ -137,7 +140,7 @@ target_link_libraries(runeth ${PROJECT_NAME})
 #target_link_libraries(stereo_euroc ${PROJECT_NAME})
 
 
-#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Monocular)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Monocular)
 
 #add_executable(mono_tum
 #Examples/Monocular/mono_tum.cc)
@@ -147,9 +150,9 @@ target_link_libraries(runeth ${PROJECT_NAME})
 #Examples/Monocular/mono_kitti.cc)
 #target_link_libraries(mono_kitti ${PROJECT_NAME})
 
-#add_executable(mono_euroc
-#Examples/Monocular/mono_euroc.cc)
-#target_link_libraries(mono_euroc ${PROJECT_NAME})
+add_executable(mono_euroc
+Examples/Monocular/mono_euroc.cc)
+target_link_libraries(mono_euroc ${PROJECT_NAME})
 
 ## Build tools
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/tools)

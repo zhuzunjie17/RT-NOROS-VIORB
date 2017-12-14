@@ -40,7 +40,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define TRACK_WITH_IMU false
+// #define TRACK_WITH_IMU
 
 using namespace std;
 
