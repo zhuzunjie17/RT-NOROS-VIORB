@@ -40,7 +40,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// #define TRACK_WITH_IMU
+#define TRACK_WITH_IMU
 
 using namespace std;
 
@@ -235,7 +235,7 @@ bool Tracking::TrackLocalMapWithIMU(bool bMapUpdated)
     if(mpLocalMapper->GetFirstVINSInited() || bMapUpdated)
     {
         // Get initial pose from Last KeyFrame
-        IMUPreintegrator imupreint = GetIMUPreIntSinceLastKF(&mCurrentFrame, mpLastKeyFrame, mvIMUSinceLastKF);
+//         IMUPreintegrator imupreint = GetIMUPreIntSinceLastKF(&mCurrentFrame, mpLastKeyFrame, mvIMUSinceLastKF);
 
         // Test log
 //         if(mpLocalMapper->GetFirstVINSInited() && !bMapUpdated) cerr<<"1-FirstVinsInit, but not bMapUpdated. shouldn't"<<endl;
@@ -243,15 +243,15 @@ bool Tracking::TrackLocalMapWithIMU(bool bMapUpdated)
         if(mCurrentFrame.GetNavState().Get_dBias_Gyr().norm() > 1e-6) cerr<<"TrackLocalMapWithIMU current Frame dBias gyr not zero"<<endl;
 
         //
-        Optimizer::PoseOptimization(&mCurrentFrame,mpLastKeyFrame,imupreint,mpLocalMapper->GetGravityVec(),true);
+        Optimizer::PoseOptimization(&mCurrentFrame,mpLastKeyFrame,mIMUPreIntInTrack,mpLocalMapper->GetGravityVec(),true);
     }
     // Map not updated, optimize with last Frame
     else
     {
         // Get initial pose from Last Frame
-        IMUPreintegrator imupreint = GetIMUPreIntSinceLastFrame(&mCurrentFrame, &mLastFrame);
+//         IMUPreintegrator imupreint = GetIMUPreIntSinceLastFrame(&mCurrentFrame, &mLastFrame);
 
-        Optimizer::PoseOptimization(&mCurrentFrame,&mLastFrame,imupreint,mpLocalMapper->GetGravityVec(),true);
+        Optimizer::PoseOptimization(&mCurrentFrame,&mLastFrame,mIMUPreIntInTrack,mpLocalMapper->GetGravityVec(),true);
     }
 
     mnMatchesInliers = 0;
@@ -283,6 +283,7 @@ bool Tracking::TrackLocalMapWithIMU(bool bMapUpdated)
     if(mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50)
         return false;
 
+	cout<<"TrackLocalMapWithIMU, after optimization the number of mnMatchesInliers: "<<mnMatchesInliers<<endl;
 //     if(mnMatchesInliers<30)
 	if(mnMatchesInliers<6/*30*/)
         return false;
@@ -358,9 +359,12 @@ bool Tracking::TrackWithIMU(bool bMapUpdated)
     }
 
     if(nmatches</*20*/10)
+	{
+		cout<< "track with imu dont have enough matches before optimize"<<endl;
         return false;
-
-
+	}
+	cout<<"mTcw: "<<mCurrentFrame.mTcw.clone()<<endl;
+	
     // Pose optimization. false: no need to compute marginalized for current Frame
     if(mpLocalMapper->GetFirstVINSInited() || bMapUpdated)
     {
@@ -493,6 +497,8 @@ cv::Mat Tracking::GrabImageMonoVI(const cv::Mat &im, const std::vector<IMUData> 
 	double ttrack= std::chrono::duration_cast<std::chrono::duration<double> >(t2 - t1).count();
 	std::cout<<"Time costs:#frame preprocess#： "<<ttrack<<std::endl;
 	
+	mpMapDrawer->TimeSet(timestamp * (double)pow(10.0,9));
+// 	mpMapDrawer->TimeSet(timestamp);
     Track();
 	std::chrono::steady_clock::time_point t3 = std::chrono::steady_clock::now();
 	double ttrack1= std::chrono::duration_cast<std::chrono::duration<double> >(t3 - t2).count();
@@ -815,7 +821,10 @@ void Tracking::Track()
                         if(!bOK)
 						{
 							cout<<"TrackWithIMU failed, TrackReferenceKeyFrame"<<endl;
+// 							cout<<"feature points number of currentframe: " << mCurrentFrame.N <<endl;
                             bOK = TrackReferenceKeyFrame();
+							
+// 							bOK = TrackWithMotionModel();
 						}
 
                     }
@@ -865,11 +874,11 @@ void Tracking::Track()
         // If we have an initial estimation of the camera pose and matching. Track the local map.
         if(!mbOnlyTracking)
         {
-			cout<<"*have an initial estimation. Track the local map*:"<<endl;
             if(bOK)
             {
+				cout<<"*have an initial estimation. Track the local map*:"<<endl;
 #ifndef TRACK_WITH_IMU
-				cout<<"track with imu,TrackLocalMap"<<endl;
+				cout<<"TrackLocalMap without IMU"<<endl;
                 bOK = TrackLocalMap();
 #else
                 if(!mpLocalMapper->GetVINSInited())
@@ -879,7 +888,7 @@ void Tracking::Track()
                     bOK = TrackLocalMap();
 					std::chrono::steady_clock::time_point tl2 = std::chrono::steady_clock::now();
 					double tl= std::chrono::duration_cast<std::chrono::duration<double> >(tl2 - tl1).count();
-					cout<<"TrackLocalMap,time costs:"<<tl<<endl;
+					cout<<"imu not ready, TrackLocalMap without IMU,time costs:"<<tl<<endl;
 					
 				}
                 else
@@ -898,6 +907,7 @@ void Tracking::Track()
 						std::chrono::steady_clock::time_point ti2 = std::chrono::steady_clock::now();
 						double ti= std::chrono::duration_cast<std::chrono::duration<double> >(ti2 - ti1).count();
 						cout<<"TrackLocalMapWithIMU,time costs:"<<ti<<endl;
+						
                     }
                 }
 #endif
@@ -1179,8 +1189,10 @@ void Tracking::MonocularInitialization()
             }
 
             // Set Frame Poses
+            
             mInitialFrame.SetPose(cv::Mat::eye(4,4,CV_32F));
             cv::Mat Tcw = cv::Mat::eye(4,4,CV_32F);
+// 			mpMapDrawer.GetInitPose();
             Rcw.copyTo(Tcw.rowRange(0,3).colRange(0,3));
             tcw.copyTo(Tcw.rowRange(0,3).col(3));
             mCurrentFrame.SetPose(Tcw);
@@ -1288,7 +1300,7 @@ void Tracking::CreateInitialMapMonocular()
     mCurrentFrame.SetPose(pKFcur->GetPose());
     mnLastKeyFrameId=mCurrentFrame.mnId;
     mpLastKeyFrame = pKFcur;
-
+	cout<<pKFcur->GetPose().clone()<<endl;
     mvpLocalKeyFrames.push_back(pKFcur);
     mvpLocalKeyFrames.push_back(pKFini);
     mvpLocalMapPoints=mpMap->GetAllMapPoints();
@@ -1300,7 +1312,7 @@ void Tracking::CreateInitialMapMonocular()
     mpMap->SetReferenceMapPoints(mvpLocalMapPoints);
 
     mpMapDrawer->SetCurrentCameraPose(pKFcur->GetPose());
-
+	mpMapDrawer->GetInitTime(pKFcur->mTimeStamp);
     mpMap->mvpKeyFrameOrigins.push_back(pKFini);
 
     mState=OK;
@@ -1364,7 +1376,7 @@ bool Tracking::TrackReferenceKeyFrame()
                 nmatchesMap++;
         }
     }
-
+    cout<< "nmatchesMap in reference keyframe: "<<nmatchesMap<<endl;
     return nmatchesMap>=10;
 }
 
@@ -1493,7 +1505,7 @@ bool Tracking::TrackWithMotionModel()
         mbVO = nmatchesMap<10;
         return nmatches>20;
     }
-
+    cout<<"track with motion model nmatchesMap number: "<<nmatchesMap<<endl;
     return nmatchesMap>=10;
 }
 
@@ -1788,7 +1800,8 @@ void Tracking::SearchLocalPoints()
         // If the camera has been relocalised recently, perform a coarser search
         if(mCurrentFrame.mnId<mnLastRelocFrameId+2)
             th=5;
-        matcher.SearchByProjection(mCurrentFrame,mvpLocalMapPoints,th);
+        int matchnum =  matcher.SearchByProjection(mCurrentFrame,mvpLocalMapPoints,th);
+		cout<< "Search LocalPoints number: "<< matchnum<<endl;
     }
 }
 

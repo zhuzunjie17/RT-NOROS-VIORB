@@ -28,7 +28,7 @@ namespace ORB_SLAM2
 {
 
 
-MapDrawer::MapDrawer(Map* pMap, const string &strSettingPath):mpMap(pMap)
+MapDrawer::MapDrawer(Map* pMap, const string &strSettingPath):mpMap(pMap),mbInitTime(true)
 {
     cv::FileStorage fSettings(strSettingPath, cv::FileStorage::READ);
 
@@ -38,7 +38,54 @@ MapDrawer::MapDrawer(Map* pMap, const string &strSettingPath):mpMap(pMap)
     mPointSize = fSettings["Viewer.PointSize"];
     mCameraSize = fSettings["Viewer.CameraSize"];
     mCameraLineWidth = fSettings["Viewer.CameraLineWidth"];
+	mbGroundTruth = fSettings["Viewer.groundtruth"];
+	fSettings["Viewer.GTfile"] >> mGTfile;
+	mCount = 0;
+	mInit = 0;
+	cout<<mGTfile<<endl;
+	if(mbGroundTruth)
+		loadGTFile(mGTfile.c_str(),mGTData);
+}
 
+void MapDrawer::GetInitTime(double t)
+{
+	if(mbInitTime)
+	{
+		//TODO: 这里可能groundtruth显示的第一帧与初始化成功的第一帧有1帧的误差
+		unique_lock<mutex> lock(mMutexInit);
+		while(mGTData[mInit].timeStamp < t)
+			mInit++;
+		mbInitTime = false;
+		Eigen::Vector3d pos = mGTData[mInit].position;
+		for(int i=0; i<mGTData.size(); i++)
+			mGTData[i].position -=pos; 
+	}
+}
+
+void MapDrawer::TimeSet(double t)
+{
+	unique_lock<mutex> lock(mMutexTime);
+	mTime = t;
+}
+
+void MapDrawer::DrawGroundTruth()
+{
+	if(mpMap->KeyFramesInMap())
+	while(mGTData[mCount+1].timeStamp < mTime)
+		mCount++;
+	glPushMatrix();
+	glLineWidth(1);
+	glColor3f(1.0f,0.0f,0.0f);
+	glBegin(GL_LINES);
+	Eigen::Vector3d pos(0,0,0);
+	for(int i=1+mInit; i<mCount; i++)
+	{
+		glVertex3d(pos[0],pos[1],pos[2]);
+		pos = mGTData[i].position;
+		glVertex3d(pos[0],pos[1],pos[2]);
+	}
+	glEnd();
+	glPopMatrix();
 }
 
 void MapDrawer::DrawMapPoints()
@@ -87,7 +134,6 @@ void MapDrawer::DrawKeyFrames(const bool bDrawKF, const bool bDrawGraph)
     const float z = w*0.6;
 
     const vector<KeyFrame*> vpKFs = mpMap->GetAllKeyFrames();
-
     if(bDrawKF)
     {
         for(size_t i=0; i<vpKFs.size(); i++)

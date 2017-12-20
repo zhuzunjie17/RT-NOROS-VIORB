@@ -31,7 +31,7 @@
 #include<opencv2/highgui/highgui.hpp>
 #include<opencv2/imgproc/imgproc.hpp>
 #include"../include/System.h"
-
+#include "FileReader.h"
 //#include "MsgSync/MsgSynchronizer.h"
 
 #include "../src/IMU/imudata.h"
@@ -41,130 +41,15 @@
 
 #include <boost/foreach.hpp>
 
-#include <fstream>
 #include <time.h>
-#include <string>
+// #include <string>
 #include <iostream>
 #include <stdlib.h>
 #include <memory>
 #include <functional>
-#include <atomic>
+
 #include <chrono>
 using namespace std;
-
-typedef struct ImageList
-{
-	double timeStamp;
-	string imgName;
-}ICell;
-
-void loadImageList(char * imagePath,std::vector<ICell> &iListData)
-{
-    ifstream inf;
-    inf.open(imagePath, ifstream::in);
-    const int cnt = 2;          // 你要输出的个数
-
-    string line;
-    //int i = 0;
-    int j = 0;
-    size_t comma = 0;
-    size_t comma2 = 0;
-    ICell temp;
-    getline(inf,line);
-    while (!inf.eof())
-    {
-        getline(inf,line);
-
-        comma = line.find(',',0);
-		string temp1 = line.substr(0,comma);
-        temp.timeStamp = (double)atof(temp1.c_str());
-        
-        //cout<<line.substr(0,comma).c_str()<<' ';
-        //memcpy(imuTimeStamp,line.substr(0,comma).c_str(),line.substr(0,comma).length);
-        while (comma < line.size() && j != cnt-1)
-        {
-
-            comma2 = line.find(',',comma + 1);
-            //i = atof(line.substr(comma + 1,comma2-comma-1).c_str());
-            temp.imgName = line.substr(comma + 1,comma2-comma-1).c_str();
-            ++j;
-            comma = comma2;
-        }
-        iListData.push_back(temp);
-
-        j = 0;
-    }
-
-    inf.close();
-  //  return 0;
-}
-
-
-void loadIMUFile(char * imuPath,std::vector<ORB_SLAM2::IMUData> &vimuData)
-{
-    ifstream inf;
-    inf.open(imuPath, ifstream::in);
-    const int cnt = 7;          // 你要输出的个数
-
-    string line;
-    //int i = 0;
-    int j = 0;
-    size_t comma = 0;
-    size_t comma2 = 0;
-
-//     char imuTime[14] = {0};
-    double acc[3] = {0.0};
-    double grad[3] = {0.0};
-    double imuTimeStamp = 0.0;
-    getline(inf,line);
-    while (!inf.eof())
-    {
-        getline(inf,line);
-        comma = line.find(',',0);
-		string temp = line.substr(0,comma);
-        imuTimeStamp = (double)atof(temp.c_str());
-       
-        //cout<<line.substr(0,comma).c_str()<<' ';
-        //memcpy(imuTimeStamp,line.substr(0,comma).c_str(),line.substr(0,comma).length);
-        while (comma < line.size() && j != cnt-1)
-        {
-	   
-            comma2 = line.find(',',comma + 1);
-            switch(j)
-	    {
-              case 0:
-		grad[0] = atof(line.substr(comma + 1,comma2-comma-1).c_str());
-		break;
-              case 1:
-		grad[1] = atof(line.substr(comma + 1,comma2-comma-1).c_str());
-		break;
-              case 2:
-		grad[2] = atof(line.substr(comma + 1,comma2-comma-1).c_str());
-		break;
-              case 3:
-		acc[0] = atof(line.substr(comma + 1,comma2-comma-1).c_str());
-		break;
-              case 4:
-		acc[1] = atof(line.substr(comma + 1,comma2-comma-1).c_str());
-		break;
-              case 5:
-		acc[2] = atof(line.substr(comma + 1,comma2-comma-1).c_str());
-		break;
-            }
-            //cout<<line.substr(comma + 1,comma2-comma-1).c_str()<<' ';
-            ++j;
-            comma = comma2;
-        }
-	ORB_SLAM2::IMUData tempImu(grad[0],grad[1],grad[2],acc[0],acc[1],acc[2],imuTimeStamp);
-        vimuData.push_back(tempImu);
-        
-        j = 0;
-    }
-
-inf.close();
-
-//return 0;
-}
 
 int main(int argc, char **argv)
 {
@@ -174,7 +59,7 @@ int main(int argc, char **argv)
     if(argc != 6)
     {
        // cerr << endl << "Usage: rosrun ORB_SLAM2 Mono path_to_vocabulary path_to_settings" << endl;
-        cerr << endl << "Usage: ./project path_to_ORBVOC.TXT path_to_euroc.yaml path_to_imu/data.csv path_to_cam0/data.csv path_to_cam0/data" << endl;
+		cerr << endl << "Usage: ./project path_to_ORBVOC.TXT path_to_euroc.yaml path_to_imu/data.csv path_to_cam0/data.csv path_to_cam0/data" << endl;
        // ros::shutdown();
         return 1;
     }
@@ -212,16 +97,22 @@ int main(int argc, char **argv)
         
     //cout<<iListData.size()<<"------------"<<allimuData.size()<<endl;
     //cv::waitKey(0);
-    for(int j=90;j<iListData.size();j++)
+	int j = 100;
+	double time = iListData[j-1].timeStamp;
+	int count_it = 0;
+	while(allimuData[count_it]._t < time)
+		count_it++;
+	count_it--;
+    for(;j<iListData.size()-20;j++)
     {
+		cout<<"----------------------------------"<<j<<"----------------------------------------"<<endl;
         std::vector<ORB_SLAM2::IMUData> vimuData;
 	    /*
-	    *imu 的频率是200HZ 图像帧率是20HZ 所以简单的认为每一帧图像对应10个imu数据
 		* TODO:这种是offline的做法，需要将其改为online的做法，即根据时间戳来判断IMU数据与图像数据的关系
 	    */
-		for(unsigned int i=0;i<10;i++)
+		double time_now = iListData[j].timeStamp;
+		for(;allimuData[count_it]._t <= time_now;count_it++)
 		{
-			int count_it = (j-1)*10+ i;
 			if(bAccMultiply98)
 			{
 				allimuData[count_it]._a(0) *= g3dm;
@@ -238,6 +129,7 @@ int main(int argc, char **argv)
 			ORB_SLAM2::IMUData imudata(allimuData[count_it]._g(0),allimuData[count_it]._g(1),allimuData[count_it]._g(2),
 									allimuData[count_it]._a(0),allimuData[count_it]._a(1),allimuData[count_it]._a(2),j*0.0005+i*0.00005);
 			*/
+// 			cout<<"imu time: "<<to_string(allimuData[count_it]._t)<<endl;
 			vimuData.push_back(imudata);
         }
 		//cout<<"IMU FINISHED READING"<<endl;
@@ -248,7 +140,7 @@ int main(int argc, char **argv)
 	    sprintf(fullPath,"%s/%s",argv[5],temp.c_str());
 		cout<<endl;
 	    cv::Mat im = cv::imread(fullPath,0);
-		cout<<"----------------------------------"<<j<<"----------------------------------------"<<endl;
+		
 	    cout<<fullPath<<endl;
 	    memset(fullPath,0,strlen(fullPath));
 

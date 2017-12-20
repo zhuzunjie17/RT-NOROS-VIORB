@@ -24,6 +24,7 @@
 
 #include<opencv2/core/core.hpp>
 #include<opencv2/features2d/features2d.hpp>
+#include <Eigen/StdVector>
 
 #include"Viewer.h"
 #include"FrameDrawer.h"
@@ -64,14 +65,14 @@ public:
     void RecomputeIMUBiasAndCurrentNavstate(NavState& nscur);
     // 20 Frames are used to compute bias
     vector<Frame> mv20FramesReloc;
-
+// 	vector<Frame, Eigen::aligned_allocator<Frame> > mv20FramesReloc;
     // Predict the NavState of Current Frame by IMU
     void PredictNavStateByIMU(bool bMapUpdated);
     IMUPreintegrator mIMUPreIntInTrack;
 
     bool TrackWithIMU(bool bMapUpdated=false);
     bool TrackLocalMapWithIMU(bool bMapUpdated=false);
-
+	
     ConfigParam* mpParams;
     cv::Mat GrabImageMonoVI(const cv::Mat &im, const std::vector<IMUData> &vimu, const double &timestamp);
     // IMU Data since last KF. Append when new data is provided
@@ -242,6 +243,9 @@ protected:
     bool mbRGB;
 
     list<MapPoint*> mlpTemporalPoints;
+	
+	double mTime;
+	
 };
 
 } //namespace ORB_SLAM

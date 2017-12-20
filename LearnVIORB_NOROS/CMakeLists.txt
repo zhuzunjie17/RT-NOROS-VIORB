@@ -69,6 +69,7 @@ src/KeyFrameDatabase.cc
 src/Sim3Solver.cc
 src/Initializer.cc
 src/Viewer.cc
+src/FileReader.cc
 
 include/Frame.h
 include/KeyFrame.h
@@ -104,11 +105,11 @@ ${LAPACK_LIBRARIES}
 )
 
 ## Build examples
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/ROS/ORB_VIO/src)
-
-add_executable(rosvio
-Examples/ROS/ORB_VIO/src/ros_vio.cc)
-target_link_libraries(rosvio ${PROJECT_NAME})
+# set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/ROS/ORB_VIO/src)
+# 
+# add_executable(rosvio
+# Examples/ROS/ORB_VIO/src/ros_vio.cc)
+# target_link_libraries(rosvio ${PROJECT_NAME})
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/MonoVIO)
 
@@ -116,14 +117,14 @@ add_executable(vio
 Examples/MonoVIO/vio.cc)
 target_link_libraries(vio ${PROJECT_NAME})
 
-add_executable(runeth
-Examples/MonoVIO/runeth.cc)
-target_link_libraries(runeth ${PROJECT_NAME})
-
+# add_executable(runeth
+# Examples/MonoVIO/runeth.cc)
+# target_link_libraries(runeth ${PROJECT_NAME})
+# 
 add_executable(deblur
 Examples/DeblurVIO/Deblur.cpp)
 target_link_libraries(deblur ${PROJECT_NAME})
-#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/RGB-D)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/RGB-D)
 
 #add_executable(rgbd_tum
 #Examples/RGB-D/rgbd_tum.cc)
@@ -150,9 +151,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Monocular)
 #Examples/Monocular/mono_kitti.cc)
 #target_link_libraries(mono_kitti ${PROJECT_NAME})
 
-add_executable(mono_euroc
-Examples/Monocular/mono_euroc.cc)
-target_link_libraries(mono_euroc ${PROJECT_NAME})
+# add_executable(mono_euroc
+# Examples/Monocular/mono_euroc.cc)
+# target_link_libraries(mono_euroc ${PROJECT_NAME})
 
 ## Build tools
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/tools)

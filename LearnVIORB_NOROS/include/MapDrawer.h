@@ -25,7 +25,7 @@
 #include"MapPoint.h"
 #include"KeyFrame.h"
 #include<pangolin/pangolin.h>
-
+#include "FileReader.h"
 #include<mutex>
 
 namespace ORB_SLAM2
@@ -38,7 +38,12 @@ public:
 
     Map* mpMap;
 
-    void DrawMapPoints();
+	void GetInitTime(double t);
+	void TimeSet(double t);
+	void DrawGroundTruth();
+    
+	void DrawRoute();
+	void DrawMapPoints();
     void DrawKeyFrames(const bool bDrawKF, const bool bDrawGraph);
     void DrawCurrentCamera(pangolin::OpenGlMatrix &Twc);
     void SetCurrentCameraPose(const cv::Mat &Tcw);
@@ -47,6 +52,12 @@ public:
 
 private:
 
+	std::vector<GT> mGTData;
+	int mCount;
+	
+	int mbGroundTruth;
+	string mGTfile;
+	
     float mKeyFrameSize;
     float mKeyFrameLineWidth;
     float mGraphLineWidth;
@@ -57,6 +68,13 @@ private:
     cv::Mat mCameraPose;
 
     std::mutex mMutexCamera;
+	
+	double mTime;
+	std::mutex mMutexTime;
+	
+	int mInit;
+	std::mutex mMutexInit;
+	bool mbInitTime;
 };
 
 } //namespace ORB_SLAM

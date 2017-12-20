@@ -1,5 +1,7 @@
 %YAML:1.0
 
+#"/home/zhuzunjie/Documents/projects/RT-NOROS-VIORB/LearnVIORB_NOROS/Vocabulary/ORBvoc.bin" "/home/zhuzunjie/Documents/projects/RT-NOROS-VIORB/LearnVIORB_NOROS/config/realsense.yaml" "/home/zhuzunjie/Documents/data/RealsenseData/lab/IMU.txt" "/home/zhuzunjie/Documents/data/RealsenseData/lab/COLOR.txt" "/home/zhuzunjie/Documents/data/RealsenseData/lab/color"
+#"/home/zhuzunjie/Documents/projects/RT-NOROS-VIORB/LearnVIORB_NOROS/Vocabulary/ORBvoc.bin" "/home/zhuzunjie/Documents/projects/RT-NOROS-VIORB/LearnVIORB_NOROS/config/realsense.yaml" "/home/zhuzunjie/Documents/data/RealsenseData/room-vicon1/IMU.txt" "/home/zhuzunjie/Documents/data/RealsenseData/room-vicon1/COLOR.txt" "/home/zhuzunjie/Documents/data/RealsenseData/room-vicon1/color"
 # 1: realtime, 0: non-realtime
 test.RealTime: 1
 # Time for visual-inertial initialization
@@ -123,4 +125,6 @@ Viewer.ViewpointX: 0
 Viewer.ViewpointY: -0.7
 Viewer.ViewpointZ: -1.8
 Viewer.ViewpointF: 500
-
+#groundtruth route visualization
+Viewer.groundtruth: 1
+Viewer.GTfile: "/home/zhuzunjie/Documents/data/RealsenseData/room-vicon1/groundtruth.csv"

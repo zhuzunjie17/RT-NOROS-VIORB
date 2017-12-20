@@ -55,6 +55,8 @@ public:
     bool isStopped();
 
     void Release();
+	
+	void CurrentTime();
 
 private:
 
@@ -80,7 +82,7 @@ private:
     bool mbStopped;
     bool mbStopRequested;
     std::mutex mMutexStop;
-
+	int mGroundTruth;
 };
 
 }

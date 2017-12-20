@@ -52,103 +52,6 @@
 #include <chrono>
 using namespace std;
 
-typedef struct ImageList
-{
-	double timeStamp;
-	string imgName;
-}ICell;
-
-void loadImageList(char * imagePath,std::vector<ICell> &iListData)
-{
-	ifstream inf;
-	inf.open(imagePath, ifstream::in);       // 你要输出的个数
-	
-	string line;
-	size_t comma = 0;
-	ICell temp;
-	getline(inf,line);
-	while (!inf.eof())
-	{
-		getline(inf,line);
-		
-		comma = line.find(' ',0);
-		string temp1 = line.substr(0,comma);
-		temp.timeStamp = (double)atof(temp1.c_str());
-		temp.imgName = line.substr(comma + 1,line.size()-comma-1).c_str();
-		iListData.push_back(temp);
-	}
-	
-	inf.close();
-	//  return 0;
-}
-
-
-void loadIMUFile(char * imuPath,std::vector<ORB_SLAM2::IMUData> &vimuData)
-{
-	ifstream inf;
-	inf.open(imuPath, ifstream::in);
-	const int cnt = 7;          // 你要输出的个数
-	
-	string line;
-	//int i = 0;
-	int j = 0;
-	size_t comma = 0;
-	size_t comma2 = 0;
-	
-	//     char imuTime[14] = {0};
-	double acc[3] = {0.0};
-	double grad[3] = {0.0};
-	double imuTimeStamp = 0.0;
-	getline(inf,line);
-	while (!inf.eof())
-	{
-		getline(inf,line);
-		comma = line.find(',',0);
-		string temp = line.substr(0,comma);
-		imuTimeStamp = (double)atof(temp.c_str());
-		
-		//cout<<line.substr(0,comma).c_str()<<' ';
-		//memcpy(imuTimeStamp,line.substr(0,comma).c_str(),line.substr(0,comma).length);
-		while (comma < line.size() && j != cnt-1)
-		{
-			
-			comma2 = line.find(',',comma + 1);
-			switch(j)
-			{
-				case 0:
-					grad[0] = atof(line.substr(comma + 1,comma2-comma-1).c_str());
-					break;
-				case 1:
-					grad[1] = atof(line.substr(comma + 1,comma2-comma-1).c_str());
-					break;
-				case 2:
-					grad[2] = atof(line.substr(comma + 1,comma2-comma-1).c_str());
-					break;
-				case 3:
-					acc[0] = atof(line.substr(comma + 1,comma2-comma-1).c_str());
-					break;
-				case 4:
-					acc[1] = atof(line.substr(comma + 1,comma2-comma-1).c_str());
-					break;
-				case 5:
-					acc[2] = atof(line.substr(comma + 1,comma2-comma-1).c_str());
-					break;
-			}
-			//cout<<line.substr(comma + 1,comma2-comma-1).c_str()<<' ';
-			++j;
-			comma = comma2;
-		}
-		ORB_SLAM2::IMUData tempImu(grad[0],grad[1],grad[2],acc[0],acc[1],acc[2],imuTimeStamp);
-		vimuData.push_back(tempImu);
-		
-		j = 0;
-	}
-	
-	inf.close();
-	
-	//return 0;
-}
-
 int main(int argc, char **argv)
 {
 	//ros::init(argc, argv, "Mono");
@@ -157,7 +60,7 @@ int main(int argc, char **argv)
 	if(argc != 6)
 	{
 		// cerr << endl << "Usage: rosrun ORB_SLAM2 Mono path_to_vocabulary path_to_settings" << endl;
-		cerr << endl << "Usage: ./project path_to_ORBVOC.TXT path_to_euroc.yaml path_to_imu/data.csv path_to_cam0/data.csv path_to_cam0/data" << endl;
+		cerr << endl << "Usage: ./project path_to_ORBVOC.TXT path_to_euroc.yaml path_to_imu/data.csv path_to_cam0/data.csv path_to_cam0/data path_to_groundtruth/data"  << endl;
 // 		"/home/zhuzunjie/Documents/projects/RT-NOROS-VIORB/LearnVIORB_NOROS/Vocabulary/ORBvoc.bin" 
 // 		"/home/zhuzunjie/Documents/projects/RT-NOROS-VIORB/LearnVIORB_NOROS/config/realsense.yaml" 
 // 		"/home/zhuzunjie/Documents/data/RealsenseData/lab/IMU.txt" 
@@ -189,9 +92,9 @@ int main(int argc, char **argv)
 	std::vector<ORB_SLAM2::IMUData> allimuData;
 	std::vector<ICell> iListData;
 	
-	loadIMUFile(argv[3],allimuData);
+	loadBlurIMUFile(argv[3],allimuData);
 	//cout<<"loading imu finished"<<endl;
-	loadImageList(argv[4],iListData);
+	loadBlurImageList(argv[4],iListData);
 	//cout<<"loading image finished"<<endl;
 	double e = pow(10.0,-3);
 	
@@ -209,10 +112,7 @@ int main(int argc, char **argv)
 	for(;j<iListData.size();j++)
 	{
 		std::vector<ORB_SLAM2::IMUData> vimuData;
-		/*
-		 * imu 的频率是200HZ 图像帧率是20HZ 所以简单的认为每一帧图像对应10个imu数据
-		 * TODO:这种是offline的做法，需要将其改为online的做法，即根据时间戳来判断IMU数据与图像数据的关系
-		 */
+
 		double time_now = iListData[j].timeStamp;
 		for(;allimuData[count_it]._t < time_now;count_it++)
 		{
