@@ -20,15 +20,12 @@ void loadImageList(char * imagePath,std::vector<ICell> &iListData)
 		comma = line.find(',',0);
 		string temp1 = line.substr(0,comma);
 		temp.timeStamp = (double)atof(temp1.c_str());
-		
-		//cout<<line.substr(0,comma).c_str()<<' ';
-		//memcpy(imuTimeStamp,line.substr(0,comma).c_str(),line.substr(0,comma).length);
+
 		while (comma < line.size() && j != cnt-1)
 		{
 			
 			comma2 = line.find(',',comma + 1);
-			//i = atof(line.substr(comma + 1,comma2-comma-1).c_str());
-			temp.imgName = line.substr(comma + 1,comma2-comma-1).c_str();
+			temp.imgName = line.substr(comma + 1,line.size()-comma-2).c_str();
 			++j;
 			comma = comma2;
 		}
@@ -38,7 +35,6 @@ void loadImageList(char * imagePath,std::vector<ICell> &iListData)
 	}
 	
 	inf.close();
-	//  return 0;
 }
 
 void loadBlurImageList(char * imagePath,std::vector<ICell> &iListData)
@@ -57,7 +53,7 @@ void loadBlurImageList(char * imagePath,std::vector<ICell> &iListData)
 		comma = line.find(' ',0);
 		string temp1 = line.substr(0,comma);
 		temp.timeStamp = (double)atof(temp1.c_str());
-		temp.imgName = line.substr(comma + 1,line.size()-comma-1).c_str();
+		temp.imgName = line.substr(comma + 1,line.size()-comma-2).c_str();
 		iListData.push_back(temp);
 	}
 	
@@ -154,9 +150,6 @@ void loadBlurIMUFile(char * imuPath,std::vector<ORB_SLAM2::IMUData> &vimuData)
 		comma = line.find(',',0);
 		string temp = line.substr(0,comma);
 		imuTimeStamp = (double)atof(temp.c_str());
-		
-		//cout<<line.substr(0,comma).c_str()<<' ';
-		//memcpy(imuTimeStamp,line.substr(0,comma).c_str(),line.substr(0,comma).length);
 		while (comma < line.size() && j != cnt-1)
 		{
 			
@@ -218,9 +211,6 @@ void loadGTFile(const char * imuPath,std::vector<GT> &vGTData)
 		comma = line.find(',',0);
 		string temp = line.substr(0,comma);
 		tempGT.timeStamp = (double)atof(temp.c_str());
-		
-		//cout<<line.substr(0,comma).c_str()<<' ';
-		//memcpy(imuTimeStamp,line.substr(0,comma).c_str(),line.substr(0,comma).length);
 		while (j < cnt)
 		{
 			
@@ -228,13 +218,13 @@ void loadGTFile(const char * imuPath,std::vector<GT> &vGTData)
 			switch(j)
 			{
 				case 0:
-					tempGT.position[2] = atof(line.substr(comma + 1,comma2-comma-1).c_str());
+					tempGT.position[0] = atof(line.substr(comma + 1,comma2-comma-1).c_str());
 					break;
 				case 1:
-					tempGT.position[0] = -(atof(line.substr(comma + 1,comma2-comma-1).c_str()));
+					tempGT.position[1] = (atof(line.substr(comma + 1,comma2-comma-1).c_str()));
 					break;
 				case 2:
-					tempGT.position[1] = -(atof(line.substr(comma + 1,comma2-comma-1).c_str()));
+					tempGT.position[2] = (atof(line.substr(comma + 1,comma2-comma-1).c_str()));
 					break;
 					// 				case 3:
 					// 					tempGT.rotation_Q[0] = atof(line.substr(comma + 1,comma2-comma-1).c_str());
@@ -262,4 +252,39 @@ void loadGTFile(const char * imuPath,std::vector<GT> &vGTData)
 	inf.close();
 	
 	//return 0;
+}
+
+void synInit(const std::vector<ICell> &imageList,const std::vector<ORB_SLAM2::IMUData> &imuList, uint imgIdx, uint imuIdx)
+{
+	// Find Start Idx
+	// 预处理数据
+	int startImuIdx = 0;
+	int startImageIdx = 0;
+	// 剔除初始的冗余IMU数据
+	while(true)
+	{
+		if(imuList[startImuIdx]._t >= imageList[0].timeStamp)
+			break;
+
+		startImuIdx++;
+	}
+
+	// 剔除初始的冗余Image数据
+	while (true)
+	{
+		if (imuList[0]._t <= imageList[startImageIdx].timeStamp)
+			break;
+
+		startImageIdx++;
+	}
+	// 将IMU和图片时间戳对齐
+	while(true)
+	{
+		if(imuList[startImuIdx]._t >= imageList[startImageIdx].timeStamp)
+			break;
+
+		startImuIdx++;
+	}
+	imgIdx = startImageIdx;
+	imuIdx = startImuIdx;
 }

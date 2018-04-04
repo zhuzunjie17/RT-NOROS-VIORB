@@ -19,17 +19,13 @@
 */
 
 #include "MapDrawer.h"
-#include "MapPoint.h"
-#include "KeyFrame.h"
-#include <pangolin/pangolin.h>
 #include <mutex>
 
 namespace ORB_SLAM2
 {
 
 
-MapDrawer::MapDrawer(Map* pMap, const string &strSettingPath):mpMap(pMap),mbInitTime(true)
-{
+MapDrawer::MapDrawer(Map* pMap, const string &strSettingPath):mpMap(pMap),mbInitTime(true) {
     cv::FileStorage fSettings(strSettingPath, cv::FileStorage::READ);
 
     mKeyFrameSize = fSettings["Viewer.KeyFrameSize"];
@@ -38,28 +34,48 @@ MapDrawer::MapDrawer(Map* pMap, const string &strSettingPath):mpMap(pMap),mbInit
     mPointSize = fSettings["Viewer.PointSize"];
     mCameraSize = fSettings["Viewer.CameraSize"];
     mCameraLineWidth = fSettings["Viewer.CameraLineWidth"];
-	mbGroundTruth = fSettings["Viewer.groundtruth"];
-	fSettings["Viewer.GTfile"] >> mGTfile;
-	mCount = 0;
-	mInit = 0;
-	cout<<mGTfile<<endl;
-	if(mbGroundTruth)
-		loadGTFile(mGTfile.c_str(),mGTData);
+    mbGroundTruth = fSettings["Viewer.groundtruth"];
+    fSettings["Viewer.GTfile"] >> mGTfile;
+    mCount = 0;
+    mInit = 0;
+    mbInitTime = true;
+    Eigen::Matrix3d R_BS;
+    Eigen::Vector3d t_BS;
+    cout << mGTfile << endl;
+    if (mbGroundTruth) {
+        loadGTFile(mGTfile.c_str(), mGTData);
+
+        cv::FileNode Tbs_ = fSettings["T.BS"];
+        R_BS << Tbs_[0], Tbs_[1], Tbs_[2],
+                Tbs_[4], Tbs_[5], Tbs_[6],
+                Tbs_[8], Tbs_[9], Tbs_[10];
+//        Eigen::Quaterniond qr(R_BS);
+//        R_BS = qr.normalized().toRotationMatrix();
+        t_BS << Tbs_[3], Tbs_[7], Tbs_[11];
+
+        for(int i=0; i<mGTData.size(); i++) {
+            mGTData[i].position = R_BS * mGTData[i].position + t_BS; //因为是相对pose，所以位移差应该没用
+            Eigen::Vector3d p = R_BS * mGTData[i].position;
+            mGTData[i].position[0] = p[1];
+            mGTData[i].position[1] = -p[2];
+            mGTData[i].position[2] = -p[0];
+
+        }
+    }
 }
 
 void MapDrawer::GetInitTime(double t)
 {
 	if(mbInitTime)
 	{
-		//TODO: 这里可能groundtruth显示的第一帧与初始化成功的第一帧有1帧的误差
 		unique_lock<mutex> lock(mMutexInit);
-		while(mGTData[mInit].timeStamp < t)
+		while(mGTData[mInit+1].timeStamp <= t)
 			mInit++;
 		mbInitTime = false;
-		Eigen::Vector3d pos = mGTData[mInit].position;
-		for(int i=0; i<mGTData.size(); i++)
-			mGTData[i].position -=pos; 
-	}
+		Eigen::Vector3d pos = mGTData[mInit].position;//将GT轨迹与当前初始化的轨迹同步（初始化位置，和外参）
+        for(int i=0; i<mGTData.size(); i++)
+            mGTData[i].position -= pos;
+    }
 }
 
 void MapDrawer::TimeSet(double t)
@@ -70,15 +86,15 @@ void MapDrawer::TimeSet(double t)
 
 void MapDrawer::DrawGroundTruth()
 {
-	if(mpMap->KeyFramesInMap())
-	while(mGTData[mCount+1].timeStamp < mTime)
-		mCount++;
+//	if(mpMap->KeyFramesInMap())
+	    while(mGTData[mCount].timeStamp < mTime)
+		    mCount++;
 	glPushMatrix();
 	glLineWidth(1);
 	glColor3f(1.0f,0.0f,0.0f);
 	glBegin(GL_LINES);
-	Eigen::Vector3d pos(0,0,0);
-	for(int i=1+mInit; i<mCount; i++)
+	Eigen::Vector3d pos(mGTData[0].position);
+	for(int i=0; i<mCount; i++)
 	{
 		glVertex3d(pos[0],pos[1],pos[2]);
 		pos = mGTData[i].position;

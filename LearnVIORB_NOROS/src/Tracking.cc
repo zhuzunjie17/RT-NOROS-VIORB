@@ -498,7 +498,6 @@ cv::Mat Tracking::GrabImageMonoVI(const cv::Mat &im, const std::vector<IMUData> 
 	std::cout<<"Time costs:#frame preprocess#： "<<ttrack<<std::endl;
 	
 	mpMapDrawer->TimeSet(timestamp * (double)pow(10.0,9));
-// 	mpMapDrawer->TimeSet(timestamp);
     Track();
 	std::chrono::steady_clock::time_point t3 = std::chrono::steady_clock::now();
 	double ttrack1= std::chrono::duration_cast<std::chrono::duration<double> >(t3 - t2).count();
@@ -1214,7 +1213,6 @@ void Tracking::CreateInitialMapMonocular()
         else
             vimu2.push_back(imu);
     }
-
     // Create KeyFrames
     KeyFrame* pKFini = new KeyFrame(mInitialFrame,mpMap,mpKeyFrameDB,vimu1,NULL);
     pKFini->ComputePreInt();
@@ -1310,9 +1308,9 @@ void Tracking::CreateInitialMapMonocular()
     mLastFrame = Frame(mCurrentFrame);
 
     mpMap->SetReferenceMapPoints(mvpLocalMapPoints);
-
+    mpMapDrawer->GetInitTime(pKFini->mTimeStamp* pow(10,9));//初始化gt的位置
     mpMapDrawer->SetCurrentCameraPose(pKFcur->GetPose());
-	mpMapDrawer->GetInitTime(pKFcur->mTimeStamp);
+
     mpMap->mvpKeyFrameOrigins.push_back(pKFini);
 
     mState=OK;

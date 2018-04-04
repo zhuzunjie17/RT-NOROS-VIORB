@@ -71,7 +71,7 @@ private:
 	
 	double mTime;
 	std::mutex mMutexTime;
-	
+
 	int mInit;
 	std::mutex mMutexInit;
 	bool mbInitTime;

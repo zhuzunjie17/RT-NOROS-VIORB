@@ -1,44 +1,21 @@
-cmake_minimum_required(VERSION 2.8)
-project(ORB_SLAM2)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+PROJECT(ORB_SLAM2)
 
 IF(NOT CMAKE_BUILD_TYPE)
-  SET(CMAKE_BUILD_TYPE Debug )
+  SET(CMAKE_BUILD_TYPE Release )
 ENDIF()
-
 MESSAGE("Build type: " ${CMAKE_BUILD_TYPE})
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  -Wall  -O3 -march=native ")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall   -O3 -march=native")
-
-# Check C++11 or C++0x support
-include(CheckCXXCompilerFlag)
-CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
-CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
-if(COMPILER_SUPPORTS_CXX11)
-   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-   add_definitions(-DCOMPILEDWITHC11)
-   message(STATUS "Using flag -std=c++11.")
-elseif(COMPILER_SUPPORTS_CXX0X)
-   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
-   add_definitions(-DCOMPILEDWITHC0X)
-   message(STATUS "Using flag -std=c++0x.")
-else()
-   message(FATAL_ERROR "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
-endif()
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall   -march=native -std=c++11")
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
+FIND_PACKAGE(OpenCV 2.4 REQUIRED)
+FIND_PACKAGE(Eigen3 REQUIRED)
+FIND_PACKAGE(Pangolin REQUIRED)
+FIND_PACKAGE(Cholmod REQUIRED)
 
-
-# set (EIGEN3_INCLUDE_DIR  /usr/local/include/eigen3)
-message("eigen:." ${EIGEN3_INCLUDE_DIR})
-find_package(OpenCV 2.4.3 REQUIRED)
-find_package(Eigen3 3.2.0 REQUIRED)
-find_package(Pangolin REQUIRED)
-find_package(Cholmod REQUIRED)
-
-
-include_directories(
+INCLUDE_DIRECTORIES(
 ${PROJECT_SOURCE_DIR}
 ${PROJECT_SOURCE_DIR}/include
 ${PROJECT_SOURCE_DIR}/src
@@ -47,9 +24,9 @@ ${Pangolin_INCLUDE_DIRS}
 ${CHOLMOD_INCLUDE_DIR}
 )
 
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
+SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 
-add_library(${PROJECT_NAME} SHARED
+ADD_LIBRARY(${PROJECT_NAME} SHARED
 src/System.cc
 src/Tracking.cc
 src/LocalMapping.cc
@@ -71,6 +48,7 @@ src/Initializer.cc
 src/Viewer.cc
 src/FileReader.cc
 
+include/FileReader.h
 include/Frame.h
 include/KeyFrame.h
 include/Tracking.h
@@ -92,7 +70,7 @@ src/IMU/g2otypes.h
 src/IMU/g2otypes.cpp
 )
 
-target_link_libraries(${PROJECT_NAME}
+TARGET_LINK_LIBRARIES(${PROJECT_NAME}
 ${OpenCV_LIBS}
 ${EIGEN3_LIBS}
 ${Pangolin_LIBRARIES}
@@ -110,8 +88,8 @@ ${LAPACK_LIBRARIES}
 # add_executable(rosvio
 # Examples/ROS/ORB_VIO/src/ros_vio.cc)
 # target_link_libraries(rosvio ${PROJECT_NAME})
-
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/MonoVIO)
+#
+#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/MonoVIO)
 
 add_executable(vio
 Examples/MonoVIO/vio.cc)
@@ -121,11 +99,11 @@ target_link_libraries(vio ${PROJECT_NAME})
 # Examples/MonoVIO/runeth.cc)
 # target_link_libraries(runeth ${PROJECT_NAME})
 # 
-add_executable(deblur
-Examples/DeblurVIO/Deblur.cpp)
-target_link_libraries(deblur ${PROJECT_NAME})
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/RGB-D)
+#add_executable(deblur
+#Examples/DeblurVIO/Deblur.cpp)
+#target_link_libraries(deblur ${PROJECT_NAME})
 
+#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/RGB-D)
 #add_executable(rgbd_tum
 #Examples/RGB-D/rgbd_tum.cc)
 #target_link_libraries(rgbd_tum ${PROJECT_NAME})
@@ -141,7 +119,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/RGB-D)
 #target_link_libraries(stereo_euroc ${PROJECT_NAME})
 
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Monocular)
+#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Monocular)
 
 #add_executable(mono_tum
 #Examples/Monocular/mono_tum.cc)
