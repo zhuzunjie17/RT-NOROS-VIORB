@@ -38,6 +38,12 @@ public:
 
     Map* mpMap;
 
+    //rovio
+    vector<Eigen::Vector3d> mRovioPos;
+    void DrawRovio();
+    void UpdateRovio(const Eigen::Vector3d& pos);
+
+    //groundtruth
 	void GetInitTime(double t);
 	void TimeSet(double t);
 	void DrawGroundTruth();
@@ -68,13 +74,20 @@ private:
     cv::Mat mCameraPose;
 
     std::mutex mMutexCamera;
-	
+
+    //draw groundtruth
 	double mTime;
 	std::mutex mMutexTime;
 
 	int mInit;
 	std::mutex mMutexInit;
 	bool mbInitTime;
+
+	//draw rovio
+	std::mutex mMutexRovio;
+	Eigen::Vector3d mRovioInitPos;
+
+
 };
 
 } //namespace ORB_SLAM

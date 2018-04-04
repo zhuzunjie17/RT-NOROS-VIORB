@@ -120,6 +120,7 @@ public:
     // SaveMap(const string &filename);
     // LoadMap(const string &filename);
 
+    void DrawRovioPos(Eigen::Vector3d pose);
 private:
 
     // Input sensor

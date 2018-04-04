@@ -129,6 +129,7 @@ void Viewer::Run()
         glClearColor(1.0f,1.0f,1.0f,1.0f);
 		if(mGroundTruth)
 			mpMapDrawer->DrawGroundTruth();
+		mpMapDrawer->DrawRovio();
         mpMapDrawer->DrawCurrentCamera(Twc);
         if(menuShowKeyFrames || menuShowGraph)
             mpMapDrawer->DrawKeyFrames(menuShowKeyFrames,menuShowGraph);

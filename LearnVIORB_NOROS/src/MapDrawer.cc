@@ -26,8 +26,9 @@ namespace ORB_SLAM2
 
 
 MapDrawer::MapDrawer(Map* pMap, const string &strSettingPath):mpMap(pMap),mbInitTime(true) {
-    cv::FileStorage fSettings(strSettingPath, cv::FileStorage::READ);
 
+
+    cv::FileStorage fSettings(strSettingPath, cv::FileStorage::READ);
     mKeyFrameSize = fSettings["Viewer.KeyFrameSize"];
     mKeyFrameLineWidth = fSettings["Viewer.KeyFrameLineWidth"];
     mGraphLineWidth = fSettings["Viewer.GraphLineWidth"];
@@ -39,6 +40,7 @@ MapDrawer::MapDrawer(Map* pMap, const string &strSettingPath):mpMap(pMap),mbInit
     mCount = 0;
     mInit = 0;
     mbInitTime = true;
+    mRovioInitPos.setZero(3);
     Eigen::Matrix3d R_BS;
     Eigen::Vector3d t_BS;
     cout << mGTfile << endl;
@@ -68,6 +70,7 @@ void MapDrawer::GetInitTime(double t)
 {
 	if(mbInitTime)
 	{
+	    //将groundtruth坐标对齐到相机初始化成功坐标位置
 		unique_lock<mutex> lock(mMutexInit);
 		while(mGTData[mInit+1].timeStamp <= t)
 			mInit++;
@@ -75,6 +78,12 @@ void MapDrawer::GetInitTime(double t)
 		Eigen::Vector3d pos = mGTData[mInit].position;//将GT轨迹与当前初始化的轨迹同步（初始化位置，和外参）
         for(int i=0; i<mGTData.size(); i++)
             mGTData[i].position -= pos;
+
+        //将rovio轨迹坐标对齐到相机初始化成功坐标位置
+        unique_lock<mutex> lock1(mMutexRovio);
+        mRovioInitPos = mRovioPos[mRovioPos.size()-1];
+        for(int i = 0; i<mRovioPos.size(); ++i)
+            mRovioPos[i] -= mRovioInitPos;
     }
 }
 
@@ -102,6 +111,30 @@ void MapDrawer::DrawGroundTruth()
 	}
 	glEnd();
 	glPopMatrix();
+}
+
+void MapDrawer::DrawRovio()
+{
+    //不知道这里要不要加锁
+    if(!mRovioPos.empty()) {
+        glPushMatrix();
+        glLineWidth(1);
+        glColor3f(1.0f, 0.0f, 1.0f);
+        glBegin(GL_LINES);
+        Eigen::Vector3d pos(mRovioPos[0]);
+        for (int i = 0; i < mCount; i++) {
+            glVertex3d(pos[0], pos[1], pos[2]);
+            pos = mRovioPos[i];
+            glVertex3d(pos[0], pos[1], pos[2]);
+        }
+        glEnd();
+        glPopMatrix();
+    }
+}
+
+void MapDrawer::UpdateRovio(const Eigen::Vector3d& pos) {
+    unique_lock<mutex> lock(mMutexRovio);
+    mRovioPos.push_back(pos - mRovioInitPos);
 }
 
 void MapDrawer::DrawMapPoints()

@@ -569,4 +569,9 @@ void System::SaveTrajectoryKITTI(const string &filename)
     cout << endl << "trajectory saved!" << endl;
 }
 
+void System::DrawRovioPos(Eigen::Vector3d pose)
+{
+    mpMapDrawer->UpdateRovio(pose);
+}
+
 } //namespace ORB_SLAM

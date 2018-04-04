@@ -109,6 +109,11 @@ int main(int argc, char **argv)
 
 
 
+    Eigen::Matrix3d rot; //groundtruth to camera
+    rot << 0,0,-1,
+            -1,0,0,
+            0,1,0;
+
     // 3dm imu output per g. 1g=9.80665 according to datasheet
     // beijing 9.8012
     const double g3dm = 9.8012;
@@ -121,7 +126,7 @@ int main(int argc, char **argv)
     for (int id = 0; id < imuIdx; ++id) {
         rovioNode.imuCallback(vIMUList[id],vIMUList[id]._t*e);
     }
-    for (; imageIdx < vImageList.size(); ++imageIdx)
+    for (; imageIdx < vImageList.size()-10; ++imageIdx)
     {
         //load image
         LOG(INFO) << "<<<<<<<<<<<<<LOAD IMAGE " << imageIdx << " : " << vImageList[imageIdx].imgName;
@@ -133,12 +138,17 @@ int main(int argc, char **argv)
         const double T1 = cv::getTickCount();
 
         rovioNode.imgCallback0(im,currtime);
-
+//        Eigen::Vector3d pos = rovioNode.imuOutput_.WrWB();
+//        SLAM.DrawRovioPos(Eigen::Vector3d(pos[1],-pos[2],-pos[0]));
         std::vector<ORB_SLAM2::IMUData> vimuData;
         while(vIMUList[imuIdx]._t < vImageList[imageIdx+1].timeStamp)//TODO:这里最后结束的时候逻辑有问题
         {
-            double imutime = vIMUList[imuIdx]._t*e;
+            double imutime = vIMUList[imuIdx]._t * e;
             rovioNode.imuCallback(vIMUList[imuIdx], imutime);
+
+            Eigen::Vector3d pos = rovioNode.imuOutput_.WrWB();
+            Eigen::Quaterniond qr(rovioNode.imuOutput_.qBW().x(),rovioNode.imuOutput_.qBW().y(),rovioNode.imuOutput_.qBW().z(),rovioNode.imuOutput_.qBW().w());
+            // only need related transformation.
 
             if(bAccMultiply98)
             {
@@ -161,6 +171,8 @@ int main(int argc, char **argv)
 
         vTimeCost.push_back(T);
         LOG(INFO)<< "Current frame track time cost: " << T << "ms";
+
+
         cv::waitKey(1);
     }
 
