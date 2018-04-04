@@ -23,10 +23,6 @@
 #include<algorithm>
 #include<fstream>
 #include<chrono>
-//#include <cstdlib>
-//#include <memory>
-//#include <functional>
-//#include <boost/foreach.hpp>
 
 #include<opencv2/core/core.hpp>
 #include<opencv2/highgui/highgui.hpp>
@@ -70,6 +66,8 @@ int main(int argc, char **argv)
     // 数据初始同步
     uint imageIdx=0;
     uint imuIdx=0;
+
+//    synInit(iListData,allimuData,imageIdx,imuIdx);
 
     uint startImuIdx = 0;
     uint startImageIdx = 0;

@@ -1,5 +1,6 @@
 #include "FileReader.h"
 #include <iostream>
+//#include "IMU/imudata.h"
 void loadImageList(char * imagePath,std::vector<ICell> &iListData)
 {
 	ifstream inf;
@@ -253,15 +254,14 @@ void loadGTFile(const char * imuPath,std::vector<GT> &vGTData)
 	
 	//return 0;
 }
-
-void synInit(const std::vector<ICell> &imageList,const std::vector<ORB_SLAM2::IMUData> &imuList, uint imgIdx, uint imuIdx)
+void initData(std::vector<ICell> &imageList, std::vector<ORB_SLAM2::IMUData> &imuList, int imgIdx, int imuIdx)
 {
 	// Find Start Idx
 	// 预处理数据
 	int startImuIdx = 0;
 	int startImageIdx = 0;
 	// 剔除初始的冗余IMU数据
-	while(true)
+	while(1)
 	{
 		if(imuList[startImuIdx]._t >= imageList[0].timeStamp)
 			break;
@@ -270,7 +270,7 @@ void synInit(const std::vector<ICell> &imageList,const std::vector<ORB_SLAM2::IM
 	}
 
 	// 剔除初始的冗余Image数据
-	while (true)
+	while (1)
 	{
 		if (imuList[0]._t <= imageList[startImageIdx].timeStamp)
 			break;
@@ -278,7 +278,7 @@ void synInit(const std::vector<ICell> &imageList,const std::vector<ORB_SLAM2::IM
 		startImageIdx++;
 	}
 	// 将IMU和图片时间戳对齐
-	while(true)
+	while(1)
 	{
 		if(imuList[startImuIdx]._t >= imageList[startImageIdx].timeStamp)
 			break;

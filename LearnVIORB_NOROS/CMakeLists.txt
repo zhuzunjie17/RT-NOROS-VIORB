@@ -1,4 +1,4 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.4)
 PROJECT(ORB_SLAM2)
 
 IF(NOT CMAKE_BUILD_TYPE)
@@ -15,126 +15,96 @@ FIND_PACKAGE(Eigen3 REQUIRED)
 FIND_PACKAGE(Pangolin REQUIRED)
 FIND_PACKAGE(Cholmod REQUIRED)
 
+FIND_PACKAGE(kindr REQUIRED)
+FIND_PACKAGE(LWF REQUIRED)
+FIND_PACKAGE(Glog REQUIRED)
+FIND_PACKAGE(PkgConfig)
+pkg_check_modules(YamlCpp REQUIRED yaml-cpp>=0.5)
+
 INCLUDE_DIRECTORIES(
-${PROJECT_SOURCE_DIR}
-${PROJECT_SOURCE_DIR}/include
-${PROJECT_SOURCE_DIR}/src
-${EIGEN3_INCLUDE_DIR} /usr/local/include/eigen3
-${Pangolin_INCLUDE_DIRS}
-${CHOLMOD_INCLUDE_DIR}
+        ${PROJECT_SOURCE_DIR}
+        ${PROJECT_SOURCE_DIR}/include
+        ${PROJECT_SOURCE_DIR}/src
+
+        ${Pangolin_INCLUDE_DIRS}
+        ${CHOLMOD_INCLUDE_DIR}
+        ${EIGEN3_INCLUDE_DIR}
+
+        ${kindr_INCLUDE_DIRS}
+        ${LWF_INCLUDE_DIRS}
+        ${GLOG_INCLUDE_DIRS}
+        ${YamlCpp_INCLUDE_DIRS}
 )
 
 SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 
+FILE(GLOB rovio_headers ${PROJECT_SOURCE_DIR}/include/rovio/*.hpp ${PROJECT_SOURCE_DIR}/include/rovio/CoordinateTransform/*.hpp)
+FILE(GLOB orbslam_headers ${PROJECT_SOURCE_DIR}/include/*.h )
+FILE(GLOB orbslam_imu_headers ${PROJECT_SOURCE_DIR}/src/IMU/*.h)
+FILE(GLOB orbslam_sources ${PROJECT_SOURCE_DIR}/src/*.cc)
+FILE(GLOB orbslam_imu_sources ${PROJECT_SOURCE_DIR}/src/IMU/*.cpp)
+
+SET(ROVIO_HEADERS
+        ${rovio_headers}
+        )
+SET(ROVIO_SOURCES
+        src/rovio/Camera.cpp
+        src/rovio/FeatureCoordinates.cpp
+        src/rovio/FeatureDistance.cpp
+        )
+SET(ORBSLAM_HEADERS
+        ${orbslam_headers}
+        )
+SET(ORBSLAM_SOURCES
+        ${orbslam_sources}
+        )
+SET(ORBSLAM_IMU_HEADERS
+        ${orbslam_imu_headers}
+        )
+SET(ORBSLAM_IMU_SOURCES
+        ${orbslam_imu_sources}
+        )
+
+
+SOURCE_GROUP(Header\ Files\\Rovio FILES ${ROVIO_HEADERS})
+SOURCE_GROUP(Header\ Files\\ORBSLAM FILES ${ORBSLAM_HEADERS})
+SOURCE_GROUP(Header\ Files\\IMU FILES ${ORBSLAM_IMU_HEADERS})
+SOURCE_GROUP(Source\ Files\\Rovio FILES ${ROVIO_SOURCES})
+SOURCE_GROUP(Source\ Files\\ORBSLAM FILES ${ORBSLAM_SOURCES})
+SOURCE_GROUP(Source\ Files\\IMU FILES ${ORBSLAM_IMU_SOURCES})
+
+
 ADD_LIBRARY(${PROJECT_NAME} SHARED
-src/System.cc
-src/Tracking.cc
-src/LocalMapping.cc
-src/LoopClosing.cc
-src/ORBextractor.cc
-src/ORBmatcher.cc
-src/FrameDrawer.cc
-src/Converter.cc
-src/MapPoint.cc
-src/KeyFrame.cc
-src/Map.cc
-src/MapDrawer.cc
-src/Optimizer.cc
-src/PnPsolver.cc
-src/Frame.cc
-src/KeyFrameDatabase.cc
-src/Sim3Solver.cc
-src/Initializer.cc
-src/Viewer.cc
-src/FileReader.cc
-
-include/FileReader.h
-include/Frame.h
-include/KeyFrame.h
-include/Tracking.h
-include/LocalMapping.h
-
-src/IMU/configparam.h
-src/IMU/configparam.cpp
-
-src/IMU/imudata.h
-src/IMU/imudata.cpp
-src/IMU/IMUPreintegrator.h
-src/IMU/IMUPreintegrator.cpp
-src/IMU/so3.cpp
-src/IMU/so3.h
-src/IMU/NavState.h
-src/IMU/NavState.cpp
-
-src/IMU/g2otypes.h
-src/IMU/g2otypes.cpp
+        ${ROVIO_HEADERS}
+        ${ORBSLAM_HEADERS}
+        ${ORBSLAM_IMU_HEADERS}
+        ${ROVIO_SOURCES}
+        ${ORBSLAM_SOURCES}
+        ${ORBSLAM_IMU_SOURCES}
 )
 
 TARGET_LINK_LIBRARIES(${PROJECT_NAME}
-${OpenCV_LIBS}
-${EIGEN3_LIBS}
-${Pangolin_LIBRARIES}
-${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so
-${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
-cholmod
-${CHOLMOD_LIBRARIES}
-${BLAS_LIBRARIES}
-${LAPACK_LIBRARIES}
+        ${OpenCV_LIBS}
+        ${EIGEN3_LIBS}
+        ${Pangolin_LIBRARIES}
+        ${CHOLMOD_LIBRARIES}
+        ${BLAS_LIBRARIES}
+        ${LAPACK_LIBRARIES}
+        ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so
+        ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
+
+        ${YamlCpp_LIBRARIES}
+        ${GLOG_LIBRARIES}
 )
 
-## Build examples
-# set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/ROS/ORB_VIO/src)
-# 
-# add_executable(rosvio
-# Examples/ROS/ORB_VIO/src/ros_vio.cc)
-# target_link_libraries(rosvio ${PROJECT_NAME})
-#
-#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/MonoVIO)
-
-add_executable(vio
+ADD_EXECUTABLE(vio
 Examples/MonoVIO/vio.cc)
-target_link_libraries(vio ${PROJECT_NAME})
+TARGET_LINK_LIBRARIES(vio ${PROJECT_NAME})
 
-# add_executable(runeth
-# Examples/MonoVIO/runeth.cc)
-# target_link_libraries(runeth ${PROJECT_NAME})
-# 
-#add_executable(deblur
-#Examples/DeblurVIO/Deblur.cpp)
-#target_link_libraries(deblur ${PROJECT_NAME})
+ADD_EXECUTABLE(rovio
+        Examples/MonoVIO/rovio_noros.cpp)
+TARGET_LINK_LIBRARIES(rovio ${PROJECT_NAME})
 
-#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/RGB-D)
-#add_executable(rgbd_tum
-#Examples/RGB-D/rgbd_tum.cc)
-#target_link_libraries(rgbd_tum ${PROJECT_NAME})
-
-#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Stereo)
-
-#add_executable(stereo_kitti
-#Examples/Stereo/stereo_kitti.cc)
-#target_link_libraries(stereo_kitti ${PROJECT_NAME})
-
-#add_executable(stereo_euroc
-#Examples/Stereo/stereo_euroc.cc)
-#target_link_libraries(stereo_euroc ${PROJECT_NAME})
-
-
-#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Monocular)
-
-#add_executable(mono_tum
-#Examples/Monocular/mono_tum.cc)
-#target_link_libraries(mono_tum ${PROJECT_NAME})
-
-#add_executable(mono_kitti
-#Examples/Monocular/mono_kitti.cc)
-#target_link_libraries(mono_kitti ${PROJECT_NAME})
-
-# add_executable(mono_euroc
-# Examples/Monocular/mono_euroc.cc)
-# target_link_libraries(mono_euroc ${PROJECT_NAME})
-
-## Build tools
-#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/tools)
-#add_executable(bin_vocabulary
-#tools/bin_vocabulary.cc)
-#target_link_libraries(bin_vocabulary ${PROJECT_NAME})
+ADD_EXECUTABLE(orb_with_rovio
+        Examples/MonoVIO/orb_with_rovio.cpp)
+TARGET_LINK_LIBRARIES(orb_with_rovio ${PROJECT_NAME})
