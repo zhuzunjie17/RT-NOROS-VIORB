@@ -108,3 +108,7 @@ TARGET_LINK_LIBRARIES(rovio ${PROJECT_NAME})
 ADD_EXECUTABLE(orb_with_rovio
         Examples/MonoVIO/orb_with_rovio.cpp)
 TARGET_LINK_LIBRARIES(orb_with_rovio ${PROJECT_NAME})
+
+ADD_EXECUTABLE(ZR300
+        Examples/MonoVIO/zr300_rovio_orb.cpp)
+TARGET_LINK_LIBRARIES(ZR300 ${PROJECT_NAME})

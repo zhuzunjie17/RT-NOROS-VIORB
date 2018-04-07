@@ -1,7 +1,6 @@
 //
-// Created by zhuzunjie on 18-4-4.
+// Created by zhuzunjie on 18-4-6.
 //
-
 #include <iostream>
 #include <iomanip>
 
@@ -47,11 +46,9 @@ int main(int argc, char **argv)
     loadImageList(argv[4], vImageList);
     vector<ORB_SLAM2::IMUData> vIMUList;
     loadIMUFile(argv[3],vIMUList);
-
     // 预处理数据,滤波器确实不需要初始同步，但这里的初始同步还是先放着。
     int imageIdx=0;
     int imuIdx=0;
-
     uint startImuIdx = 0;
     uint startImageIdx = 0;
     // 剔除初始的冗余IMU数据
@@ -83,10 +80,10 @@ int main(int argc, char **argv)
     imuIdx = startImuIdx;
 
     //rovio init
-    string filter_config = "/home/zhuzunjie/Projects/RT-NOROS-VIORB/LearnVIORB_NOROS/config/rovio.info";
+    string filter_config = "/home/zhuzunjie/Projects/RT-NOROS-VIORB/LearnVIORB_NOROS/config/zr300/rovio.info";
     std::shared_ptr<mtFilter> mpFilter(new mtFilter);
     mpFilter->readFromInfo(filter_config);
-    std::string camera_config = "/home/zhuzunjie/Projects/RT-NOROS-VIORB/LearnVIORB_NOROS/config/euroc_cam0.yaml";
+    std::string camera_config = "/home/zhuzunjie/Projects/RT-NOROS-VIORB/LearnVIORB_NOROS/config/zr300/zr300.yaml";
     mpFilter->cameraCalibrationFile_[0] = camera_config;
     mpFilter->refreshProperties();
     rovio::RovioNode<mtFilter> rovioNode(mpFilter);
@@ -120,8 +117,8 @@ int main(int argc, char **argv)
         const double T1 = cv::getTickCount();
 
         rovioNode.imgCallback0(im,currtime);
-        Eigen::Vector3d pos = rovioNode.imuOutput_.WrWB();
-        SLAM.DrawRovioPos(Eigen::Vector3d(pos[1],-pos[2],-pos[0]));
+//        Eigen::Vector3d pos = rovioNode.imuOutput_.WrWB();
+//        SLAM.DrawRovioPos(Eigen::Vector3d(pos[1],-pos[2],-pos[0]));
         std::vector<ORB_SLAM2::IMUData> vimuData;
         while(vIMUList[imuIdx]._t < vImageList[imageIdx+1].timeStamp)//TODO:这里最后结束的时候逻辑有问题
         {
@@ -133,7 +130,6 @@ int main(int argc, char **argv)
             Eigen::Quaterniond qr(rovioNode.imuOutput_.qBW().x(),rovioNode.imuOutput_.qBW().y(),rovioNode.imuOutput_.qBW().z(),rovioNode.imuOutput_.qBW().w());
             // only need related transformation.
             SLAM.DrawRovioPos(Eigen::Vector3d(pos[1],-pos[2],-pos[0]));
-
 
             if(bAccMultiply98)
             {
@@ -156,6 +152,7 @@ int main(int argc, char **argv)
 
         vTimeCost.push_back(T);
         LOG(INFO)<< "Current frame track time cost: " << T << "ms";
+
 
         cv::waitKey(1);
     }

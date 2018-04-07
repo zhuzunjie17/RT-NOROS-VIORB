@@ -39,20 +39,20 @@ MapDrawer::MapDrawer(Map* pMap, const string &strSettingPath):mpMap(pMap),mbInit
     fSettings["Viewer.GTfile"] >> mGTfile;
     mCount = 0;
     mInit = 0;
-    mbInitTime = true;
+    mbInitTime = false;
     mRovioInitPos.setZero(3);
     Eigen::Matrix3d R_BS;
     Eigen::Vector3d t_BS;
     cout << mGTfile << endl;
     if (mbGroundTruth) {
+        mbInitTime = true;
         loadGTFile(mGTfile.c_str(), mGTData);
 
         cv::FileNode Tbs_ = fSettings["T.BS"];
         R_BS << Tbs_[0], Tbs_[1], Tbs_[2],
                 Tbs_[4], Tbs_[5], Tbs_[6],
                 Tbs_[8], Tbs_[9], Tbs_[10];
-//        Eigen::Quaterniond qr(R_BS);
-//        R_BS = qr.normalized().toRotationMatrix();
+
         t_BS << Tbs_[3], Tbs_[7], Tbs_[11];
 
         for(int i=0; i<mGTData.size(); i++) {
@@ -122,7 +122,7 @@ void MapDrawer::DrawRovio()
         glColor3f(1.0f, 0.0f, 1.0f);
         glBegin(GL_LINES);
         Eigen::Vector3d pos(mRovioPos[0]);
-        for (int i = 0; i < mCount; i++) {
+        for (int i = 0; i < mRovioPos.size(); i++) {
             glVertex3d(pos[0], pos[1], pos[2]);
             pos = mRovioPos[i];
             glVertex3d(pos[0], pos[1], pos[2]);

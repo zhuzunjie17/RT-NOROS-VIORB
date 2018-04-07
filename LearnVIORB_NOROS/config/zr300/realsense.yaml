@@ -48,14 +48,14 @@ IMU.multiplyG: 0
 
 # camera-imu frame transformation, Pi = Tic * Pc
 Camera.Tbc:
- [0.999927, 0.0107638, 0.00553847, 0.0938483,
-  -0.0106798, 0.999831, -0.0149774, 0.00180874,
-  -0.00569875, 0.0149172,0.999873, 0.0004859,
-  0.0, 0.0, 0.0, 1.0]
- #[0.99992675, -0.010679, -0.0056987, -0.093819335,
-  #0.0107637, 0.99983078, 0.0149171, -0.00282584,
-  #0.00553847, -0.0149774, 0.99987251, -0.000978523,
-  #0.0, 0.0, 0.0, 0.1]
+# [1, 0, 0, -0.07127316092305903,
+#  0, 1, 0, 0.007299567877838882,
+#  0, 0, 1, 0.00961373829614162,
+#  0.0, 0.0, 0.0, 1.0]
+ [0.99992675, -0.010679, -0.0056987, 0.093819335,
+  0.0107637, 0.99983078, 0.0149171, 0.00282584,
+  0.00553847, -0.0149774, 0.99987251, 0.000978523,
+  0.0, 0.0, 0.0, 0.1]
 # Local Window size
 LocalMapping.LocalWindowSize: 20
 
@@ -64,15 +64,15 @@ LocalMapping.LocalWindowSize: 20
 #--------------------------------------------------------------------------------------------
 
 # Camera calibration and distortion parameters (OpenCV) 
-Camera.fx: 619.362
-Camera.fy: 621.976
-Camera.cx: 315.294
-Camera.cy: 242.406
+Camera.fx: 608.362
+Camera.fy: 608.976
+Camera.cx: 331.294
+Camera.cy: 246.406
 
-Camera.k1: 0.0721324
-Camera.k2: -0.1235923
-Camera.p1: -0.0005962
-Camera.p2: -0.0005710 
+Camera.k1: 0.0644
+Camera.k2: -0.114
+Camera.p1: 0.00127
+Camera.p2: 0.00203
 
 Camera.width: 640
 Camera.height: 480
@@ -126,5 +126,5 @@ Viewer.ViewpointY: -0.7
 Viewer.ViewpointZ: -1.8
 Viewer.ViewpointF: 500
 #groundtruth route visualization
-Viewer.groundtruth: 1
+Viewer.groundtruth: 0
 Viewer.GTfile: "/home/zhuzunjie/Documents/data/RealsenseData/room-vicon1/groundtruth.csv"
