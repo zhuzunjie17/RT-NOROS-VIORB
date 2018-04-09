@@ -5,11 +5,11 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="ORB_SLAM2" targetName="orb_with_rovio" />
+      <config projectName="ORB_SLAM2" targetName="ORB_SLAM2" />
       <config projectName="ORB_SLAM2" targetName="rovio" />
       <config projectName="ORB_SLAM2" targetName="ZR300" />
       <config projectName="ORB_SLAM2" targetName="vio" />
-      <config projectName="ORB_SLAM2" targetName="ORB_SLAM2" />
+      <config projectName="ORB_SLAM2" targetName="orb_with_rovio" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -19,11 +19,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f21b5c0-0d8e-4481-a97a-f9f79caa4816" name="Default" comment="combine rovio, view(and synchronize) rovio trajectory, TODO: realtime position don't synchronize with groundtruth, why?">
-      <change afterPath="$PROJECT_DIR$/Examples/MonoVIO/zr300_rovio_orb.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/zr300/zr300.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/MonoVIO/orb_with_rovio.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MonoVIO/orb_with_rovio.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.8.2/CMakeCCompiler.cmake" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.8.2/CMakeCXXCompiler.cmake" beforeDir="false" />
@@ -95,10 +91,6 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/ORB_SLAM2.cbp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/config/euroc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/euroc.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/realsense.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/zr300/realsense.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/FileReader.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/FileReader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileReader.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileReader.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MapDrawer.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapDrawer.cc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-relwithdebinfo/" />
@@ -116,8 +108,17 @@
       <file leaf-file-name="zr300_rovio_orb.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Examples/MonoVIO/zr300_rovio_orb.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="131" column="23" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
+            <state relative-caret-position="1748">
+              <caret line="92" column="18" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="System.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/System.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1292">
+              <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -125,34 +126,29 @@
       <file leaf-file-name="System.cc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/System.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="708">
-              <caret line="573" column="19" selection-start-line="573" selection-start-column="19" selection-end-line="573" selection-end-column="19" />
+            <state relative-caret-position="4294">
+              <caret line="226" column="22" selection-start-line="226" selection-start-column="22" selection-end-line="226" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Viewer.cc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Viewer.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2470">
+              <caret line="130" column="31" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
               <folding>
-                <element signature="e#0#826#0" />
-                <element signature="e#1053#1226#0" />
-                <element signature="e#1539#1705#0" />
-                <element signature="e#1708#3685#0" />
-                <element signature="e#3687#4914#0" />
-                <element signature="e#8830#9959#0" />
-                <element signature="e#9961#11075#0" />
-                <element signature="e#11077#12178#0" />
-                <element signature="e#12180#12303#0" />
-                <element signature="e#12305#12432#0" />
-                <element signature="e#12434#12520#0" />
-                <element signature="e#12522#12941#0" />
-                <element signature="e#12943#15233#0" />
-                <element signature="e#15236#16368#0" />
-                <element signature="e#16370#18643#0" />
+                <element signature="e#828#847#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapDrawer.cc" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MapDrawer.cc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MapDrawer.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="124" column="44" selection-start-line="124" selection-start-column="44" selection-end-line="124" selection-end-column="44" />
+            <state relative-caret-position="19">
+              <caret line="1" selection-start-line="1" selection-end-line="2" />
               <folding>
                 <element signature="e#828#850#0" expanded="true" />
               </folding>
@@ -160,32 +156,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RovioNode.hpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/rovio/RovioNode.hpp">
+      <file leaf-file-name="realsense.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/zr300/realsense.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="362" column="11" selection-start-line="362" selection-start-column="11" selection-end-line="362" selection-end-column="11" />
+            <state relative-caret-position="342">
+              <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Camera.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rovio/Camera.cpp">
+      <file leaf-file-name="rovio.info" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/zr300/rovio.info">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapDrawer.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/MapDrawer.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-              <folding>
-                <element signature="e#869#884#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="375">
+              <caret line="147" column="1" lean-forward="true" selection-start-line="147" selection-start-column="1" selection-end-line="147" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -225,14 +209,15 @@
         <option value="$PROJECT_DIR$/src/System.cc" />
         <option value="$PROJECT_DIR$/include/MapDrawer.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/config/euroc.yaml" />
         <option value="$PROJECT_DIR$/config/realsense.yaml" />
         <option value="$PROJECT_DIR$/src/FileReader.cc" />
         <option value="$PROJECT_DIR$/include/FileReader.h" />
         <option value="$PROJECT_DIR$/Examples/MonoVIO/orb_with_rovio.cpp" />
         <option value="$PROJECT_DIR$/config/zr300/realsense.yaml" />
-        <option value="$PROJECT_DIR$/Examples/MonoVIO/zr300_rovio_orb.cpp" />
         <option value="$PROJECT_DIR$/src/MapDrawer.cc" />
+        <option value="$PROJECT_DIR$/Examples/MonoVIO/zr300_rovio_orb.cpp" />
+        <option value="$PROJECT_DIR$/config/euroc.yaml" />
+        <option value="$PROJECT_DIR$/config/zr300/rovio.info" />
       </list>
     </option>
   </component>
@@ -244,10 +229,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1544" />
-    <option name="y" value="488" />
-    <option name="width" value="1013" />
-    <option name="height" value="1888" />
+    <option name="x" value="1145" />
+    <option name="y" value="460" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -255,6 +240,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,7 +284,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -328,16 +313,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.orb_with_rovio(V203)">
+  <component name="RunManager" selected="Application.orb_with_rovio_ZR300(slow)">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="RelWithDebInfo" RUN_TARGET_PROJECT_NAME="ORB_SLAM2" RUN_TARGET_NAME="orb_with_rovio" EXPLICIT_BUILD_TARGET_NAME="all" />
     <configuration name="orb_with_rovio(V102)" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/Vocabulary/ORBvoc.bin $PROJECT_DIR$/config/euroc.yaml $USER_HOME$/Data/Euroc/V1_02_medium/mav0/imu0/data.csv $USER_HOME$/Data/Euroc/V1_02_medium/mav0/cam0/data.csv $USER_HOME$/Data/Euroc/V1_02_medium/mav0/cam0/data" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="orb_with_rovio" CONFIG_NAME="RelWithDebInfo" RUN_TARGET_PROJECT_NAME="ORB_SLAM2" RUN_TARGET_NAME="orb_with_rovio" />
     <configuration name="orb_with_rovio(V203)" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/Vocabulary/ORBvoc.bin $PROJECT_DIR$/config/euroc.yaml $USER_HOME$/Data/Euroc/V2_03_difficult/mav0/imu0/data.csv $USER_HOME$/Data/Euroc/V2_03_difficult/mav0/cam0/data.csv $USER_HOME$/Data/Euroc/V2_03_difficult/mav0/cam0/data" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="orb_with_rovio" CONFIG_NAME="RelWithDebInfo" RUN_TARGET_PROJECT_NAME="ORB_SLAM2" RUN_TARGET_NAME="orb_with_rovio" />
+    <configuration name="orb_with_rovio_ZR300(slow2fast)" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/Vocabulary/ORBvoc.bin $PROJECT_DIR$/config/zr300/realsense.yaml $USER_HOME$/Data/RealsenseData/slow2fast/IMU.txt $USER_HOME$/Data/RealsenseData/slow2fast/COLOR.txt $USER_HOME$/Data/RealsenseData/slow2fast/color" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="ZR300" CONFIG_NAME="RelWithDebInfo" RUN_TARGET_PROJECT_NAME="ORB_SLAM2" RUN_TARGET_NAME="ZR300" />
     <configuration name="orb_with_rovio_ZR300(slow)" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/Vocabulary/ORBvoc.bin $PROJECT_DIR$/config/zr300/realsense.yaml $USER_HOME$/Data/RealsenseData/slow/IMU.txt $USER_HOME$/Data/RealsenseData/slow/COLOR.txt $USER_HOME$/Data/RealsenseData/slow/color" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="ZR300" CONFIG_NAME="RelWithDebInfo" RUN_TARGET_PROJECT_NAME="ORB_SLAM2" RUN_TARGET_NAME="ZR300" />
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.orb_with_rovio(V203)" />
       <item itemvalue="Application.orb_with_rovio(V102)" />
       <item itemvalue="Application.orb_with_rovio_ZR300(slow)" />
+      <item itemvalue="Application.orb_with_rovio_ZR300(slow2fast)" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -356,7 +343,10 @@
       <workItem from="1522826412400" duration="15883000" />
       <workItem from="1522897799429" duration="14119000" />
       <workItem from="1523070424185" duration="4002000" />
-      <workItem from="1523081770064" duration="2778000" />
+      <workItem from="1523081770064" duration="11057000" />
+      <workItem from="1523153149866" duration="14000" />
+      <workItem from="1523170173804" duration="424000" />
+      <workItem from="1523256411822" duration="2962000" />
     </task>
     <task id="LOCAL-00001" summary="simplified vio.cpp">
       <created>1522817463250</created>
@@ -379,11 +369,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522847501413</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修复rovio轨迹与groundtruth轨迹不同步的bug；修改读取模块；实现跟踪zr300数据">
+      <created>1523084929685</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1523084929685</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67820000" />
+    <option name="totallyTimeSpent" value="79499000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -398,18 +395,17 @@
     <frame x="1145" y="460" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19268559" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19268559" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32860824" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.28961176" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32948583" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32860824" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32948583" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34942287" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32948583" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34942287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3298969" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39979014" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -417,26 +413,27 @@
       <window_info anchor="right" id="Data View" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32948583" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19268559" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.17523609" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Data View" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32860824" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.32948583" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32948583" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39979014" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.28961176" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3298969" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32860824" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32948583" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.28961176" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32948583" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -477,7 +474,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="simplified vio.cpp" />
     <MESSAGE value="combine rovio, view(and synchronize) rovio trajectory, TODO: realtime position don't synchronize with groundtruth, why?" />
-    <option name="LAST_COMMIT_MESSAGE" value="combine rovio, view(and synchronize) rovio trajectory, TODO: realtime position don't synchronize with groundtruth, why?" />
+    <MESSAGE value="修复rovio轨迹与groundtruth轨迹不同步的bug；修改读取模块；实现跟踪zr300数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复rovio轨迹与groundtruth轨迹不同步的bug；修改读取模块；实现跟踪zr300数据" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -507,17 +505,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Examples/MonoVIO/orb_with_rovio.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1349">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="e#42#61#0" expanded="true" />
-            <element signature="e#170#194#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Examples/MonoVIO/vio.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2546">
@@ -619,9 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="1310" column="70" selection-start-line="1310" selection-start-column="70" selection-end-line="1310" selection-end-column="70" />
-          <folding>
-            <element signature="e#829#850#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -629,9 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="e#42#61#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -677,16 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
           <caret line="105" column="4" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/System.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="122" column="13" selection-start-line="122" selection-start-column="13" selection-end-line="122" selection-end-column="13" />
-          <folding>
-            <element signature="e#864#880#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,13 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/euroc.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2014">
-          <caret line="106" column="73" selection-start-line="106" selection-start-column="73" selection-end-line="106" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/FileReader.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -799,20 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#43#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/MonoVIO/orb_with_rovio.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="89" column="56" lean-forward="true" selection-start-line="89" selection-start-column="56" selection-end-line="89" selection-end-column="56" />
-          <folding>
-            <element signature="e#42#61#0" expanded="true" />
-            <element signature="e#170#194#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -823,17 +773,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/zr300/realsense.yaml">
+    <entry file="file://$PROJECT_DIR$/config/realsense.yaml" />
+    <entry file="file://$PROJECT_DIR$/src/rovio/Camera.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/realsense.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="167" selection-start-line="3" selection-start-column="167" selection-end-line="3" selection-end-column="167" />
+        <state relative-caret-position="172">
+          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -844,68 +788,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/MapDrawer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/euroc.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="727">
+          <caret line="123" column="32" lean-forward="true" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/MonoVIO/orb_with_rovio.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="119" column="45" lean-forward="true" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
+          <folding>
+            <element signature="e#42#61#0" expanded="true" />
+            <element signature="e#170#194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/zr300/realsense.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Examples/MonoVIO/zr300_rovio_orb.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="131" column="23" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
+        <state relative-caret-position="1748">
+          <caret line="92" column="18" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/System.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/System.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="573" column="19" selection-start-line="573" selection-start-column="19" selection-end-line="573" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#826#0" />
-            <element signature="e#1053#1226#0" />
-            <element signature="e#1539#1705#0" />
-            <element signature="e#1708#3685#0" />
-            <element signature="e#3687#4914#0" />
-            <element signature="e#8830#9959#0" />
-            <element signature="e#9961#11075#0" />
-            <element signature="e#11077#12178#0" />
-            <element signature="e#12180#12303#0" />
-            <element signature="e#12305#12432#0" />
-            <element signature="e#12434#12520#0" />
-            <element signature="e#12522#12941#0" />
-            <element signature="e#12943#15233#0" />
-            <element signature="e#15236#16368#0" />
-            <element signature="e#16370#18643#0" />
-          </folding>
+        <state relative-caret-position="4294">
+          <caret line="226" column="22" selection-start-line="226" selection-start-column="22" selection-end-line="226" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Viewer.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="131" column="33" lean-forward="true" selection-start-line="131" selection-start-column="33" selection-end-line="131" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rovio/Camera.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/MapDrawer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        <state relative-caret-position="2470">
+          <caret line="130" column="31" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
           <folding>
-            <element signature="e#869#884#0" expanded="true" />
+            <element signature="e#828#847#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MapDrawer.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="124" column="44" selection-start-line="124" selection-start-column="44" selection-end-line="124" selection-end-column="44" />
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="2" />
           <folding>
             <element signature="e#828#850#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/zr300/rovio.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="147" column="1" lean-forward="true" selection-start-line="147" selection-start-column="1" selection-end-line="147" selection-end-column="24" />
         </state>
       </provider>
     </entry>
