@@ -1,0 +1,6 @@
+Log file created at: 2018/04/06 15:24:02
+Running on machine: ubuntu14045
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0406 15:24:02.408488 37037 orb_with_rovio.cpp:55] pass
+I0406 15:24:02.737706 37037 orb_with_rovio.cpp:132] <<<<<<<<<<<<<LOAD IMAGE 1 : 1413394881605760512,1413394881605760512.png
+F0406 15:24:02.737746 37037 orb_with_rovio.cpp:135] read image /home/zhuzunjie/Data/Euroc/V2_03_difficult/mav0/cam0/data/1413394881605760512,1413394881605760512.pngfailed!

@@ -1,0 +1,1076 @@
+Log file created at: 2018/04/07 16:17:11
+Running on machine: ubuntu14045
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0407 16:17:11.507947 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 1 : 1413394881605760512.png
+I0407 16:17:11.532074 15785 orb_with_rovio.cpp:158] Current frame track time cost: 21.4324ms
+I0407 16:17:11.532156 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 2 : 1413394881655760384.png
+I0407 16:17:11.585299 15785 orb_with_rovio.cpp:158] Current frame track time cost: 50.7305ms
+I0407 16:17:11.585342 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 3 : 1413394881705760512.png
+I0407 16:17:11.664883 15785 orb_with_rovio.cpp:158] Current frame track time cost: 76.503ms
+I0407 16:17:11.666646 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 4 : 1413394881755760384.png
+I0407 16:17:11.751793 15785 orb_with_rovio.cpp:158] Current frame track time cost: 82.8491ms
+I0407 16:17:11.755192 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 5 : 1413394881805760512.png
+I0407 16:17:11.810333 15785 orb_with_rovio.cpp:158] Current frame track time cost: 52.5314ms
+I0407 16:17:11.811455 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 6 : 1413394881855760384.png
+I0407 16:17:11.867486 15785 orb_with_rovio.cpp:158] Current frame track time cost: 53.7304ms
+I0407 16:17:11.868633 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 7 : 1413394881905760512.png
+I0407 16:17:11.919188 15785 orb_with_rovio.cpp:158] Current frame track time cost: 48.3894ms
+I0407 16:17:11.920339 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 8 : 1413394881955760384.png
+I0407 16:17:11.971374 15785 orb_with_rovio.cpp:158] Current frame track time cost: 48.9111ms
+I0407 16:17:11.972492 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 9 : 1413394882005760512.png
+I0407 16:17:12.020758 15785 orb_with_rovio.cpp:158] Current frame track time cost: 46.1134ms
+I0407 16:17:12.021915 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 10 : 1413394882055760384.png
+I0407 16:17:12.075902 15785 orb_with_rovio.cpp:158] Current frame track time cost: 51.9012ms
+I0407 16:17:12.076942 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 11 : 1413394882105760512.png
+I0407 16:17:12.130997 15785 orb_with_rovio.cpp:158] Current frame track time cost: 51.9352ms
+I0407 16:17:12.132128 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 12 : 1413394882155760384.png
+I0407 16:17:12.184769 15785 orb_with_rovio.cpp:158] Current frame track time cost: 50.5324ms
+I0407 16:17:12.185885 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 13 : 1413394882205760512.png
+I0407 16:17:12.240970 15785 orb_with_rovio.cpp:158] Current frame track time cost: 52.9282ms
+I0407 16:17:12.242987 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 14 : 1413394882255760384.png
+I0407 16:17:12.299782 15785 orb_with_rovio.cpp:158] Current frame track time cost: 54.766ms
+I0407 16:17:12.300961 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 15 : 1413394882305760512.png
+I0407 16:17:12.354038 15785 orb_with_rovio.cpp:158] Current frame track time cost: 51.0166ms
+I0407 16:17:12.355185 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 16 : 1413394882355760384.png
+I0407 16:17:12.408102 15785 orb_with_rovio.cpp:158] Current frame track time cost: 50.769ms
+I0407 16:17:12.409227 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 17 : 1413394882405760512.png
+I0407 16:17:12.453529 15785 orb_with_rovio.cpp:158] Current frame track time cost: 42.2214ms
+I0407 16:17:12.454658 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 18 : 1413394882455760384.png
+I0407 16:17:12.500391 15785 orb_with_rovio.cpp:158] Current frame track time cost: 43.5768ms
+I0407 16:17:12.501592 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 19 : 1413394882505760512.png
+I0407 16:17:12.548739 15785 orb_with_rovio.cpp:158] Current frame track time cost: 44.6573ms
+I0407 16:17:12.549955 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 20 : 1413394882555760384.png
+I0407 16:17:12.606405 15785 orb_with_rovio.cpp:158] Current frame track time cost: 54.1796ms
+I0407 16:17:12.607671 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 21 : 1413394882605760512.png
+I0407 16:17:12.664970 15785 orb_with_rovio.cpp:158] Current frame track time cost: 53.7976ms
+I0407 16:17:12.666136 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 22 : 1413394882655760384.png
+I0407 16:17:12.731639 15785 orb_with_rovio.cpp:158] Current frame track time cost: 62.9431ms
+I0407 16:17:12.732774 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 23 : 1413394882705760512.png
+I0407 16:17:12.797020 15785 orb_with_rovio.cpp:158] Current frame track time cost: 61.8673ms
+I0407 16:17:12.798187 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 24 : 1413394882755760384.png
+I0407 16:17:12.844365 15785 orb_with_rovio.cpp:158] Current frame track time cost: 43.9489ms
+I0407 16:17:12.845455 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 25 : 1413394882805760512.png
+I0407 16:17:12.894291 15785 orb_with_rovio.cpp:158] Current frame track time cost: 46.4392ms
+I0407 16:17:12.895402 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 26 : 1413394882855760384.png
+I0407 16:17:12.963886 15785 orb_with_rovio.cpp:158] Current frame track time cost: 66.092ms
+I0407 16:17:12.979429 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 27 : 1413394882905760512.png
+I0407 16:17:13.033037 15785 orb_with_rovio.cpp:158] Current frame track time cost: 51.2725ms
+I0407 16:17:13.034183 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 28 : 1413394882955760384.png
+I0407 16:17:13.096973 15785 orb_with_rovio.cpp:158] Current frame track time cost: 60.7663ms
+I0407 16:17:13.098121 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 29 : 1413394883005760512.png
+I0407 16:17:13.157109 15785 orb_with_rovio.cpp:158] Current frame track time cost: 56.8633ms
+I0407 16:17:13.158241 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 30 : 1413394883055760384.png
+I0407 16:17:13.227957 15785 orb_with_rovio.cpp:158] Current frame track time cost: 67.7269ms
+I0407 16:17:13.229140 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 31 : 1413394883105760512.png
+I0407 16:17:13.278585 15785 orb_with_rovio.cpp:158] Current frame track time cost: 47.2297ms
+I0407 16:17:13.279745 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 32 : 1413394883155760384.png
+I0407 16:17:13.330984 15785 orb_with_rovio.cpp:158] Current frame track time cost: 48.8728ms
+I0407 16:17:13.332131 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 33 : 1413394883205760512.png
+I0407 16:17:13.391850 15785 orb_with_rovio.cpp:158] Current frame track time cost: 57.6267ms
+I0407 16:17:13.393018 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 34 : 1413394883255760384.png
+I0407 16:17:13.446483 15785 orb_with_rovio.cpp:158] Current frame track time cost: 51.4028ms
+I0407 16:17:13.447644 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 35 : 1413394883305760512.png
+I0407 16:17:13.497674 15785 orb_with_rovio.cpp:158] Current frame track time cost: 47.8312ms
+I0407 16:17:13.498790 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 36 : 1413394883355760384.png
+I0407 16:17:13.548144 15785 orb_with_rovio.cpp:158] Current frame track time cost: 47.2633ms
+I0407 16:17:13.550215 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 37 : 1413394883405760512.png
+I0407 16:17:13.596627 15785 orb_with_rovio.cpp:158] Current frame track time cost: 44.0447ms
+I0407 16:17:13.597800 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 38 : 1413394883455760384.png
+I0407 16:17:13.643898 15785 orb_with_rovio.cpp:158] Current frame track time cost: 43.7279ms
+I0407 16:17:13.645071 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 39 : 1413394883505760512.png
+I0407 16:17:13.694514 15785 orb_with_rovio.cpp:158] Current frame track time cost: 46.9259ms
+I0407 16:17:13.695668 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 40 : 1413394883555760384.png
+I0407 16:17:13.747264 15785 orb_with_rovio.cpp:158] Current frame track time cost: 49.4812ms
+I0407 16:17:13.748505 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 41 : 1413394883605760512.png
+I0407 16:17:13.799197 15785 orb_with_rovio.cpp:158] Current frame track time cost: 48.1802ms
+I0407 16:17:13.800429 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 42 : 1413394883655760384.png
+I0407 16:17:13.845916 15785 orb_with_rovio.cpp:158] Current frame track time cost: 43.1248ms
+I0407 16:17:13.847128 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 43 : 1413394883705760512.png
+I0407 16:17:13.891547 15785 orb_with_rovio.cpp:158] Current frame track time cost: 42.4964ms
+I0407 16:17:13.896463 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 44 : 1413394883755760384.png
+I0407 16:17:13.948199 15785 orb_with_rovio.cpp:158] Current frame track time cost: 49.6772ms
+I0407 16:17:13.949349 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 45 : 1413394883805760512.png
+I0407 16:17:13.999840 15785 orb_with_rovio.cpp:158] Current frame track time cost: 48.2996ms
+I0407 16:17:14.000953 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 46 : 1413394883855760384.png
+I0407 16:17:14.044132 15785 orb_with_rovio.cpp:158] Current frame track time cost: 41.1278ms
+I0407 16:17:14.045298 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 47 : 1413394883905760512.png
+I0407 16:17:14.095491 15785 orb_with_rovio.cpp:158] Current frame track time cost: 48.164ms
+I0407 16:17:14.096637 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 48 : 1413394883955760384.png
+I0407 16:17:14.142077 15785 orb_with_rovio.cpp:158] Current frame track time cost: 43.387ms
+I0407 16:17:14.143287 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 49 : 1413394884005760512.png
+I0407 16:17:14.202329 15785 orb_with_rovio.cpp:158] Current frame track time cost: 57.0039ms
+I0407 16:17:14.203500 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 50 : 1413394884055760384.png
+I0407 16:17:14.249536 15785 orb_with_rovio.cpp:158] Current frame track time cost: 43.8333ms
+I0407 16:17:14.250735 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 51 : 1413394884105760512.png
+I0407 16:17:14.295934 15785 orb_with_rovio.cpp:158] Current frame track time cost: 42.9394ms
+I0407 16:17:14.297075 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 52 : 1413394884155760384.png
+I0407 16:17:14.344907 15785 orb_with_rovio.cpp:158] Current frame track time cost: 45.7986ms
+I0407 16:17:14.346045 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 53 : 1413394884205760512.png
+I0407 16:17:14.394062 15785 orb_with_rovio.cpp:158] Current frame track time cost: 46.0648ms
+I0407 16:17:14.395216 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 54 : 1413394884255760384.png
+I0407 16:17:14.444351 15785 orb_with_rovio.cpp:158] Current frame track time cost: 47.1213ms
+I0407 16:17:14.445502 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 55 : 1413394884305760512.png
+I0407 16:17:14.505957 15785 orb_with_rovio.cpp:158] Current frame track time cost: 58.4436ms
+I0407 16:17:14.507148 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 56 : 1413394884355760384.png
+I0407 16:17:14.565352 15785 orb_with_rovio.cpp:158] Current frame track time cost: 56.1641ms
+I0407 16:17:14.567155 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 57 : 1413394884405760512.png
+I0407 16:17:14.622279 15785 orb_with_rovio.cpp:158] Current frame track time cost: 53.058ms
+I0407 16:17:14.623440 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 58 : 1413394884455760384.png
+I0407 16:17:14.669432 15785 orb_with_rovio.cpp:158] Current frame track time cost: 43.9418ms
+I0407 16:17:14.670583 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 59 : 1413394884505760512.png
+I0407 16:17:14.726696 15785 orb_with_rovio.cpp:158] Current frame track time cost: 53.872ms
+I0407 16:17:14.727898 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 60 : 1413394884555760384.png
+I0407 16:17:14.775426 15785 orb_with_rovio.cpp:158] Current frame track time cost: 45.4916ms
+I0407 16:17:14.777042 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 61 : 1413394884605760512.png
+I0407 16:17:14.829861 15785 orb_with_rovio.cpp:158] Current frame track time cost: 50.5665ms
+I0407 16:17:14.831049 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 62 : 1413394884655760384.png
+I0407 16:17:14.885191 15785 orb_with_rovio.cpp:158] Current frame track time cost: 52.067ms
+I0407 16:17:14.886363 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 63 : 1413394884705760512.png
+I0407 16:17:14.937479 15785 orb_with_rovio.cpp:158] Current frame track time cost: 49.0686ms
+I0407 16:17:14.938635 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 64 : 1413394884755760384.png
+I0407 16:17:14.986605 15785 orb_with_rovio.cpp:158] Current frame track time cost: 45.9689ms
+I0407 16:17:14.987766 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 65 : 1413394884805760512.png
+I0407 16:17:15.037916 15785 orb_with_rovio.cpp:158] Current frame track time cost: 47.7967ms
+I0407 16:17:15.039058 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 66 : 1413394884855760384.png
+I0407 16:17:15.087169 15785 orb_with_rovio.cpp:158] Current frame track time cost: 46.0581ms
+I0407 16:17:15.088399 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 67 : 1413394884905760512.png
+I0407 16:17:15.133424 15785 orb_with_rovio.cpp:158] Current frame track time cost: 42.7687ms
+I0407 16:17:15.134464 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 68 : 1413394884955760384.png
+I0407 16:17:15.194454 15785 orb_with_rovio.cpp:158] Current frame track time cost: 57.8692ms
+I0407 16:17:15.195547 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 69 : 1413394885005760512.png
+I0407 16:17:15.241467 15785 orb_with_rovio.cpp:158] Current frame track time cost: 43.8336ms
+I0407 16:17:15.242599 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 70 : 1413394885055760384.png
+I0407 16:17:15.288745 15785 orb_with_rovio.cpp:158] Current frame track time cost: 44.1416ms
+I0407 16:17:15.289928 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 71 : 1413394885105760512.png
+I0407 16:17:15.344544 15785 orb_with_rovio.cpp:158] Current frame track time cost: 52.6377ms
+I0407 16:17:15.345693 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 72 : 1413394885155760384.png
+I0407 16:17:15.392294 15785 orb_with_rovio.cpp:158] Current frame track time cost: 44.5242ms
+I0407 16:17:15.393455 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 73 : 1413394885205760512.png
+I0407 16:17:15.441519 15785 orb_with_rovio.cpp:158] Current frame track time cost: 45.9523ms
+I0407 16:17:15.442672 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 74 : 1413394885255760384.png
+I0407 16:17:15.510645 15785 orb_with_rovio.cpp:158] Current frame track time cost: 65.9874ms
+I0407 16:17:15.511780 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 75 : 1413394885305760512.png
+I0407 16:17:15.556442 15785 orb_with_rovio.cpp:158] Current frame track time cost: 42.4948ms
+I0407 16:17:15.557667 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 76 : 1413394885355760384.png
+I0407 16:17:15.611274 15785 orb_with_rovio.cpp:158] Current frame track time cost: 51.3594ms
+I0407 16:17:15.612414 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 77 : 1413394885405760512.png
+I0407 16:17:15.658638 15785 orb_with_rovio.cpp:158] Current frame track time cost: 44.1153ms
+I0407 16:17:15.659807 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 78 : 1413394885455760384.png
+I0407 16:17:15.708005 15785 orb_with_rovio.cpp:158] Current frame track time cost: 46.0577ms
+I0407 16:17:15.709138 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 79 : 1413394885505760512.png
+I0407 16:17:15.757109 15785 orb_with_rovio.cpp:158] Current frame track time cost: 45.98ms
+I0407 16:17:15.758249 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 80 : 1413394885555760384.png
+I0407 16:17:15.812891 15785 orb_with_rovio.cpp:158] Current frame track time cost: 52.5784ms
+I0407 16:17:15.814055 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 81 : 1413394885605760512.png
+I0407 16:17:15.864418 15785 orb_with_rovio.cpp:158] Current frame track time cost: 48.3329ms
+I0407 16:17:15.865557 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 82 : 1413394885655760384.png
+I0407 16:17:15.917975 15785 orb_with_rovio.cpp:158] Current frame track time cost: 50.3953ms
+I0407 16:17:15.919118 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 83 : 1413394885705760512.png
+I0407 16:17:15.968541 15785 orb_with_rovio.cpp:158] Current frame track time cost: 47.4123ms
+I0407 16:17:15.969733 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 84 : 1413394885755760384.png
+I0407 16:17:16.020869 15785 orb_with_rovio.cpp:158] Current frame track time cost: 49.0499ms
+I0407 16:17:16.022073 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 85 : 1413394885805760512.png
+I0407 16:17:16.072013 15785 orb_with_rovio.cpp:158] Current frame track time cost: 47.4201ms
+I0407 16:17:16.073132 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 86 : 1413394885855760384.png
+I0407 16:17:16.122905 15785 orb_with_rovio.cpp:158] Current frame track time cost: 47.7267ms
+I0407 16:17:16.124114 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 87 : 1413394885905760512.png
+I0407 16:17:16.192277 15785 orb_with_rovio.cpp:158] Current frame track time cost: 65.9235ms
+I0407 16:17:16.213697 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 88 : 1413394885955760384.png
+I0407 16:17:16.278053 15785 orb_with_rovio.cpp:158] Current frame track time cost: 62.3312ms
+I0407 16:17:16.279275 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 89 : 1413394886005760512.png
+I0407 16:17:16.356822 15785 orb_with_rovio.cpp:158] Current frame track time cost: 74.5854ms
+I0407 16:17:16.357929 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 90 : 1413394886055760384.png
+I0407 16:17:16.420374 15785 orb_with_rovio.cpp:158] Current frame track time cost: 60.2398ms
+I0407 16:17:16.421484 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 91 : 1413394886105760512.png
+I0407 16:17:16.485085 15785 orb_with_rovio.cpp:158] Current frame track time cost: 61.3001ms
+I0407 16:17:16.486197 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 92 : 1413394886155760384.png
+I0407 16:17:16.567801 15785 orb_with_rovio.cpp:158] Current frame track time cost: 79.5169ms
+I0407 16:17:16.580862 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 93 : 1413394886205760512.png
+I0407 16:17:16.633940 15785 orb_with_rovio.cpp:158] Current frame track time cost: 50.976ms
+I0407 16:17:16.635133 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 94 : 1413394886255760384.png
+I0407 16:17:16.703603 15785 orb_with_rovio.cpp:158] Current frame track time cost: 66.4376ms
+I0407 16:17:16.714385 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 95 : 1413394886305760512.png
+I0407 16:17:16.771739 15785 orb_with_rovio.cpp:158] Current frame track time cost: 55.2967ms
+I0407 16:17:16.779840 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 96 : 1413394886355760384.png
+I0407 16:17:16.837596 15785 orb_with_rovio.cpp:158] Current frame track time cost: 55.6969ms
+I0407 16:17:16.846504 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 97 : 1413394886405760512.png
+I0407 16:17:16.898710 15785 orb_with_rovio.cpp:158] Current frame track time cost: 50.1646ms
+I0407 16:17:16.914809 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 98 : 1413394886455760384.png
+I0407 16:17:16.969333 15785 orb_with_rovio.cpp:158] Current frame track time cost: 52.4757ms
+I0407 16:17:16.970464 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 99 : 1413394886505760512.png
+I0407 16:17:17.024092 15785 orb_with_rovio.cpp:158] Current frame track time cost: 51.6364ms
+I0407 16:17:17.025359 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 100 : 1413394886555760384.png
+I0407 16:17:17.081784 15785 orb_with_rovio.cpp:158] Current frame track time cost: 54.3714ms
+I0407 16:17:17.082963 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 101 : 1413394886605760512.png
+I0407 16:17:17.138720 15785 orb_with_rovio.cpp:158] Current frame track time cost: 53.5338ms
+I0407 16:17:17.139937 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 102 : 1413394886655760384.png
+I0407 16:17:17.193573 15785 orb_with_rovio.cpp:158] Current frame track time cost: 51.4759ms
+I0407 16:17:17.194731 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 103 : 1413394886705760512.png
+I0407 16:17:17.249897 15785 orb_with_rovio.cpp:158] Current frame track time cost: 53.0598ms
+I0407 16:17:17.251080 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 104 : 1413394886755760384.png
+I0407 16:17:17.307508 15785 orb_with_rovio.cpp:158] Current frame track time cost: 54.2281ms
+I0407 16:17:17.308709 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 105 : 1413394886805760512.png
+I0407 16:17:17.370014 15785 orb_with_rovio.cpp:158] Current frame track time cost: 58.9708ms
+I0407 16:17:17.371246 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 106 : 1413394886855760384.png
+I0407 16:17:17.426460 15785 orb_with_rovio.cpp:158] Current frame track time cost: 53.1128ms
+I0407 16:17:17.427695 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 107 : 1413394886905760512.png
+I0407 16:17:17.481391 15785 orb_with_rovio.cpp:158] Current frame track time cost: 51.3642ms
+I0407 16:17:17.482561 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 108 : 1413394886955760384.png
+I0407 16:17:17.536098 15785 orb_with_rovio.cpp:158] Current frame track time cost: 51.5324ms
+I0407 16:17:17.537273 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 109 : 1413394887005760512.png
+I0407 16:17:17.590699 15785 orb_with_rovio.cpp:158] Current frame track time cost: 51.245ms
+I0407 16:17:17.591918 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 110 : 1413394887055760384.png
+I0407 16:17:17.650199 15785 orb_with_rovio.cpp:158] Current frame track time cost: 55.974ms
+I0407 16:17:17.651376 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 111 : 1413394887105760512.png
+I0407 16:17:17.703480 15785 orb_with_rovio.cpp:158] Current frame track time cost: 50.013ms
+I0407 16:17:17.704624 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 112 : 1413394887155760384.png
+I0407 16:17:17.756394 15785 orb_with_rovio.cpp:158] Current frame track time cost: 49.7267ms
+I0407 16:17:17.757550 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 113 : 1413394887205760512.png
+I0407 16:17:17.804445 15785 orb_with_rovio.cpp:158] Current frame track time cost: 44.9291ms
+I0407 16:17:17.805580 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 114 : 1413394887255760384.png
+I0407 16:17:17.864302 15785 orb_with_rovio.cpp:158] Current frame track time cost: 56.8008ms
+I0407 16:17:17.865468 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 115 : 1413394887305760512.png
+I0407 16:17:17.921231 15785 orb_with_rovio.cpp:158] Current frame track time cost: 53.8511ms
+I0407 16:17:17.922441 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 116 : 1413394887355760384.png
+I0407 16:17:17.973909 15785 orb_with_rovio.cpp:158] Current frame track time cost: 49.4614ms
+I0407 16:17:17.975136 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 117 : 1413394887405760512.png
+I0407 16:17:18.026310 15785 orb_with_rovio.cpp:158] Current frame track time cost: 49.018ms
+I0407 16:17:18.027520 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 118 : 1413394887455760384.png
+I0407 16:17:18.077930 15785 orb_with_rovio.cpp:158] Current frame track time cost: 48.3011ms
+I0407 16:17:18.079134 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 119 : 1413394887505760512.png
+I0407 16:17:18.219076 15785 orb_with_rovio.cpp:158] Current frame track time cost: 137.844ms
+I0407 16:17:18.220221 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 120 : 1413394887555760384.png
+I0407 16:17:18.262495 15785 orb_with_rovio.cpp:158] Current frame track time cost: 38.9071ms
+I0407 16:17:18.263679 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 121 : 1413394887605760512.png
+I0407 16:17:18.324520 15785 orb_with_rovio.cpp:158] Current frame track time cost: 58.4889ms
+I0407 16:17:18.325696 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 122 : 1413394887655760384.png
+I0407 16:17:18.376477 15785 orb_with_rovio.cpp:158] Current frame track time cost: 48.6008ms
+I0407 16:17:18.377599 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 123 : 1413394887705760512.png
+I0407 16:17:18.445798 15785 orb_with_rovio.cpp:158] Current frame track time cost: 66.1392ms
+I0407 16:17:18.446961 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 124 : 1413394887755760384.png
+I0407 16:17:18.484076 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.0211ms
+I0407 16:17:18.485220 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 125 : 1413394887805760512.png
+I0407 16:17:18.520915 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.6405ms
+I0407 16:17:18.522084 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 126 : 1413394887855760384.png
+I0407 16:17:18.556819 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.7237ms
+I0407 16:17:18.557960 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 127 : 1413394887905760512.png
+I0407 16:17:18.590879 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.9252ms
+I0407 16:17:18.592027 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 128 : 1413394887955760384.png
+I0407 16:17:18.625676 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.6532ms
+I0407 16:17:18.626816 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 129 : 1413394888005760512.png
+I0407 16:17:18.661254 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.3785ms
+I0407 16:17:18.662391 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 130 : 1413394888055760384.png
+I0407 16:17:18.695312 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.9611ms
+I0407 16:17:18.696462 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 131 : 1413394888105760512.png
+I0407 16:17:18.730219 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.6596ms
+I0407 16:17:18.731436 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 132 : 1413394888155760384.png
+I0407 16:17:18.765344 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.6817ms
+I0407 16:17:18.766479 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 133 : 1413394888205760512.png
+I0407 16:17:18.805208 15785 orb_with_rovio.cpp:158] Current frame track time cost: 36.7437ms
+I0407 16:17:18.806362 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 134 : 1413394888255760384.png
+I0407 16:17:18.840555 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.3244ms
+I0407 16:17:18.841693 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 135 : 1413394888305760512.png
+I0407 16:17:18.878304 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.5768ms
+I0407 16:17:18.879420 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 136 : 1413394888355760384.png
+I0407 16:17:18.912801 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.4063ms
+I0407 16:17:18.913944 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 137 : 1413394888405760512.png
+I0407 16:17:18.949781 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.9142ms
+I0407 16:17:18.950902 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 138 : 1413394888455760384.png
+I0407 16:17:18.985136 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.2671ms
+I0407 16:17:18.986327 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 139 : 1413394888505760512.png
+I0407 16:17:19.021236 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.9706ms
+I0407 16:17:19.022459 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 140 : 1413394888555760384.png
+I0407 16:17:19.062957 15785 orb_with_rovio.cpp:158] Current frame track time cost: 38.6588ms
+I0407 16:17:19.064144 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 141 : 1413394888605760512.png
+I0407 16:17:19.100348 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.3038ms
+I0407 16:17:19.101507 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 142 : 1413394888655760384.png
+I0407 16:17:19.138334 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.4701ms
+I0407 16:17:19.139444 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 143 : 1413394888705760512.png
+I0407 16:17:19.177703 15785 orb_with_rovio.cpp:158] Current frame track time cost: 36.3768ms
+I0407 16:17:19.178870 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 144 : 1413394888755760384.png
+I0407 16:17:19.214138 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.2907ms
+I0407 16:17:19.215353 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 145 : 1413394888805760512.png
+I0407 16:17:19.250653 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.4326ms
+I0407 16:17:19.251744 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 146 : 1413394888855760384.png
+I0407 16:17:19.286831 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.1606ms
+I0407 16:17:19.288008 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 147 : 1413394888905760512.png
+I0407 16:17:19.323678 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.7492ms
+I0407 16:17:19.324818 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 148 : 1413394888955760384.png
+I0407 16:17:19.358791 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.0541ms
+I0407 16:17:19.359962 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 149 : 1413394889005760512.png
+I0407 16:17:19.399150 15785 orb_with_rovio.cpp:158] Current frame track time cost: 37.2123ms
+I0407 16:17:19.400352 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 150 : 1413394889055760384.png
+I0407 16:17:19.434257 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.9961ms
+I0407 16:17:19.435379 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 151 : 1413394889105760512.png
+I0407 16:17:19.467578 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.2236ms
+I0407 16:17:19.468746 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 152 : 1413394889155760384.png
+I0407 16:17:19.500432 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.8175ms
+I0407 16:17:19.501583 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 153 : 1413394889205760512.png
+I0407 16:17:19.533529 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.9078ms
+I0407 16:17:19.534687 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 154 : 1413394889255760384.png
+I0407 16:17:19.566107 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.6028ms
+I0407 16:17:19.567268 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 155 : 1413394889305760512.png
+I0407 16:17:19.597704 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.6631ms
+I0407 16:17:19.598853 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 156 : 1413394889355760384.png
+I0407 16:17:19.629186 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.5273ms
+I0407 16:17:19.630383 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 157 : 1413394889405760512.png
+I0407 16:17:19.660559 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.222ms
+I0407 16:17:19.661723 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 158 : 1413394889455760384.png
+I0407 16:17:19.692080 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.2199ms
+I0407 16:17:19.693265 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 159 : 1413394889505760512.png
+I0407 16:17:19.723726 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.6229ms
+I0407 16:17:19.724859 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 160 : 1413394889555760384.png
+I0407 16:17:19.755295 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.6015ms
+I0407 16:17:19.756451 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 161 : 1413394889605760512.png
+I0407 16:17:19.785776 15785 orb_with_rovio.cpp:158] Current frame track time cost: 27.419ms
+I0407 16:17:19.786916 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 162 : 1413394889655760384.png
+I0407 16:17:19.816781 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.1222ms
+I0407 16:17:19.818434 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 163 : 1413394889705760512.png
+I0407 16:17:19.848949 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.6894ms
+I0407 16:17:19.850116 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 164 : 1413394889755760384.png
+I0407 16:17:19.882576 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.7797ms
+I0407 16:17:19.883760 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 165 : 1413394889805760512.png
+I0407 16:17:19.914484 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.7354ms
+I0407 16:17:19.915647 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 166 : 1413394889855760384.png
+I0407 16:17:19.948413 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.8881ms
+I0407 16:17:19.949578 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 167 : 1413394889905760512.png
+I0407 16:17:19.987107 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.5403ms
+I0407 16:17:19.988276 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 168 : 1413394889955760384.png
+I0407 16:17:20.032456 15785 orb_with_rovio.cpp:158] Current frame track time cost: 42.1391ms
+I0407 16:17:20.033645 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 169 : 1413394890005760512.png
+I0407 16:17:20.078619 15785 orb_with_rovio.cpp:158] Current frame track time cost: 42.3076ms
+I0407 16:17:20.079826 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 170 : 1413394890055760384.png
+I0407 16:17:20.119513 15785 orb_with_rovio.cpp:158] Current frame track time cost: 37.16ms
+I0407 16:17:20.120671 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 171 : 1413394890105760512.png
+I0407 16:17:20.159950 15785 orb_with_rovio.cpp:158] Current frame track time cost: 36.8683ms
+I0407 16:17:20.161106 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 172 : 1413394890155760384.png
+I0407 16:17:20.204924 15785 orb_with_rovio.cpp:158] Current frame track time cost: 41.6843ms
+I0407 16:17:20.206084 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 173 : 1413394890205760512.png
+I0407 16:17:20.248176 15785 orb_with_rovio.cpp:158] Current frame track time cost: 39.1059ms
+I0407 16:17:20.249979 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 174 : 1413394890255760384.png
+I0407 16:17:20.285538 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.6278ms
+I0407 16:17:20.286655 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 175 : 1413394890305760512.png
+I0407 16:17:20.321141 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.659ms
+I0407 16:17:20.322280 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 176 : 1413394890355760384.png
+I0407 16:17:20.355617 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.6216ms
+I0407 16:17:20.356806 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 177 : 1413394890405760512.png
+I0407 16:17:20.391314 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.6605ms
+I0407 16:17:20.392463 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 178 : 1413394890455760384.png
+I0407 16:17:20.426483 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.2326ms
+I0407 16:17:20.427646 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 179 : 1413394890505760512.png
+I0407 16:17:20.461060 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.5725ms
+I0407 16:17:20.462198 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 180 : 1413394890555760384.png
+I0407 16:17:20.497900 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.1391ms
+I0407 16:17:20.499092 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 181 : 1413394890605760512.png
+I0407 16:17:20.531340 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.2216ms
+I0407 16:17:20.532552 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 182 : 1413394890655760384.png
+I0407 16:17:20.565178 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.4921ms
+I0407 16:17:20.566339 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 183 : 1413394890705760512.png
+I0407 16:17:20.598852 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.5224ms
+I0407 16:17:20.600040 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 184 : 1413394890755760384.png
+I0407 16:17:20.632141 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.1928ms
+I0407 16:17:20.633357 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 185 : 1413394890805760512.png
+I0407 16:17:20.663985 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.7357ms
+I0407 16:17:20.665130 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 186 : 1413394890855760384.png
+I0407 16:17:20.709427 15785 orb_with_rovio.cpp:158] Current frame track time cost: 41.8273ms
+I0407 16:17:20.710628 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 187 : 1413394890905760512.png
+I0407 16:17:20.748993 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.814ms
+I0407 16:17:20.750118 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 188 : 1413394890955760384.png
+I0407 16:17:20.784377 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.2058ms
+I0407 16:17:20.785560 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 189 : 1413394891005760512.png
+I0407 16:17:20.820787 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.0583ms
+I0407 16:17:20.821935 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 190 : 1413394891055760384.png
+I0407 16:17:20.859956 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.9699ms
+I0407 16:17:20.861147 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 191 : 1413394891105760512.png
+I0407 16:17:20.900887 15785 orb_with_rovio.cpp:158] Current frame track time cost: 37.7891ms
+I0407 16:17:20.902148 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 192 : 1413394891155760384.png
+I0407 16:17:20.938228 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.124ms
+I0407 16:17:20.939491 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 193 : 1413394891205760512.png
+I0407 16:17:20.975455 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.9639ms
+I0407 16:17:20.976681 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 194 : 1413394891255760384.png
+I0407 16:17:21.014647 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.9154ms
+I0407 16:17:21.015851 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 195 : 1413394891305760512.png
+I0407 16:17:21.050540 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.5013ms
+I0407 16:17:21.051687 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 196 : 1413394891355760384.png
+I0407 16:17:21.085049 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.2136ms
+I0407 16:17:21.086244 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 197 : 1413394891405760512.png
+I0407 16:17:21.119901 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.5981ms
+I0407 16:17:21.121111 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 198 : 1413394891455760384.png
+I0407 16:17:21.153786 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.7344ms
+I0407 16:17:21.160691 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 199 : 1413394891505760512.png
+I0407 16:17:21.194023 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.377ms
+I0407 16:17:21.195250 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 200 : 1413394891555760384.png
+I0407 16:17:21.233696 15785 orb_with_rovio.cpp:158] Current frame track time cost: 36.6261ms
+I0407 16:17:21.234900 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 201 : 1413394891605760512.png
+I0407 16:17:21.308717 15785 orb_with_rovio.cpp:158] Current frame track time cost: 69.8241ms
+I0407 16:17:21.309895 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 202 : 1413394891655760384.png
+I0407 16:17:21.370389 15785 orb_with_rovio.cpp:158] Current frame track time cost: 56.6539ms
+I0407 16:17:21.371608 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 203 : 1413394891705760512.png
+I0407 16:17:21.425007 15785 orb_with_rovio.cpp:158] Current frame track time cost: 50.2569ms
+I0407 16:17:21.426185 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 204 : 1413394891755760384.png
+I0407 16:17:21.473130 15785 orb_with_rovio.cpp:158] Current frame track time cost: 44.2043ms
+I0407 16:17:21.474330 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 205 : 1413394891805760512.png
+I0407 16:17:21.510130 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.3685ms
+I0407 16:17:21.511281 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 206 : 1413394891855760384.png
+I0407 16:17:21.545594 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.4022ms
+I0407 16:17:21.546792 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 207 : 1413394891905760512.png
+I0407 16:17:21.579485 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.0936ms
+I0407 16:17:21.580638 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 208 : 1413394891955760384.png
+I0407 16:17:21.612092 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.8392ms
+I0407 16:17:21.613332 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 209 : 1413394892005760512.png
+I0407 16:17:21.643914 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.9926ms
+I0407 16:17:21.645067 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 210 : 1413394892055760384.png
+I0407 16:17:21.674299 15785 orb_with_rovio.cpp:158] Current frame track time cost: 27.6494ms
+I0407 16:17:21.675453 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 211 : 1413394892105760512.png
+I0407 16:17:21.712676 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.7744ms
+I0407 16:17:21.713884 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 212 : 1413394892155760384.png
+I0407 16:17:21.750857 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.028ms
+I0407 16:17:21.752044 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 213 : 1413394892205760512.png
+I0407 16:17:21.788534 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.8565ms
+I0407 16:17:21.789801 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 214 : 1413394892255760384.png
+I0407 16:17:21.821072 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.7063ms
+I0407 16:17:21.822288 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 215 : 1413394892305760512.png
+I0407 16:17:21.853042 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.1401ms
+I0407 16:17:21.854240 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 216 : 1413394892355760384.png
+I0407 16:17:21.888412 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.5111ms
+I0407 16:17:21.889582 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 217 : 1413394892405760512.png
+I0407 16:17:21.920660 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.4354ms
+I0407 16:17:21.921826 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 218 : 1413394892455760384.png
+I0407 16:17:21.961181 15785 orb_with_rovio.cpp:158] Current frame track time cost: 37.5722ms
+I0407 16:17:21.962371 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 219 : 1413394892505760512.png
+I0407 16:17:21.994016 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.932ms
+I0407 16:17:21.995143 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 220 : 1413394892555760384.png
+I0407 16:17:22.028084 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.2095ms
+I0407 16:17:22.029206 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 221 : 1413394892605760512.png
+I0407 16:17:22.064514 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.544ms
+I0407 16:17:22.065663 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 222 : 1413394892655760384.png
+I0407 16:17:22.100778 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.2926ms
+I0407 16:17:22.101899 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 223 : 1413394892705760512.png
+I0407 16:17:22.153715 15785 orb_with_rovio.cpp:158] Current frame track time cost: 49.9688ms
+I0407 16:17:22.154932 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 224 : 1413394892755760384.png
+I0407 16:17:22.203997 15785 orb_with_rovio.cpp:158] Current frame track time cost: 45.9704ms
+I0407 16:17:22.205133 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 225 : 1413394892805760512.png
+I0407 16:17:22.249266 15785 orb_with_rovio.cpp:158] Current frame track time cost: 41.4405ms
+I0407 16:17:22.250463 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 226 : 1413394892855760384.png
+I0407 16:17:22.290740 15785 orb_with_rovio.cpp:158] Current frame track time cost: 37.8194ms
+I0407 16:17:22.292012 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 227 : 1413394892905760512.png
+I0407 16:17:22.329548 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.2611ms
+I0407 16:17:22.330714 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 228 : 1413394892955760384.png
+I0407 16:17:22.360870 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.4721ms
+I0407 16:17:22.362083 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 229 : 1413394893005760512.png
+I0407 16:17:22.412322 15785 orb_with_rovio.cpp:158] Current frame track time cost: 48.466ms
+I0407 16:17:22.413573 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 230 : 1413394893055760384.png
+I0407 16:17:22.459652 15785 orb_with_rovio.cpp:158] Current frame track time cost: 43.1664ms
+I0407 16:17:22.460883 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 231 : 1413394893105760512.png
+I0407 16:17:22.507374 15785 orb_with_rovio.cpp:158] Current frame track time cost: 43.8724ms
+I0407 16:17:22.508608 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 232 : 1413394893155760384.png
+I0407 16:17:22.544313 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.4074ms
+I0407 16:17:22.545433 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 233 : 1413394893205760512.png
+I0407 16:17:22.577899 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.6868ms
+I0407 16:17:22.579061 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 234 : 1413394893255760384.png
+I0407 16:17:22.617365 15785 orb_with_rovio.cpp:158] Current frame track time cost: 36.6015ms
+I0407 16:17:22.618536 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 235 : 1413394893305760512.png
+I0407 16:17:22.652823 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.4584ms
+I0407 16:17:22.654021 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 236 : 1413394893355760384.png
+I0407 16:17:22.708866 15785 orb_with_rovio.cpp:158] Current frame track time cost: 53.2345ms
+I0407 16:17:22.710077 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 237 : 1413394893405760512.png
+I0407 16:17:22.767618 15785 orb_with_rovio.cpp:158] Current frame track time cost: 53.9126ms
+I0407 16:17:22.768800 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 238 : 1413394893455760384.png
+I0407 16:17:22.818914 15785 orb_with_rovio.cpp:158] Current frame track time cost: 47.3321ms
+I0407 16:17:22.820093 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 239 : 1413394893505760512.png
+I0407 16:17:22.872542 15785 orb_with_rovio.cpp:158] Current frame track time cost: 50.0141ms
+I0407 16:17:22.873734 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 240 : 1413394893555760384.png
+I0407 16:17:22.941510 15785 orb_with_rovio.cpp:158] Current frame track time cost: 65.5068ms
+I0407 16:17:22.942636 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 241 : 1413394893605760512.png
+I0407 16:17:23.006222 15785 orb_with_rovio.cpp:158] Current frame track time cost: 61.6745ms
+I0407 16:17:23.007380 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 242 : 1413394893655760384.png
+I0407 16:17:23.055518 15785 orb_with_rovio.cpp:158] Current frame track time cost: 46.5118ms
+I0407 16:17:23.056659 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 243 : 1413394893705760512.png
+I0407 16:17:23.092844 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.5167ms
+I0407 16:17:23.094027 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 244 : 1413394893755760384.png
+I0407 16:17:23.152495 15785 orb_with_rovio.cpp:158] Current frame track time cost: 56.845ms
+I0407 16:17:23.153697 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 245 : 1413394893805760512.png
+I0407 16:17:23.209906 15785 orb_with_rovio.cpp:158] Current frame track time cost: 54.6297ms
+I0407 16:17:23.211130 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 246 : 1413394893855760384.png
+I0407 16:17:23.313141 15785 orb_with_rovio.cpp:158] Current frame track time cost: 98.3388ms
+I0407 16:17:23.314294 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 247 : 1413394893905760512.png
+I0407 16:17:23.383975 15785 orb_with_rovio.cpp:158] Current frame track time cost: 67.2348ms
+I0407 16:17:23.385179 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 248 : 1413394893955760384.png
+I0407 16:17:23.440827 15785 orb_with_rovio.cpp:158] Current frame track time cost: 53.6588ms
+I0407 16:17:23.441987 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 249 : 1413394894005760512.png
+I0407 16:17:23.492720 15785 orb_with_rovio.cpp:158] Current frame track time cost: 48.9211ms
+I0407 16:17:23.493911 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 250 : 1413394894055760384.png
+I0407 16:17:23.548991 15785 orb_with_rovio.cpp:158] Current frame track time cost: 53.181ms
+I0407 16:17:23.550137 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 251 : 1413394894105760512.png
+I0407 16:17:23.603341 15785 orb_with_rovio.cpp:158] Current frame track time cost: 51.5064ms
+I0407 16:17:23.604492 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 252 : 1413394894155760384.png
+I0407 16:17:23.659194 15785 orb_with_rovio.cpp:158] Current frame track time cost: 52.9495ms
+I0407 16:17:23.660351 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 253 : 1413394894205760512.png
+I0407 16:17:23.744248 15785 orb_with_rovio.cpp:158] Current frame track time cost: 82.1173ms
+I0407 16:17:23.745422 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 254 : 1413394894255760384.png
+I0407 16:17:23.804172 15785 orb_with_rovio.cpp:158] Current frame track time cost: 56.3633ms
+I0407 16:17:23.805338 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 255 : 1413394894305760512.png
+I0407 16:17:23.852010 15785 orb_with_rovio.cpp:158] Current frame track time cost: 44.58ms
+I0407 16:17:23.853185 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 256 : 1413394894355760384.png
+I0407 16:17:23.899257 15785 orb_with_rovio.cpp:158] Current frame track time cost: 43.9079ms
+I0407 16:17:23.900429 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 257 : 1413394894405760512.png
+I0407 16:17:23.946736 15785 orb_with_rovio.cpp:158] Current frame track time cost: 44.4974ms
+I0407 16:17:23.947865 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 258 : 1413394894455760384.png
+I0407 16:17:24.031479 15785 orb_with_rovio.cpp:158] Current frame track time cost: 81.7729ms
+I0407 16:17:24.032649 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 259 : 1413394894505760512.png
+I0407 16:17:24.111580 15785 orb_with_rovio.cpp:158] Current frame track time cost: 75.6179ms
+I0407 16:17:24.116422 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 260 : 1413394894555760384.png
+I0407 16:17:24.185309 15785 orb_with_rovio.cpp:158] Current frame track time cost: 64.0343ms
+I0407 16:17:24.186496 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 261 : 1413394894605760512.png
+I0407 16:17:24.225198 15785 orb_with_rovio.cpp:158] Current frame track time cost: 36.9164ms
+I0407 16:17:24.226294 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 262 : 1413394894655760384.png
+I0407 16:17:24.269397 15785 orb_with_rovio.cpp:158] Current frame track time cost: 41.1766ms
+I0407 16:17:24.270579 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 263 : 1413394894705760512.png
+I0407 16:17:24.311239 15785 orb_with_rovio.cpp:158] Current frame track time cost: 38.9491ms
+I0407 16:17:24.312400 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 264 : 1413394894755760384.png
+I0407 16:17:24.348141 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.0012ms
+I0407 16:17:24.349340 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 265 : 1413394894805760512.png
+I0407 16:17:24.390004 15785 orb_with_rovio.cpp:158] Current frame track time cost: 39.0153ms
+I0407 16:17:24.391207 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 266 : 1413394894855760384.png
+I0407 16:17:24.434284 15785 orb_with_rovio.cpp:158] Current frame track time cost: 41.433ms
+I0407 16:17:24.435474 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 267 : 1413394894905760512.png
+I0407 16:17:24.498231 15785 orb_with_rovio.cpp:158] Current frame track time cost: 61.1131ms
+I0407 16:17:24.499440 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 268 : 1413394894955760384.png
+I0407 16:17:24.557930 15785 orb_with_rovio.cpp:158] Current frame track time cost: 55.0625ms
+I0407 16:17:24.559116 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 269 : 1413394895005760512.png
+I0407 16:17:24.615373 15785 orb_with_rovio.cpp:158] Current frame track time cost: 52.9414ms
+I0407 16:17:24.616624 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 270 : 1413394895055760384.png
+I0407 16:17:24.667541 15785 orb_with_rovio.cpp:158] Current frame track time cost: 48.2148ms
+I0407 16:17:24.668706 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 271 : 1413394895105760512.png
+I0407 16:17:24.712898 15785 orb_with_rovio.cpp:158] Current frame track time cost: 41.7701ms
+I0407 16:17:24.714057 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 272 : 1413394895155760384.png
+I0407 16:17:24.755796 15785 orb_with_rovio.cpp:158] Current frame track time cost: 39.5521ms
+I0407 16:17:24.756947 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 273 : 1413394895205760512.png
+I0407 16:17:24.805970 15785 orb_with_rovio.cpp:158] Current frame track time cost: 47.0581ms
+I0407 16:17:24.807145 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 274 : 1413394895255760384.png
+I0407 16:17:24.848740 15785 orb_with_rovio.cpp:158] Current frame track time cost: 39.62ms
+I0407 16:17:24.849936 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 275 : 1413394895305760512.png
+I0407 16:17:24.905099 15785 orb_with_rovio.cpp:158] Current frame track time cost: 53.1997ms
+I0407 16:17:24.906270 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 276 : 1413394895355760384.png
+I0407 16:17:24.947006 15785 orb_with_rovio.cpp:158] Current frame track time cost: 38.7282ms
+I0407 16:17:24.948773 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 277 : 1413394895405760512.png
+I0407 16:17:24.982293 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.4894ms
+I0407 16:17:24.983508 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 278 : 1413394895455760384.png
+I0407 16:17:25.016644 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.9883ms
+I0407 16:17:25.017830 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 279 : 1413394895505760512.png
+I0407 16:17:25.050516 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.7328ms
+I0407 16:17:25.055508 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 280 : 1413394895555760384.png
+I0407 16:17:25.089231 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.5753ms
+I0407 16:17:25.090433 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 281 : 1413394895605760512.png
+I0407 16:17:25.130818 15785 orb_with_rovio.cpp:158] Current frame track time cost: 38.1753ms
+I0407 16:17:25.131970 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 282 : 1413394895655760384.png
+I0407 16:17:25.170670 15785 orb_with_rovio.cpp:158] Current frame track time cost: 36.6328ms
+I0407 16:17:25.172541 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 283 : 1413394895705760512.png
+I0407 16:17:25.218600 15785 orb_with_rovio.cpp:158] Current frame track time cost: 44.0901ms
+I0407 16:17:25.233892 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 284 : 1413394895755760384.png
+I0407 16:17:25.272330 15785 orb_with_rovio.cpp:158] Current frame track time cost: 36.4386ms
+I0407 16:17:25.273499 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 285 : 1413394895805760512.png
+I0407 16:17:25.308976 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.3271ms
+I0407 16:17:25.310169 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 286 : 1413394895855760384.png
+I0407 16:17:25.347090 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.8071ms
+I0407 16:17:25.348256 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 287 : 1413394895905760512.png
+I0407 16:17:25.385445 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.9241ms
+I0407 16:17:25.386643 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 288 : 1413394895955760384.png
+I0407 16:17:25.422730 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.8077ms
+I0407 16:17:25.424043 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 289 : 1413394896005760512.png
+I0407 16:17:25.462127 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.7473ms
+I0407 16:17:25.463335 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 290 : 1413394896055760384.png
+I0407 16:17:25.499539 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.7854ms
+I0407 16:17:25.500819 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 291 : 1413394896105760512.png
+I0407 16:17:25.537082 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.0029ms
+I0407 16:17:25.538307 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 292 : 1413394896155760384.png
+I0407 16:17:25.573879 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.3755ms
+I0407 16:17:25.575157 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 293 : 1413394896205760512.png
+I0407 16:17:25.660408 15785 orb_with_rovio.cpp:158] Current frame track time cost: 82.9152ms
+I0407 16:17:25.661545 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 294 : 1413394896255760384.png
+I0407 16:17:25.705399 15785 orb_with_rovio.cpp:158] Current frame track time cost: 40.7109ms
+I0407 16:17:25.706684 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 295 : 1413394896305760512.png
+I0407 16:17:25.748167 15785 orb_with_rovio.cpp:158] Current frame track time cost: 38.4939ms
+I0407 16:17:25.749359 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 296 : 1413394896355760384.png
+I0407 16:17:25.787704 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.4483ms
+I0407 16:17:25.788857 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 297 : 1413394896405760512.png
+I0407 16:17:25.827069 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.7156ms
+I0407 16:17:25.828236 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 298 : 1413394896455760384.png
+I0407 16:17:25.861729 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.1612ms
+I0407 16:17:25.862934 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 299 : 1413394896505760512.png
+I0407 16:17:25.897507 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.3825ms
+I0407 16:17:25.898622 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 300 : 1413394896555760384.png
+I0407 16:17:25.933959 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.2267ms
+I0407 16:17:25.935201 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 301 : 1413394896605760512.png
+I0407 16:17:25.993798 15785 orb_with_rovio.cpp:158] Current frame track time cost: 56.2166ms
+I0407 16:17:25.995096 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 302 : 1413394896655760384.png
+I0407 16:17:26.056088 15785 orb_with_rovio.cpp:158] Current frame track time cost: 56.1749ms
+I0407 16:17:26.057380 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 303 : 1413394896705760512.png
+I0407 16:17:26.117043 15785 orb_with_rovio.cpp:158] Current frame track time cost: 55.9243ms
+I0407 16:17:26.118343 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 304 : 1413394896755760384.png
+I0407 16:17:26.161525 15785 orb_with_rovio.cpp:158] Current frame track time cost: 40.3378ms
+I0407 16:17:26.162725 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 305 : 1413394896805760512.png
+I0407 16:17:26.198868 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.0511ms
+I0407 16:17:26.200032 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 306 : 1413394896855760384.png
+I0407 16:17:26.234230 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.3391ms
+I0407 16:17:26.235437 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 307 : 1413394896905760512.png
+I0407 16:17:26.270604 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.2635ms
+I0407 16:17:26.271832 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 308 : 1413394896955760384.png
+I0407 16:17:26.304980 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.3371ms
+I0407 16:17:26.306095 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 309 : 1413394897005760512.png
+I0407 16:17:26.354130 15785 orb_with_rovio.cpp:158] Current frame track time cost: 46.2398ms
+I0407 16:17:26.355366 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 310 : 1413394897055760384.png
+I0407 16:17:26.400914 15785 orb_with_rovio.cpp:158] Current frame track time cost: 42.3692ms
+I0407 16:17:26.402156 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 311 : 1413394897105760512.png
+I0407 16:17:26.440050 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.595ms
+I0407 16:17:26.441308 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 312 : 1413394897155760384.png
+I0407 16:17:26.501405 15785 orb_with_rovio.cpp:158] Current frame track time cost: 57.9122ms
+I0407 16:17:26.502599 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 313 : 1413394897205760512.png
+I0407 16:17:26.562120 15785 orb_with_rovio.cpp:158] Current frame track time cost: 55.3254ms
+I0407 16:17:26.563264 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 314 : 1413394897255760384.png
+I0407 16:17:26.616693 15785 orb_with_rovio.cpp:158] Current frame track time cost: 49.6989ms
+I0407 16:17:26.617820 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 315 : 1413394897305760512.png
+I0407 16:17:26.672279 15785 orb_with_rovio.cpp:158] Current frame track time cost: 51.8248ms
+I0407 16:17:26.673437 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 316 : 1413394897355760384.png
+I0407 16:17:26.716460 15785 orb_with_rovio.cpp:158] Current frame track time cost: 40.7955ms
+I0407 16:17:26.717675 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 317 : 1413394897405760512.png
+I0407 16:17:26.753263 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.318ms
+I0407 16:17:26.754487 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 318 : 1413394897455760384.png
+I0407 16:17:26.788563 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.8818ms
+I0407 16:17:26.789692 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 319 : 1413394897505760512.png
+I0407 16:17:26.824510 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.6069ms
+I0407 16:17:26.825723 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 320 : 1413394897555760384.png
+I0407 16:17:26.862864 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.8838ms
+I0407 16:17:26.864046 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 321 : 1413394897605760512.png
+I0407 16:17:26.907517 15785 orb_with_rovio.cpp:158] Current frame track time cost: 41.3395ms
+I0407 16:17:26.908696 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 322 : 1413394897655760384.png
+I0407 16:17:26.944057 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.309ms
+I0407 16:17:26.956352 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 323 : 1413394897705760512.png
+I0407 16:17:26.997723 15785 orb_with_rovio.cpp:158] Current frame track time cost: 39.3188ms
+I0407 16:17:26.998919 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 324 : 1413394897755760384.png
+I0407 16:17:27.076489 15785 orb_with_rovio.cpp:158] Current frame track time cost: 72.314ms
+I0407 16:17:27.077751 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 325 : 1413394897805760512.png
+I0407 16:17:27.134974 15785 orb_with_rovio.cpp:158] Current frame track time cost: 53.3487ms
+I0407 16:17:27.136184 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 326 : 1413394897855760384.png
+I0407 16:17:27.176429 15785 orb_with_rovio.cpp:158] Current frame track time cost: 37.5937ms
+I0407 16:17:27.177609 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 327 : 1413394897905760512.png
+I0407 16:17:27.216091 15785 orb_with_rovio.cpp:158] Current frame track time cost: 36.5214ms
+I0407 16:17:27.217314 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 328 : 1413394897955760384.png
+I0407 16:17:27.261946 15785 orb_with_rovio.cpp:158] Current frame track time cost: 42.8323ms
+I0407 16:17:27.263145 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 329 : 1413394898005760512.png
+I0407 16:17:27.305775 15785 orb_with_rovio.cpp:158] Current frame track time cost: 40.953ms
+I0407 16:17:27.307018 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 330 : 1413394898055760384.png
+I0407 16:17:27.344897 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.9801ms
+I0407 16:17:27.346081 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 331 : 1413394898105760512.png
+I0407 16:17:27.383888 15785 orb_with_rovio.cpp:158] Current frame track time cost: 36.2048ms
+I0407 16:17:27.385129 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 332 : 1413394898155760384.png
+I0407 16:17:27.460170 15785 orb_with_rovio.cpp:158] Current frame track time cost: 70.9345ms
+I0407 16:17:27.461382 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 333 : 1413394898205760512.png
+I0407 16:17:27.522716 15785 orb_with_rovio.cpp:158] Current frame track time cost: 58.31ms
+I0407 16:17:27.523926 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 334 : 1413394898255760384.png
+I0407 16:17:27.572598 15785 orb_with_rovio.cpp:158] Current frame track time cost: 46.0721ms
+I0407 16:17:27.573772 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 335 : 1413394898305760512.png
+I0407 16:17:27.615924 15785 orb_with_rovio.cpp:158] Current frame track time cost: 39.9438ms
+I0407 16:17:27.617116 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 336 : 1413394898355760384.png
+I0407 16:17:27.653599 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.4445ms
+I0407 16:17:27.654783 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 337 : 1413394898405760512.png
+I0407 16:17:27.694365 15785 orb_with_rovio.cpp:158] Current frame track time cost: 37.3698ms
+I0407 16:17:27.695569 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 338 : 1413394898455760384.png
+I0407 16:17:27.739925 15785 orb_with_rovio.cpp:158] Current frame track time cost: 42.2255ms
+I0407 16:17:27.741101 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 339 : 1413394898505760512.png
+I0407 16:17:27.778941 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.8484ms
+I0407 16:17:27.780086 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 340 : 1413394898555760384.png
+I0407 16:17:27.813464 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.7416ms
+I0407 16:17:27.814647 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 341 : 1413394898605760512.png
+I0407 16:17:27.851799 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.5132ms
+I0407 16:17:27.852990 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 342 : 1413394898655760384.png
+I0407 16:17:27.887686 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.8107ms
+I0407 16:17:27.888828 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 343 : 1413394898705760512.png
+I0407 16:17:27.922487 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.0186ms
+I0407 16:17:27.923666 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 344 : 1413394898755760384.png
+I0407 16:17:27.963240 15785 orb_with_rovio.cpp:158] Current frame track time cost: 37.9053ms
+I0407 16:17:27.964365 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 345 : 1413394898805760512.png
+I0407 16:17:28.000511 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.3485ms
+I0407 16:17:28.001657 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 346 : 1413394898855760384.png
+I0407 16:17:28.053496 15785 orb_with_rovio.cpp:158] Current frame track time cost: 50.1975ms
+I0407 16:17:28.054632 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 347 : 1413394898905760512.png
+I0407 16:17:28.106277 15785 orb_with_rovio.cpp:158] Current frame track time cost: 49.9692ms
+I0407 16:17:28.107517 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 348 : 1413394898955760384.png
+I0407 16:17:28.164340 15785 orb_with_rovio.cpp:158] Current frame track time cost: 55.1204ms
+I0407 16:17:28.165488 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 349 : 1413394899005760512.png
+I0407 16:17:28.247912 15785 orb_with_rovio.cpp:158] Current frame track time cost: 80.7002ms
+I0407 16:17:28.249084 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 350 : 1413394899055760384.png
+I0407 16:17:28.314785 15785 orb_with_rovio.cpp:158] Current frame track time cost: 62.8592ms
+I0407 16:17:28.323587 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 351 : 1413394899105760512.png
+I0407 16:17:28.378404 15785 orb_with_rovio.cpp:158] Current frame track time cost: 52.7591ms
+I0407 16:17:28.379458 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 352 : 1413394899155760384.png
+I0407 16:17:28.421325 15785 orb_with_rovio.cpp:158] Current frame track time cost: 40.0163ms
+I0407 16:17:28.422545 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 353 : 1413394899205760512.png
+I0407 16:17:28.470759 15785 orb_with_rovio.cpp:158] Current frame track time cost: 46.3859ms
+I0407 16:17:28.471900 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 354 : 1413394899255760384.png
+I0407 16:17:28.520146 15785 orb_with_rovio.cpp:158] Current frame track time cost: 46.5113ms
+I0407 16:17:28.521409 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 355 : 1413394899305760512.png
+I0407 16:17:28.572959 15785 orb_with_rovio.cpp:158] Current frame track time cost: 49.6528ms
+I0407 16:17:28.574101 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 356 : 1413394899355760384.png
+I0407 16:17:28.626179 15785 orb_with_rovio.cpp:158] Current frame track time cost: 50.4162ms
+I0407 16:17:28.627308 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 357 : 1413394899405760512.png
+I0407 16:17:28.684525 15785 orb_with_rovio.cpp:158] Current frame track time cost: 55.5226ms
+I0407 16:17:28.685674 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 358 : 1413394899455760384.png
+I0407 16:17:28.741647 15785 orb_with_rovio.cpp:158] Current frame track time cost: 54.2752ms
+I0407 16:17:28.742795 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 359 : 1413394899505760512.png
+I0407 16:17:28.841007 15785 orb_with_rovio.cpp:158] Current frame track time cost: 96.5127ms
+I0407 16:17:28.842185 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 360 : 1413394899555760384.png
+I0407 16:17:28.916334 15785 orb_with_rovio.cpp:158] Current frame track time cost: 71.2278ms
+I0407 16:17:28.917513 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 361 : 1413394899605760512.png
+I0407 16:17:28.958158 15785 orb_with_rovio.cpp:158] Current frame track time cost: 38.3639ms
+I0407 16:17:28.959367 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 362 : 1413394899655760384.png
+I0407 16:17:29.026831 15785 orb_with_rovio.cpp:158] Current frame track time cost: 65.6409ms
+I0407 16:17:29.028010 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 363 : 1413394899705760512.png
+I0407 16:17:29.084141 15785 orb_with_rovio.cpp:158] Current frame track time cost: 53.9162ms
+I0407 16:17:29.085393 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 364 : 1413394899755760384.png
+I0407 16:17:29.133936 15785 orb_with_rovio.cpp:158] Current frame track time cost: 46.5172ms
+I0407 16:17:29.135149 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 365 : 1413394899805760512.png
+I0407 16:17:29.183531 15785 orb_with_rovio.cpp:158] Current frame track time cost: 46.5479ms
+I0407 16:17:29.184795 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 366 : 1413394899855760384.png
+I0407 16:17:29.237406 15785 orb_with_rovio.cpp:158] Current frame track time cost: 50.7496ms
+I0407 16:17:29.238605 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 367 : 1413394899905760512.png
+I0407 16:17:29.289813 15785 orb_with_rovio.cpp:158] Current frame track time cost: 49.4302ms
+I0407 16:17:29.290978 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 368 : 1413394899955760384.png
+I0407 16:17:29.342373 15785 orb_with_rovio.cpp:158] Current frame track time cost: 49.3765ms
+I0407 16:17:29.343590 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 369 : 1413394900005760512.png
+I0407 16:17:29.392299 15785 orb_with_rovio.cpp:158] Current frame track time cost: 46.7404ms
+I0407 16:17:29.393414 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 370 : 1413394900055760384.png
+I0407 16:17:29.440026 15785 orb_with_rovio.cpp:158] Current frame track time cost: 44.7057ms
+I0407 16:17:29.441181 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 371 : 1413394900105760512.png
+I0407 16:17:29.486448 15785 orb_with_rovio.cpp:158] Current frame track time cost: 43.3482ms
+I0407 16:17:29.487594 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 372 : 1413394900155760384.png
+I0407 16:17:29.521409 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.8767ms
+I0407 16:17:29.522603 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 373 : 1413394900205760512.png
+I0407 16:17:29.610353 15785 orb_with_rovio.cpp:158] Current frame track time cost: 83.2019ms
+I0407 16:17:29.611538 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 374 : 1413394900255760384.png
+I0407 16:17:29.689328 15785 orb_with_rovio.cpp:158] Current frame track time cost: 74.6957ms
+I0407 16:17:29.690593 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 375 : 1413394900305760512.png
+I0407 16:17:29.746960 15785 orb_with_rovio.cpp:158] Current frame track time cost: 54.0141ms
+I0407 16:17:29.748117 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 376 : 1413394900355760384.png
+I0407 16:17:29.796116 15785 orb_with_rovio.cpp:158] Current frame track time cost: 45.9177ms
+I0407 16:17:29.797232 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 377 : 1413394900405760512.png
+I0407 16:17:29.839280 15785 orb_with_rovio.cpp:158] Current frame track time cost: 40.1352ms
+I0407 16:17:29.840462 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 378 : 1413394900455760384.png
+I0407 16:17:29.877646 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.2294ms
+I0407 16:17:29.878885 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 379 : 1413394900505760512.png
+I0407 16:17:29.929946 15785 orb_with_rovio.cpp:158] Current frame track time cost: 48.94ms
+I0407 16:17:29.931166 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 380 : 1413394900555760384.png
+I0407 16:17:29.985425 15785 orb_with_rovio.cpp:158] Current frame track time cost: 52.2306ms
+I0407 16:17:29.986589 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 381 : 1413394900605760512.png
+I0407 16:17:30.057257 15785 orb_with_rovio.cpp:158] Current frame track time cost: 68.7544ms
+I0407 16:17:30.058450 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 382 : 1413394900655760384.png
+I0407 16:17:30.122330 15785 orb_with_rovio.cpp:158] Current frame track time cost: 61.2663ms
+I0407 16:17:30.123512 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 383 : 1413394900705760512.png
+I0407 16:17:30.176846 15785 orb_with_rovio.cpp:158] Current frame track time cost: 51.1005ms
+I0407 16:17:30.177971 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 384 : 1413394900755760384.png
+I0407 16:17:30.219185 15785 orb_with_rovio.cpp:158] Current frame track time cost: 39.3332ms
+I0407 16:17:30.220363 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 385 : 1413394900805760512.png
+I0407 16:17:30.262032 15785 orb_with_rovio.cpp:158] Current frame track time cost: 39.9265ms
+I0407 16:17:30.263321 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 386 : 1413394900855760384.png
+I0407 16:17:30.305140 15785 orb_with_rovio.cpp:158] Current frame track time cost: 39.9754ms
+I0407 16:17:30.306764 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 387 : 1413394900905760512.png
+I0407 16:17:30.354035 15785 orb_with_rovio.cpp:158] Current frame track time cost: 45.5237ms
+I0407 16:17:30.355249 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 388 : 1413394900955760384.png
+I0407 16:17:30.413054 15785 orb_with_rovio.cpp:158] Current frame track time cost: 55.999ms
+I0407 16:17:30.414225 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 389 : 1413394901005760512.png
+I0407 16:17:30.460278 15785 orb_with_rovio.cpp:158] Current frame track time cost: 44.2426ms
+I0407 16:17:30.461472 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 390 : 1413394901055760384.png
+I0407 16:17:30.505347 15785 orb_with_rovio.cpp:158] Current frame track time cost: 42.0548ms
+I0407 16:17:30.506544 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 391 : 1413394901105760512.png
+I0407 16:17:30.551858 15785 orb_with_rovio.cpp:158] Current frame track time cost: 43.6151ms
+I0407 16:17:30.553063 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 392 : 1413394901155760384.png
+I0407 16:17:30.605348 15785 orb_with_rovio.cpp:158] Current frame track time cost: 50.6062ms
+I0407 16:17:30.606578 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 393 : 1413394901205760512.png
+I0407 16:17:30.641897 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.559ms
+I0407 16:17:30.643139 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 394 : 1413394901255760384.png
+I0407 16:17:30.676040 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.1922ms
+I0407 16:17:30.677232 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 395 : 1413394901305760512.png
+I0407 16:17:30.707468 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.6278ms
+I0407 16:17:30.708595 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 396 : 1413394901355760384.png
+I0407 16:17:30.738797 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.5209ms
+I0407 16:17:30.740028 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 397 : 1413394901405760512.png
+I0407 16:17:30.772217 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.6386ms
+I0407 16:17:30.773552 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 398 : 1413394901455760384.png
+I0407 16:17:30.806898 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.7757ms
+I0407 16:17:30.808037 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 399 : 1413394901505760512.png
+I0407 16:17:30.842131 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.466ms
+I0407 16:17:30.843293 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 400 : 1413394901555760384.png
+I0407 16:17:30.876345 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.3405ms
+I0407 16:17:30.877462 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 401 : 1413394901605760512.png
+I0407 16:17:30.910045 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.8523ms
+I0407 16:17:30.911212 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 402 : 1413394901655760384.png
+I0407 16:17:30.943588 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.5502ms
+I0407 16:17:30.944782 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 403 : 1413394901705760512.png
+I0407 16:17:30.976589 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.0052ms
+I0407 16:17:30.977767 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 404 : 1413394901755760384.png
+I0407 16:17:31.013490 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.9497ms
+I0407 16:17:31.014642 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 405 : 1413394901805760512.png
+I0407 16:17:31.045593 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.3075ms
+I0407 16:17:31.047397 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 406 : 1413394901855760384.png
+I0407 16:17:31.080373 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.2789ms
+I0407 16:17:31.081531 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 407 : 1413394901905760512.png
+I0407 16:17:31.111800 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.6801ms
+I0407 16:17:31.113003 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 408 : 1413394901955760384.png
+I0407 16:17:31.144708 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.0605ms
+I0407 16:17:31.145853 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 409 : 1413394902005760512.png
+I0407 16:17:31.176698 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.9076ms
+I0407 16:17:31.177865 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 410 : 1413394902055760384.png
+I0407 16:17:31.211225 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.6044ms
+I0407 16:17:31.212343 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 411 : 1413394902105760512.png
+I0407 16:17:31.247176 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.1684ms
+I0407 16:17:31.248324 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 412 : 1413394902155760384.png
+I0407 16:17:31.285254 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.3501ms
+I0407 16:17:31.286418 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 413 : 1413394902205760512.png
+I0407 16:17:31.318948 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.9577ms
+I0407 16:17:31.320135 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 414 : 1413394902255760384.png
+I0407 16:17:31.350685 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.0072ms
+I0407 16:17:31.351841 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 415 : 1413394902305760512.png
+I0407 16:17:31.381494 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.065ms
+I0407 16:17:31.382591 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 416 : 1413394902355760384.png
+I0407 16:17:31.417269 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.1044ms
+I0407 16:17:31.418431 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 417 : 1413394902405760512.png
+I0407 16:17:31.459480 15785 orb_with_rovio.cpp:158] Current frame track time cost: 39.4698ms
+I0407 16:17:31.460691 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 418 : 1413394902455760384.png
+I0407 16:17:31.492636 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.3621ms
+I0407 16:17:31.493757 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 419 : 1413394902505760512.png
+I0407 16:17:31.525466 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.0393ms
+I0407 16:17:31.526612 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 420 : 1413394902555760384.png
+I0407 16:17:31.558589 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.4003ms
+I0407 16:17:31.559767 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 421 : 1413394902605760512.png
+I0407 16:17:31.591336 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.8776ms
+I0407 16:17:31.592578 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 422 : 1413394902655760384.png
+I0407 16:17:31.628399 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.1422ms
+I0407 16:17:31.629554 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 423 : 1413394902705760512.png
+I0407 16:17:31.668110 15785 orb_with_rovio.cpp:158] Current frame track time cost: 36.675ms
+I0407 16:17:31.669353 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 424 : 1413394902755760384.png
+I0407 16:17:31.701777 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.3136ms
+I0407 16:17:31.702929 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 425 : 1413394902805760512.png
+I0407 16:17:31.742861 15785 orb_with_rovio.cpp:158] Current frame track time cost: 37.9156ms
+I0407 16:17:31.744029 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 426 : 1413394902855760384.png
+I0407 16:17:31.778482 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.4491ms
+I0407 16:17:31.779824 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 427 : 1413394902905760512.png
+I0407 16:17:31.812942 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.2314ms
+I0407 16:17:31.814198 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 428 : 1413394902955760384.png
+I0407 16:17:31.875443 15785 orb_with_rovio.cpp:158] Current frame track time cost: 59.2159ms
+I0407 16:17:31.876621 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 429 : 1413394903055760384.png
+I0407 16:17:31.919395 15785 orb_with_rovio.cpp:158] Current frame track time cost: 40.9958ms
+I0407 16:17:31.920583 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 430 : 1413394903155760384.png
+I0407 16:17:31.959300 15785 orb_with_rovio.cpp:158] Current frame track time cost: 37.0636ms
+I0407 16:17:31.960474 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 431 : 1413394903255760384.png
+I0407 16:17:31.994576 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.4996ms
+I0407 16:17:31.995720 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 432 : 1413394903355760384.png
+I0407 16:17:32.030344 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.828ms
+I0407 16:17:32.031491 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 433 : 1413394903455760384.png
+I0407 16:17:32.063338 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.9514ms
+I0407 16:17:32.064569 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 434 : 1413394903555760384.png
+I0407 16:17:32.098434 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.8706ms
+I0407 16:17:32.099658 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 435 : 1413394903605760512.png
+I0407 16:17:32.121760 15785 orb_with_rovio.cpp:158] Current frame track time cost: 19.7664ms
+I0407 16:17:32.123023 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 436 : 1413394903655760384.png
+I0407 16:17:32.156100 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.7457ms
+I0407 16:17:32.157274 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 437 : 1413394903705760512.png
+I0407 16:17:32.189250 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.2625ms
+I0407 16:17:32.190418 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 438 : 1413394903755760384.png
+I0407 16:17:32.224429 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.9055ms
+I0407 16:17:32.225617 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 439 : 1413394903805760512.png
+I0407 16:17:32.258416 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.0372ms
+I0407 16:17:32.259564 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 440 : 1413394903855760384.png
+I0407 16:17:32.293109 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.7437ms
+I0407 16:17:32.294282 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 441 : 1413394903905760512.png
+I0407 16:17:32.326860 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.5196ms
+I0407 16:17:32.328024 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 442 : 1413394903955760384.png
+I0407 16:17:32.371464 15785 orb_with_rovio.cpp:158] Current frame track time cost: 41.1136ms
+I0407 16:17:32.372640 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 443 : 1413394904005760512.png
+I0407 16:17:32.409261 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.2106ms
+I0407 16:17:32.410414 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 444 : 1413394904055760384.png
+I0407 16:17:32.446743 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.3746ms
+I0407 16:17:32.447906 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 445 : 1413394904105760512.png
+I0407 16:17:32.505462 15785 orb_with_rovio.cpp:158] Current frame track time cost: 55.5128ms
+I0407 16:17:32.506651 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 446 : 1413394904155760384.png
+I0407 16:17:32.563858 15785 orb_with_rovio.cpp:158] Current frame track time cost: 53.1046ms
+I0407 16:17:32.565081 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 447 : 1413394904205760512.png
+I0407 16:17:32.610100 15785 orb_with_rovio.cpp:158] Current frame track time cost: 42.3847ms
+I0407 16:17:32.611382 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 448 : 1413394904255760384.png
+I0407 16:17:32.651501 15785 orb_with_rovio.cpp:158] Current frame track time cost: 37.7883ms
+I0407 16:17:32.652660 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 449 : 1413394904305760512.png
+I0407 16:17:32.688181 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.5658ms
+I0407 16:17:32.689440 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 450 : 1413394904355760384.png
+I0407 16:17:32.723690 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.3337ms
+I0407 16:17:32.724855 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 451 : 1413394904405760512.png
+I0407 16:17:32.758931 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.1673ms
+I0407 16:17:32.760192 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 452 : 1413394904455760384.png
+I0407 16:17:32.793597 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.4562ms
+I0407 16:17:32.794750 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 453 : 1413394904505760512.png
+I0407 16:17:32.827930 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.0986ms
+I0407 16:17:32.829110 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 454 : 1413394904555760384.png
+I0407 16:17:32.861755 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.5895ms
+I0407 16:17:32.862934 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 455 : 1413394904605760512.png
+I0407 16:17:32.899840 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.9686ms
+I0407 16:17:32.901020 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 456 : 1413394904655760384.png
+I0407 16:17:32.936156 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.2944ms
+I0407 16:17:32.937325 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 457 : 1413394904705760512.png
+I0407 16:17:32.970924 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.7135ms
+I0407 16:17:32.972093 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 458 : 1413394904755760384.png
+I0407 16:17:33.005108 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.0003ms
+I0407 16:17:33.006248 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 459 : 1413394904805760512.png
+I0407 16:17:33.064868 15785 orb_with_rovio.cpp:158] Current frame track time cost: 56.802ms
+I0407 16:17:33.066036 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 460 : 1413394904855760384.png
+I0407 16:17:33.121681 15785 orb_with_rovio.cpp:158] Current frame track time cost: 51.241ms
+I0407 16:17:33.122829 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 461 : 1413394904905760512.png
+I0407 16:17:33.168321 15785 orb_with_rovio.cpp:158] Current frame track time cost: 42.5695ms
+I0407 16:17:33.169482 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 462 : 1413394904955760384.png
+I0407 16:17:33.210762 15785 orb_with_rovio.cpp:158] Current frame track time cost: 38.764ms
+I0407 16:17:33.211957 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 463 : 1413394905005760512.png
+I0407 16:17:33.244659 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.5547ms
+I0407 16:17:33.245810 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 464 : 1413394905055760384.png
+I0407 16:17:33.282050 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.4471ms
+I0407 16:17:33.283183 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 465 : 1413394905105760512.png
+I0407 16:17:33.315511 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.4764ms
+I0407 16:17:33.316777 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 466 : 1413394905155760384.png
+I0407 16:17:33.351858 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.1735ms
+I0407 16:17:33.353081 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 467 : 1413394905205760512.png
+I0407 16:17:33.384673 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.0302ms
+I0407 16:17:33.385895 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 468 : 1413394905255760384.png
+I0407 16:17:33.424392 15785 orb_with_rovio.cpp:158] Current frame track time cost: 36.9091ms
+I0407 16:17:33.425535 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 469 : 1413394905305760512.png
+I0407 16:17:33.456998 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.8764ms
+I0407 16:17:33.458173 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 470 : 1413394905355760384.png
+I0407 16:17:33.493600 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.8964ms
+I0407 16:17:33.494828 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 471 : 1413394905405760512.png
+I0407 16:17:33.532671 15785 orb_with_rovio.cpp:158] Current frame track time cost: 36.1242ms
+I0407 16:17:33.533849 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 472 : 1413394905455760384.png
+I0407 16:17:33.570312 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.7335ms
+I0407 16:17:33.571497 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 473 : 1413394905505760512.png
+I0407 16:17:33.604599 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.4878ms
+I0407 16:17:33.605787 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 474 : 1413394905555760384.png
+I0407 16:17:33.637094 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.502ms
+I0407 16:17:33.638352 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 475 : 1413394905605760512.png
+I0407 16:17:33.673071 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.9327ms
+I0407 16:17:33.674284 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 476 : 1413394905655760384.png
+I0407 16:17:33.707700 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.8145ms
+I0407 16:17:33.708899 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 477 : 1413394905705760512.png
+I0407 16:17:33.741336 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.7625ms
+I0407 16:17:33.742568 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 478 : 1413394905755760384.png
+I0407 16:17:33.777104 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.5621ms
+I0407 16:17:33.778288 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 479 : 1413394905805760512.png
+I0407 16:17:33.812001 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.8944ms
+I0407 16:17:33.813110 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 480 : 1413394905855760384.png
+I0407 16:17:33.845867 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.1372ms
+I0407 16:17:33.847097 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 481 : 1413394905905760512.png
+I0407 16:17:33.879130 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.4143ms
+I0407 16:17:33.880314 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 482 : 1413394905955760384.png
+I0407 16:17:33.911514 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.582ms
+I0407 16:17:33.912675 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 483 : 1413394906005760512.png
+I0407 16:17:33.946030 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.4937ms
+I0407 16:17:33.947162 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 484 : 1413394906055760384.png
+I0407 16:17:33.976884 15785 orb_with_rovio.cpp:158] Current frame track time cost: 28.0391ms
+I0407 16:17:33.978132 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 485 : 1413394906105760512.png
+I0407 16:17:34.009346 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.1729ms
+I0407 16:17:34.010488 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 486 : 1413394906155760384.png
+I0407 16:17:34.040086 15785 orb_with_rovio.cpp:158] Current frame track time cost: 27.7345ms
+I0407 16:17:34.041182 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 487 : 1413394906205760512.png
+I0407 16:17:34.072850 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.9244ms
+I0407 16:17:34.074002 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 488 : 1413394906255760384.png
+I0407 16:17:34.103570 15785 orb_with_rovio.cpp:158] Current frame track time cost: 27.9223ms
+I0407 16:17:34.104910 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 489 : 1413394906305760512.png
+I0407 16:17:34.136335 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.4714ms
+I0407 16:17:34.137486 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 490 : 1413394906355760384.png
+I0407 16:17:34.169068 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.7306ms
+I0407 16:17:34.170120 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 491 : 1413394906405760512.png
+I0407 16:17:34.202224 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.4366ms
+I0407 16:17:34.203382 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 492 : 1413394906455760384.png
+I0407 16:17:34.236115 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.8438ms
+I0407 16:17:34.237251 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 493 : 1413394906505760512.png
+I0407 16:17:34.269809 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.6165ms
+I0407 16:17:34.271067 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 494 : 1413394906555760384.png
+I0407 16:17:34.302233 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.2365ms
+I0407 16:17:34.303367 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 495 : 1413394906605760512.png
+I0407 16:17:34.338969 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.6214ms
+I0407 16:17:34.340025 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 496 : 1413394906655760384.png
+I0407 16:17:34.372628 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.4469ms
+I0407 16:17:34.373728 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 497 : 1413394906705760512.png
+I0407 16:17:34.406018 15785 orb_with_rovio.cpp:158] Current frame track time cost: 29.7115ms
+I0407 16:17:34.407146 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 498 : 1413394906755760384.png
+I0407 16:17:34.444559 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.3036ms
+I0407 16:17:34.445659 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 499 : 1413394906805760512.png
+I0407 16:17:34.480341 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.7255ms
+I0407 16:17:34.481472 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 500 : 1413394906855760384.png
+I0407 16:17:34.516665 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.7646ms
+I0407 16:17:34.517834 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 501 : 1413394906905760512.png
+I0407 16:17:34.556632 15785 orb_with_rovio.cpp:158] Current frame track time cost: 36.5962ms
+I0407 16:17:34.557792 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 502 : 1413394906955760384.png
+I0407 16:17:34.592615 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.7726ms
+I0407 16:17:34.594501 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 503 : 1413394907005760512.png
+I0407 16:17:34.631846 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.1794ms
+I0407 16:17:34.633015 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 504 : 1413394907055760384.png
+I0407 16:17:34.666759 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.9598ms
+I0407 16:17:34.667942 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 505 : 1413394907105760512.png
+I0407 16:17:34.702260 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.2695ms
+I0407 16:17:34.703791 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 506 : 1413394907155760384.png
+I0407 16:17:34.737891 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.0968ms
+I0407 16:17:34.739186 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 507 : 1413394907205760512.png
+I0407 16:17:34.774483 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.3896ms
+I0407 16:17:34.775642 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 508 : 1413394907255760384.png
+I0407 16:17:34.809924 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.3142ms
+I0407 16:17:34.811029 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 509 : 1413394907305760512.png
+I0407 16:17:34.844472 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.4938ms
+I0407 16:17:34.845584 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 510 : 1413394907355760384.png
+I0407 16:17:34.879542 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.1123ms
+I0407 16:17:34.880677 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 511 : 1413394907405760512.png
+I0407 16:17:34.912761 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.3374ms
+I0407 16:17:34.913940 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 512 : 1413394907455760384.png
+I0407 16:17:34.949864 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.0516ms
+I0407 16:17:34.950999 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 513 : 1413394907505760512.png
+I0407 16:17:34.986778 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.9153ms
+I0407 16:17:34.987934 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 514 : 1413394907555760384.png
+I0407 16:17:35.020557 15785 orb_with_rovio.cpp:158] Current frame track time cost: 30.8356ms
+I0407 16:17:35.021709 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 515 : 1413394907605760512.png
+I0407 16:17:35.058106 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.6414ms
+I0407 16:17:35.059250 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 516 : 1413394907655760384.png
+I0407 16:17:35.092741 15785 orb_with_rovio.cpp:158] Current frame track time cost: 31.5888ms
+I0407 16:17:35.093961 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 517 : 1413394907705760512.png
+I0407 16:17:35.133831 15785 orb_with_rovio.cpp:158] Current frame track time cost: 37.5352ms
+I0407 16:17:35.134965 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 518 : 1413394907755760384.png
+I0407 16:17:35.183511 15785 orb_with_rovio.cpp:158] Current frame track time cost: 46.4146ms
+I0407 16:17:35.184631 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 519 : 1413394907805760512.png
+I0407 16:17:35.239513 15785 orb_with_rovio.cpp:158] Current frame track time cost: 52.9961ms
+I0407 16:17:35.240692 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 520 : 1413394907855760384.png
+I0407 16:17:35.351876 15785 orb_with_rovio.cpp:158] Current frame track time cost: 105.927ms
+I0407 16:17:35.353063 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 521 : 1413394907905760512.png
+I0407 16:17:35.426580 15785 orb_with_rovio.cpp:158] Current frame track time cost: 69.5933ms
+I0407 16:17:35.427793 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 522 : 1413394907955760384.png
+I0407 16:17:35.483080 15785 orb_with_rovio.cpp:158] Current frame track time cost: 52.0005ms
+I0407 16:17:35.484283 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 523 : 1413394908005760512.png
+I0407 16:17:35.530144 15785 orb_with_rovio.cpp:158] Current frame track time cost: 43.2283ms
+I0407 16:17:35.531440 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 524 : 1413394908055760384.png
+I0407 16:17:35.571080 15785 orb_with_rovio.cpp:158] Current frame track time cost: 37.2183ms
+I0407 16:17:35.572209 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 525 : 1413394908105760512.png
+I0407 16:17:35.612084 15785 orb_with_rovio.cpp:158] Current frame track time cost: 37.7043ms
+I0407 16:17:35.613251 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 526 : 1413394908155760384.png
+I0407 16:17:35.651306 15785 orb_with_rovio.cpp:158] Current frame track time cost: 35.95ms
+I0407 16:17:35.652509 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 527 : 1413394908205760512.png
+I0407 16:17:35.689321 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.8064ms
+I0407 16:17:35.690569 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 528 : 1413394908255760384.png
+I0407 16:17:35.770043 15785 orb_with_rovio.cpp:158] Current frame track time cost: 74.3761ms
+I0407 16:17:35.771215 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 529 : 1413394908305760512.png
+I0407 16:17:35.832160 15785 orb_with_rovio.cpp:158] Current frame track time cost: 57.2671ms
+I0407 16:17:35.833343 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 530 : 1413394908355760384.png
+I0407 16:17:35.885956 15785 orb_with_rovio.cpp:158] Current frame track time cost: 49.8156ms
+I0407 16:17:35.887171 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 531 : 1413394908405760512.png
+I0407 16:17:35.940095 15785 orb_with_rovio.cpp:158] Current frame track time cost: 50.2838ms
+I0407 16:17:35.941316 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 532 : 1413394908455760384.png
+I0407 16:17:35.982445 15785 orb_with_rovio.cpp:158] Current frame track time cost: 38.4977ms
+I0407 16:17:35.983692 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 533 : 1413394908505760512.png
+I0407 16:17:36.020274 15785 orb_with_rovio.cpp:158] Current frame track time cost: 34.3978ms
+I0407 16:17:36.021534 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 534 : 1413394908555760384.png
+I0407 16:17:36.056576 15785 orb_with_rovio.cpp:158] Current frame track time cost: 33.107ms
+I0407 16:17:36.057797 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 535 : 1413394908605760512.png
+I0407 16:17:36.092592 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.8518ms
+I0407 16:17:36.093739 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 536 : 1413394908655760384.png
+I0407 16:17:36.128154 15785 orb_with_rovio.cpp:158] Current frame track time cost: 32.615ms
+I0407 16:17:36.129298 15785 orb_with_rovio.cpp:114] <<<<<<<<<<<<<LOAD IMAGE 537 : 1413394908705760512.p

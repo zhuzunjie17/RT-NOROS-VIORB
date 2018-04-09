@@ -1,0 +1,346 @@
+Log file created at: 2018/04/06 16:39:40
+Running on machine: ubuntu14045
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0406 16:39:40.851907 50207 zr300_rovio_orb.cpp:59] pass
+I0406 16:39:41.130018 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 0 : 254.7957813.png
+I0406 16:39:41.152815 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 16.3216ms
+I0406 16:39:41.152886 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 1 : 288.0389063.png
+I0406 16:39:41.189450 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 30.3024ms
+I0406 16:39:41.189482 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 2 : 321.2799688.png
+I0406 16:39:41.235309 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 37.7822ms
+I0406 16:39:41.237726 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 3 : 354.5235625.png
+I0406 16:39:41.284694 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 40.8515ms
+I0406 16:39:41.285795 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 4 : 387.757375.png
+I0406 16:39:41.324429 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 32.4971ms
+I0406 16:39:41.329098 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 5 : 420.9984063.png
+I0406 16:39:41.373006 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 34.9041ms
+I0406 16:39:41.374133 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 6 : 454.244125.png
+I0406 16:39:41.425407 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 42.013ms
+I0406 16:39:41.426554 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 7 : 487.5005.png
+I0406 16:39:41.460676 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.5714ms
+I0406 16:39:41.461807 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 8 : 520.762875.png
+I0406 16:39:41.499338 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 31.2903ms
+I0406 16:39:41.500519 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 9 : 554.0308125.png
+I0406 16:39:41.538519 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 31.437ms
+I0406 16:39:41.539615 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 10 : 587.2819063.png
+I0406 16:39:41.574443 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.5919ms
+I0406 16:39:41.576558 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 11 : 620.5305937.png
+I0406 16:39:41.610172 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.2893ms
+I0406 16:39:41.612304 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 12 : 653.7795625.png
+I0406 16:39:41.656743 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 38.1676ms
+I0406 16:39:41.657938 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 13 : 687.0322812.png
+I0406 16:39:41.694702 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 30.4074ms
+I0406 16:39:41.695852 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 14 : 720.2867187.png
+I0406 16:39:41.732408 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 30.3656ms
+I0406 16:39:41.733639 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 15 : 753.5356562.png
+I0406 16:39:41.772614 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 32.636ms
+I0406 16:39:41.773808 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 16 : 786.794.png
+I0406 16:39:41.806224 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.0258ms
+I0406 16:39:41.807339 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 17 : 820.0469688.png
+I0406 16:39:41.839635 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.0616ms
+I0406 16:39:41.840788 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 18 : 853.2944063.png
+I0406 16:39:41.883838 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 36.7402ms
+I0406 16:39:41.884985 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 19 : 886.5435625.png
+I0406 16:39:41.917572 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.4799ms
+I0406 16:39:41.918704 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 20 : 919.7828125.png
+I0406 16:39:41.955401 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 30.3254ms
+I0406 16:39:41.956570 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 21 : 953.0292188.png
+I0406 16:39:41.990402 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.479ms
+I0406 16:39:41.991554 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 22 : 986.2802813.png
+I0406 16:39:42.036049 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 38.2453ms
+I0406 16:39:42.037199 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 23 : 1019.524437.png
+I0406 16:39:42.072353 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 28.866ms
+I0406 16:39:42.073529 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 24 : 1052.771219.png
+I0406 16:39:42.108306 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 28.4314ms
+I0406 16:39:42.110059 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 25 : 1086.018812.png
+I0406 16:39:42.146345 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 30.0356ms
+I0406 16:39:42.148084 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 26 : 1119.263344.png
+I0406 16:39:42.201787 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 46.6777ms
+I0406 16:39:42.202977 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 27 : 1152.508969.png
+I0406 16:39:42.254302 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 44.3975ms
+I0406 16:39:42.256045 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 28 : 1185.755.png
+I0406 16:39:42.313953 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 46.7418ms
+I0406 16:39:42.315243 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 29 : 1219.002625.png
+I0406 16:39:42.361855 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 37.2102ms
+I0406 16:39:42.363080 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 30 : 1252.253156.png
+I0406 16:39:42.403744 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 32.4283ms
+I0406 16:39:42.404970 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 31 : 1285.503688.png
+I0406 16:39:42.444000 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 31.3966ms
+I0406 16:39:42.445209 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 32 : 1318.755562.png
+I0406 16:39:42.489529 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 37.2102ms
+I0406 16:39:42.494863 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 33 : 1352.010125.png
+I0406 16:39:42.529566 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 28.6151ms
+I0406 16:39:42.530663 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 34 : 1385.261406.png
+I0406 16:39:42.564472 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.7899ms
+I0406 16:39:42.595278 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 35 : 1418.516594.png
+I0406 16:39:42.629993 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 28.4298ms
+I0406 16:39:42.632077 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 36 : 1451.766594.png
+I0406 16:39:42.675240 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 36.9201ms
+I0406 16:39:42.678799 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 37 : 1485.0105.png
+I0406 16:39:42.714077 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 29.0196ms
+I0406 16:39:42.715215 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 38 : 1518.254125.png
+I0406 16:39:42.747951 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.4798ms
+I0406 16:39:42.763155 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 39 : 1551.500438.png
+I0406 16:39:42.797425 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 28.0081ms
+I0406 16:39:42.798580 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 40 : 1584.737719.png
+I0406 16:39:42.841933 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 37.0928ms
+I0406 16:39:42.843065 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 41 : 1617.975406.png
+I0406 16:39:42.876600 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.2795ms
+I0406 16:39:42.880933 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 42 : 1651.21975.png
+I0406 16:39:42.913885 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.6519ms
+I0406 16:39:42.915110 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 43 : 1684.466531.png
+I0406 16:39:42.948351 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.8045ms
+I0406 16:39:42.949486 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 44 : 1717.716156.png
+I0406 16:39:43.009071 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 49.9963ms
+I0406 16:39:43.010213 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 45 : 1750.968969.png
+I0406 16:39:43.043447 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.4589ms
+I0406 16:39:43.044577 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 46 : 1784.215219.png
+I0406 16:39:43.077554 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.7063ms
+I0406 16:39:43.078758 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 47 : 1817.462906.png
+I0406 16:39:43.112447 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.4379ms
+I0406 16:39:43.113687 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 48 : 1850.707375.png
+I0406 16:39:43.162369 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 42.2018ms
+I0406 16:39:43.164346 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 49 : 1883.955062.png
+I0406 16:39:43.199609 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.0106ms
+I0406 16:39:43.200811 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 50 : 1917.20575.png
+I0406 16:39:43.233803 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.7414ms
+I0406 16:39:43.234943 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 51 : 1950.459781.png
+I0406 16:39:43.277961 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 36.7434ms
+I0406 16:39:43.279072 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 52 : 1983.718469.png
+I0406 16:39:43.314278 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 28.9596ms
+I0406 16:39:43.315491 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 53 : 2016.985063.png
+I0406 16:39:43.350571 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 28.8037ms
+I0406 16:39:43.351800 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 54 : 2050.250406.png
+I0406 16:39:43.396793 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 38.5917ms
+I0406 16:39:43.398015 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 55 : 2083.518594.png
+I0406 16:39:43.432209 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.8618ms
+I0406 16:39:43.433431 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 56 : 2116.779906.png
+I0406 16:39:43.467433 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.5119ms
+I0406 16:39:43.468616 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 57 : 2150.037188.png
+I0406 16:39:43.519742 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 39.874ms
+I0406 16:39:43.520959 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 58 : 2183.2975.png
+I0406 16:39:43.559309 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 30.6714ms
+I0406 16:39:43.560467 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 59 : 2216.5515.png
+I0406 16:39:43.598151 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 30.6672ms
+I0406 16:39:43.599316 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 60 : 2249.804156.png
+I0406 16:39:43.632627 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.9207ms
+I0406 16:39:43.633800 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 61 : 2283.063031.png
+I0406 16:39:43.671842 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 30.8223ms
+I0406 16:39:43.685696 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 62 : 2316.324562.png
+I0406 16:39:43.721957 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 29.7486ms
+I0406 16:39:43.723098 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 63 : 2349.584781.png
+I0406 16:39:43.756148 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.7636ms
+I0406 16:39:43.757393 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 64 : 2382.846656.png
+I0406 16:39:43.790474 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.53ms
+I0406 16:39:43.796373 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 65 : 2416.107125.png
+I0406 16:39:43.829407 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.7612ms
+I0406 16:39:43.846117 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 66 : 2449.363188.png
+I0406 16:39:43.879109 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.6762ms
+I0406 16:39:43.881234 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 67 : 2482.617813.png
+I0406 16:39:43.923804 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 36.2802ms
+I0406 16:39:43.930776 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 68 : 2515.867156.png
+I0406 16:39:43.965930 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 28.8536ms
+I0406 16:39:43.967190 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 69 : 2549.119281.png
+I0406 16:39:44.012197 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 38.7259ms
+I0406 16:39:44.013368 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 70 : 2582.372188.png
+I0406 16:39:44.049154 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 29.5235ms
+I0406 16:39:44.050318 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 71 : 2615.6275.png
+I0406 16:39:44.085220 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 28.6209ms
+I0406 16:39:44.086469 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 72 : 2648.880594.png
+I0406 16:39:44.120033 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.0185ms
+I0406 16:39:44.121201 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 73 : 2682.128719.png
+I0406 16:39:44.154981 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.5247ms
+I0406 16:39:44.156146 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 74 : 2715.386281.png
+I0406 16:39:44.197638 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 34.1533ms
+I0406 16:39:44.198804 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 75 : 2748.636531.png
+I0406 16:39:44.236136 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 30.2393ms
+I0406 16:39:44.239002 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 76 : 2781.891344.png
+I0406 16:39:44.276072 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 30.2716ms
+I0406 16:39:44.278039 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 77 : 2815.146281.png
+I0406 16:39:44.315840 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 28.1766ms
+I0406 16:39:44.316980 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 78 : 2848.401531.png
+I0406 16:39:44.362223 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 38.9026ms
+I0406 16:39:44.364060 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 79 : 2881.655969.png
+I0406 16:39:44.397917 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.6052ms
+I0406 16:39:44.399066 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 80 : 2914.913375.png
+I0406 16:39:44.445132 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 36.3414ms
+I0406 16:39:44.446274 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 81 : 2948.173375.png
+I0406 16:39:44.493405 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 38.2488ms
+I0406 16:39:44.494545 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 82 : 2981.42775.png
+I0406 16:39:44.540035 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 37.3683ms
+I0406 16:39:44.541188 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 83 : 3014.681562.png
+I0406 16:39:44.582948 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 34.1274ms
+I0406 16:39:44.584151 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 84 : 3047.932906.png
+I0406 16:39:44.623958 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 32.5444ms
+I0406 16:39:44.625167 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 85 : 3081.173875.png
+I0406 16:39:44.663671 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 31.1297ms
+I0406 16:39:44.664842 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 86 : 3114.419906.png
+I0406 16:39:44.699257 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 28.0845ms
+I0406 16:39:44.700436 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 87 : 3147.671813.png
+I0406 16:39:44.734696 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.7419ms
+I0406 16:39:44.735855 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 88 : 3180.919938.png
+I0406 16:39:44.770346 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.7188ms
+I0406 16:39:44.771543 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 89 : 3214.166469.png
+I0406 16:39:44.805487 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.5665ms
+I0406 16:39:44.806692 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 90 : 3247.415687.png
+I0406 16:39:44.840801 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.6114ms
+I0406 16:39:44.841948 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 91 : 3280.664969.png
+I0406 16:39:44.875880 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.4264ms
+I0406 16:39:44.877058 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 92 : 3313.916156.png
+I0406 16:39:44.911046 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.8419ms
+I0406 16:39:44.912176 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 93 : 3347.162313.png
+I0406 16:39:44.950902 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 32.4158ms
+I0406 16:39:44.952034 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 94 : 3380.413375.png
+I0406 16:39:44.991914 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 30.0518ms
+I0406 16:39:44.993110 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 95 : 3413.667438.png
+I0406 16:39:45.026494 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.8454ms
+I0406 16:39:45.027621 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 96 : 3446.918437.png
+I0406 16:39:45.062819 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 28.5082ms
+I0406 16:39:45.064024 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 97 : 3480.164875.png
+I0406 16:39:45.107697 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 37.0211ms
+I0406 16:39:45.109577 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 98 : 3513.42125.png
+I0406 16:39:45.142581 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.5998ms
+I0406 16:39:45.143906 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 99 : 3546.673094.png
+I0406 16:39:45.177650 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.3805ms
+I0406 16:39:45.179388 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 100 : 3579.930563.png
+I0406 16:39:45.212801 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.1373ms
+I0406 16:39:45.213924 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 101 : 3613.185313.png
+I0406 16:39:45.257489 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 36.356ms
+I0406 16:39:45.259281 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 102 : 3646.439781.png
+I0406 16:39:45.297382 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 30.3496ms
+I0406 16:39:45.298535 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 103 : 3679.688469.png
+I0406 16:39:45.341027 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 34.1959ms
+I0406 16:39:45.342280 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 104 : 3712.936531.png
+I0406 16:39:45.375468 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.6667ms
+I0406 16:39:45.376617 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 105 : 3746.189938.png
+I0406 16:39:45.409988 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.0792ms
+I0406 16:39:45.411123 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 106 : 3779.446531.png
+I0406 16:39:45.444913 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.5475ms
+I0406 16:39:45.446117 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 107 : 3812.702281.png
+I0406 16:39:45.488936 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 36.5419ms
+I0406 16:39:45.490063 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 108 : 3845.955406.png
+I0406 16:39:45.552664 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 48.5626ms
+I0406 16:39:45.553856 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 109 : 3879.204875.png
+I0406 16:39:45.604871 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 39.9599ms
+I0406 16:39:45.606107 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 110 : 3912.455344.png
+I0406 16:39:45.651965 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 36.2529ms
+I0406 16:39:45.653079 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 111 : 3945.709.png
+I0406 16:39:45.696112 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 34.1745ms
+I0406 16:39:45.697320 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 112 : 3978.957031.png
+I0406 16:39:45.740041 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 34.6199ms
+I0406 16:39:45.741235 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 113 : 4012.204906.png
+I0406 16:39:45.779815 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 30.8169ms
+I0406 16:39:45.781018 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 114 : 4045.456938.png
+I0406 16:39:45.817441 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 29.4439ms
+I0406 16:39:45.818600 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 115 : 4078.708031.png
+I0406 16:39:45.853140 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.8558ms
+I0406 16:39:45.854281 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 116 : 4111.974156.png
+I0406 16:39:45.887398 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.7836ms
+I0406 16:39:45.888592 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 117 : 4145.240125.png
+I0406 16:39:45.921977 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.8561ms
+I0406 16:39:45.923188 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 118 : 4178.502125.png
+I0406 16:39:45.956092 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.5739ms
+I0406 16:39:45.957259 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 119 : 4211.7565.png
+I0406 16:39:45.991587 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.771ms
+I0406 16:39:45.992733 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 120 : 4245.015125.png
+I0406 16:39:46.025954 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.7109ms
+I0406 16:39:46.028012 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 121 : 4278.269656.png
+I0406 16:39:46.061218 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.9085ms
+I0406 16:39:46.062337 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 122 : 4311.521031.png
+I0406 16:39:46.095306 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.6971ms
+I0406 16:39:46.096434 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 123 : 4344.776906.png
+I0406 16:39:46.129216 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.5458ms
+I0406 16:39:46.130340 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 124 : 4378.025719.png
+I0406 16:39:46.163496 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.8966ms
+I0406 16:39:46.164660 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 125 : 4411.276063.png
+I0406 16:39:46.198031 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.1002ms
+I0406 16:39:46.199168 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 126 : 4444.528812.png
+I0406 16:39:46.232257 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.7632ms
+I0406 16:39:46.233479 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 127 : 4477.780062.png
+I0406 16:39:46.266675 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.794ms
+I0406 16:39:46.267909 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 128 : 4511.033844.png
+I0406 16:39:46.302129 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.8601ms
+I0406 16:39:46.303261 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 129 : 4544.286094.png
+I0406 16:39:46.336309 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.7917ms
+I0406 16:39:46.337466 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 130 : 4577.533406.png
+I0406 16:39:46.371101 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.367ms
+I0406 16:39:46.372282 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 131 : 4610.773313.png
+I0406 16:39:46.405236 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.6289ms
+I0406 16:39:46.406450 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 132 : 4644.016938.png
+I0406 16:39:46.450518 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 37.4702ms
+I0406 16:39:46.451612 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 133 : 4677.263437.png
+I0406 16:39:46.485673 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.7423ms
+I0406 16:39:46.486790 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 134 : 4710.5095.png
+I0406 16:39:46.524161 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 31.0524ms
+I0406 16:39:46.525346 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 135 : 4743.755187.png
+I0406 16:39:46.563618 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 31.8424ms
+I0406 16:39:46.564853 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 136 : 4777.004094.png
+I0406 16:39:46.602051 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 30.9304ms
+I0406 16:39:46.603211 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 137 : 4810.2535.png
+I0406 16:39:46.638371 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 28.6336ms
+I0406 16:39:46.639606 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 138 : 4843.502688.png
+I0406 16:39:46.674399 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 28.0268ms
+I0406 16:39:46.675583 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 139 : 4876.751281.png
+I0406 16:39:46.709812 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.6822ms
+I0406 16:39:46.710976 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 140 : 4910.000625.png
+I0406 16:39:46.745283 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.7329ms
+I0406 16:39:46.746454 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 141 : 4943.250625.png
+I0406 16:39:46.787909 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 35.3575ms
+I0406 16:39:46.789145 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 142 : 4976.48875.png
+I0406 16:39:46.823863 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.9019ms
+I0406 16:39:46.825031 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 143 : 5009.718625.png
+I0406 16:39:46.859567 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.9272ms
+I0406 16:39:46.860855 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 144 : 5042.9595.png
+I0406 16:39:46.893865 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.6644ms
+I0406 16:39:46.895072 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 145 : 5076.203.png
+I0406 16:39:46.927620 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.275ms
+I0406 16:39:46.928831 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 146 : 5109.442344.png
+I0406 16:39:46.960983 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.0426ms
+I0406 16:39:46.962204 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 147 : 5142.688281.png
+I0406 16:39:46.995549 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.2726ms
+I0406 16:39:46.996695 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 148 : 5175.936375.png
+I0406 16:39:47.029897 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.796ms
+I0406 16:39:47.031050 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 149 : 5209.183531.png
+I0406 16:39:47.064095 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.751ms
+I0406 16:39:47.065203 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 150 : 5242.433813.png
+I0406 16:39:47.099462 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 28.2265ms
+I0406 16:39:47.100664 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 151 : 5275.684188.png
+I0406 16:39:47.144702 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 38.1296ms
+I0406 16:39:47.145879 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 152 : 5308.928063.png
+I0406 16:39:47.178656 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.343ms
+I0406 16:39:47.179797 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 153 : 5342.170781.png
+I0406 16:39:47.212955 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.0183ms
+I0406 16:39:47.214094 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 154 : 5375.411187.png
+I0406 16:39:47.255743 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 35.7011ms
+I0406 16:39:47.256911 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 155 : 5408.656125.png
+I0406 16:39:47.288915 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 25.9434ms
+I0406 16:39:47.290122 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 156 : 5441.901937.png
+I0406 16:39:47.330078 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 33.8686ms
+I0406 16:39:47.331238 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 157 : 5475.142281.png
+I0406 16:39:47.362656 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 25.5173ms
+I0406 16:39:47.363833 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 158 : 5508.389219.png
+I0406 16:39:47.400427 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 30.3134ms
+I0406 16:39:47.401655 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 159 : 5541.632969.png
+I0406 16:39:47.438134 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 29.1444ms
+I0406 16:39:47.439344 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 160 : 5574.879.png
+I0406 16:39:47.475796 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 29.9104ms
+I0406 16:39:47.477022 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 161 : 5608.126313.png
+I0406 16:39:47.512728 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 29.4166ms
+I0406 16:39:47.513903 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 162 : 5641.374219.png
+I0406 16:39:47.546943 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.9022ms
+I0406 16:39:47.548198 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 163 : 5674.625625.png
+I0406 16:39:47.581117 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.7701ms
+I0406 16:39:47.582388 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 164 : 5707.872938.png
+I0406 16:39:47.614926 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.5334ms
+I0406 16:39:47.616180 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 165 : 5741.116844.png
+I0406 16:39:47.650007 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 27.87ms
+I0406 16:39:47.651168 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 166 : 5774.358344.png
+I0406 16:39:47.683924 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.8436ms
+I0406 16:39:47.685096 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 167 : 5807.59825.png
+I0406 16:39:47.717672 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 26.5658ms
+I0406 16:39:47.718819 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 168 : 5840.843687.png
+I0406 16:39:47.750624 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 25.8762ms
+I0406 16:39:47.751813 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 169 : 5874.089937.png
+I0406 16:39:47.783069 50207 zr300_rovio_orb.cpp:178] Current frame track time cost: 25.3708ms
+I0406 16:39:47.784266 50207 zr300_rovio_orb.cpp:136] <<<<<<<<<<<<<LOAD IMAGE 170 : 5907.332125.png
+I0406 16:39:47.816342 50207 zr3
